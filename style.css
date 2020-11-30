@@ -1,4 +1,9 @@
 @import url(//db.onlinewebfonts.com/c/d85e6ab19860a0a1cc2c3d7a3eb7f98c?family=Monotype+Corsiva);
+
+@font-face{
+	font-family: AppleChancery;
+	src: url('AppleChancery.woff'), url('AppleChancery.woff') format('woff');}
+
 /* CSS File for Davin's Portfolio Website */
 
 /* -------------------------------------------------------------
@@ -33,7 +38,7 @@ nav {
 	padding: 32px;
 	background-color: #571867;
 	color: #FFFFFF;
-	font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-family:'Monotype Corsiva','AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
 	font-size: 200%;
 }
 
@@ -120,7 +125,7 @@ nav a:hover {
 }
 
 .section__title {
-	font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-family:'Monotype Corsiva','AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
  	color: #571867;
  	text-align: center;
 }
@@ -270,7 +275,7 @@ h1 {
 	margin-bottom: 0;
 	padding: 20px;
 	font-size: 260%;
-	font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-family:'Monotype Corsiva','AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
 	text-align: center;
 	letter-spacing: 0.2rem;
 }
@@ -310,6 +315,7 @@ h2 {
 
 h3 {
 	font-size: 140%;
+	/*font-family: AppleChancery;*/
 }
 
 .text-align-bullet {
