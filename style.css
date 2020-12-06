@@ -217,7 +217,7 @@ nav a:hover {
 
 @media screen and (min-width: 1080px) { 
 	.section__box {
-		margin: 40px;
+		margin: 10px 40px;
 	}
 	.section__box-emphasis {
 		margin-left: 30px;
