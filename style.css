@@ -40,7 +40,7 @@ nav {
 	padding: 32px;
 	background-color: #571867;
 	color: #FFFFFF;
-	font-family: 'LucidaCallig','AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-family: 'AppleChancery','LucidaCallig','ITC Zapf Chancery','URW Chancery L',cursive;
 	font-size: 200%;
 }
 
@@ -127,7 +127,7 @@ nav a:hover {
 }
 
 .section__title {
-	font-family:'LucidaCallig','AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-family: 'AppleChancery', 'LucidaCallig', 'ITC Zapf Chancery','URW Chancery L',cursive;
  	color: #571867;
  	text-align: center;
 }
@@ -181,7 +181,7 @@ nav a:hover {
 
 .section__box {
 	padding: 10px;
-	margin: 20px;
+	margin: 10px 20px;
 	flex: 1 1 260px;
 	text-align: center;
 }
@@ -208,7 +208,7 @@ nav a:hover {
 
 @media screen and (min-width: 700px) {
 	.section__box {
-		margin: 30px;
+		margin: 10px 30px;
 	}
 	.section__box-emphasis {
 		max-width: 70%;
@@ -276,8 +276,8 @@ h1 {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding: 20px;
-	font-size: 250%;
-	font-family: 'LucidaCallig','AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-size: 260%;
+	font-family: 'AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
 	text-align: center;
 	letter-spacing: 0.1rem;
 }
