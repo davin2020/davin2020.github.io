@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-<!-- HTML File for Davins Portfolio-->
   <title>Davin's Portfolio</title>
   <link href="normalize.css" type="text/css" rel="stylesheet">
   <link href="style.css" type="text/css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-<!--  <link href="//db.onlinewebfonts.com/c/d85e6ab19860a0a1cc2c3d7a3eb7f98c?family=Monotype+Corsiva" rel="stylesheet" type="text/css"/>-->
-<!--	<link href="//db.onlinewebfonts.com/c/d85e6ab19860a0a1cc2c3d7a3eb7f98c?family=Monotype+Corsiva" rel="stylesheet" type="text/css"/>-->
 </head>
 
 <body>
@@ -49,7 +46,7 @@
 						<p>Entitled to work in the UK & NZ, with over 12 years IT industry experience across both countries</p>
 					</article>
 					<article class="section__box">
-						<p><b>Open to new opportunites, from January 2021</b></p>
+						<p><b>Open to new opportunities from January 2021</b></p>
 						<p>Interested in travelling, sci-fi shows, good design, architecture & psychology, and have experience in making short films</p>
 					</article>
 					<article class="section__box">
@@ -62,18 +59,39 @@
 			</section>
 			
 <!-- Section: Portfolio-->
-			<section class="layout__porfolio">
+			<section class="layout__portfolio">
 				<a name="Portfolio">
 				<h2 class="section__title">Portfolio</h2>
 				</a>
 				<div class="section__container">
+
+					<article class=" section__box-emphasis">
+						<h3>Social Media Site</h3>
+<!--						<a  target="_blank" title="Live Demo Coming Soon"></a>-->
+						<img src="images/knowsy_app.png" alt="Screenshot of Social Media Website" class="portfolio-images" title="Live Demo Coming Soon">
+						<p>As a team of 4 we made a 'Today I Learned' social media site called Knowsy. We decided to use the MERN stack, with separate repos for the front & backend, and GraphQL for the API calls to MongoDB.</p>
+						<p>We mostly did pair programming and I chose to work on the backend API. I was heavily involved in researching & creating the GraphQL queries & mutations, and later integrating the front & backends. We handled login manually, using the jsonwebtoken and  bcrypt node modules</p>
+						<p>This was our first scrum project working unsupervised, and I learned that I definitely prefer a more structured environment. Next time I would allocate time for researching before sprint/task planning, as we hadn't used GraphQL before. I would also allow more time when estimating tasks, to deal with the inevitable issues that crop up when trying to integrate different repos worked on by different people.
+						</p>
+						<div class="group_icons">
+							<span class="tech_icons_group">
+								<i><img src="images/icon_graphql.svg" alt="GraphQL icon" title="GraphQL" class="tech_icon"></i>
+								<i class="fab fa-node fa-3x" title="Node JS"></i>
+								<i class="fab fa-react fa-3x" title="React JS"></i>
+							</span>
+							<span class="github_link">
+								<a href="https://github.com/Mayden-Academy/2020-sept-knowsys-api" target="_blank"><i class="fab fa-github-square fa-3x" title="Knowsys Backend API"></i></a>
+								<a href="https://github.com/Mayden-Academy/2020-sept-knowsys-ui" target="_blank"><i class="fab fa-github-square fa-3x" title="Knowsys User Interface"></i></a>
+							</span>
+						</div>
+					</article>
 					<article class=" section__box-emphasis">
 						<h3>Ecommerce Site</h3>
-						<a href="https://dev.io-academy.uk/projects/2020-sept/2020-sept-ecommerce/index.php" target="_blank"><img src="images/robot_stores2.png" alt="Screenshot of Ecommerce Wesbite" class="portfolio-images"></a>
+						<a href="https://dev.io-academy.uk/projects/2020-sept/2020-sept-ecommerce/index.php" target="_blank"><img src="images/robot_stores2.png" alt="Screenshot of Ecommerce Website" class="portfolio-images"></a>
 						<p>I volunteered as Scrum Master and facilitated our team to create an e-commerce site based on existing product data. I used my previous OO experience to assist the team with creating the architecture plan for the site. </p>
 							<p>We decided to use the Hydrator Entity design pattern along with a PDO Connection in our LAMP stack, with HTML, CSS & Bootstrap for the frontend. We also reviewed the SOLID principles and adjusted the plan accordingly. I did pair programming to create some of the classes and peer reviewed colleagues code in GitHub. During  Sprint Review I gave a non-technical overview of the site's architecture.</p>
 						<div class="group_icons">
-							<span class="tech_icons">
+							<span class="tech_icons_group">
 								<i class="fab fa-php fa-2x" title="PHP"></i>
 								<i class="fab fa-html5 fa-2x" title="HTML 5"></i>
 								<i class="fab fa-css3-alt fa-2x" title="CSS 3"></i>
@@ -89,9 +107,9 @@
 						<a href="https://todo.2020-davin.dev.io-academy.uk/" target="_blank">
 							<img src="images/todo_app.png" alt="Screenshot of To Do App" class="portfolio-images">
 						</a>
-						<p>We learned about MVC & PHP frameworks, then used them as part of an exercise to create a To Do app. We cloned an existing repo that contained the Slim 4 framework, and worked through the architecture plan as a group. I then worked independantly to create the functionality to add, complete or delete a task from the underlying MySQL DB, using Routing, the Dependency Injection Container, Factories, Controllers & Views.</p>
+						<p>We learned about MVC & PHP frameworks, then used them as part of an exercise to create a To Do app. We cloned an existing repo that contained the Slim 4 framework, and worked through the architecture plan as a group. I then worked independently to create the functionality to add, complete or delete a task from the underlying MySQL DB, using Routing, the Dependency Injection Container, Factories, Controllers & Views.</p>
 						<div class="group_icons">
-							<span class="tech_icons">
+							<span class="tech_icons_group">
 								<i class="fab fa-php fa-2x" title="PHP"></i>
 								<i class="fab fa-html5 fa-2x" title="HTML 5"></i>
 								<i class="fab fa-css3-alt fa-2x" title="CSS 3"></i>
@@ -107,7 +125,7 @@
 						<a href="https://dev.io-academy.uk/projects/2020-sept/2020-sept-maze-game/" target="_blank"><img src="images/maze_game.png" alt="Screenshot of Maze Game" class="portfolio-images"></a>
 						<p>As part of a scrum team of 8 people, we designed & created a maze game using Javascript. I did some pair programming to design the splash screen wireframe & code that, and coded the eventListeners to detect collisions with the path & ghost obstacles. I also implemented changes after our tutor's code reviews</p>
 						<div class="group_icons">
-							<span class="tech_icons">
+							<span class="tech_icons_group">
 								<i class="fab fa-js-square fa-2x" title="JavaScript"></i>
 								<i class="fab fa-html5 fa-2x" title="HTML 5"></i>
 								<i class="fab fa-css3-alt fa-2x" title="CSS 3"></i>
@@ -123,7 +141,7 @@
 						<a href="https://davin2020.github.io/milkyway/" target="_blank"><img src="images/solar_system.png" alt="Screenshot of Solar System Animation" class="portfolio-images"></a>
 						<p>As part of learning Advanced FrontEnd techniques, we created an animation of our solar system, using SVGs and keyframes & animations in CSS</p>
 						<div class="group_icons">
-							<span class="tech_icons">
+							<span class="tech_icons_group">
 								<i class="fab fa-css3-alt fa-2x" title="CSS 3"></i>
 							</span>
 							<span class="github_link">
@@ -138,7 +156,8 @@
 						<p>While working on a service desk during 2017-8, I created several Powershell scripts. One example was a script to create Public Folders in Exchange, as that was a common but time consuming task.</p>
 						<p>Another example was a script to move security groups from one manager to another. This script was used during a restructuring period when multiple managers were moving departments, and reduced the amount of time my Team Leader had to spend on admin work after hours.</p>
 						<div class="group_icons">
-							<span class="tech_icons">
+							<span class="tech_icons_group">
+								<i><img src="images/icon_powershell_96.svg" alt="PowerShell Icon" title="PowerShell" class="tech_icon" /></i>
 							</span>
 							<span class="github_link">
 								<a href="https://github.com/davin2020/powershell/" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
@@ -155,31 +174,36 @@
 					</a>
 				<div class="section__container">
 					<article class="section__box">
-						<h3>Mayden Academy</h3>
-						<p>Enrolled on the Mayden Full Stack web development course, which was recently voted the #2nd best bootcamp in the UK, and #6th in the world.</p>
-						<p>Currently learning:</p>
-						<br>Languages:
+						<h3>Web Development</h3>
+						<p>In December 2020 I graduated from the 16 week Full Stack Web Development bootcamp run by iO Academy (previously known as Mayden Academy). In October 2020, iO were voted the <a href="https://io-academy.uk/io-academy-ranked-in-the-top-10-best-coding-bootcamps-in-the-world/" target="_blank">#2nd best bootcamp in the UK and 6th in the world by SwitchUp</a></p>
+						<p>Main topics we covered during the bootcamp:</p>
+<!--						<br>Languages, frameworks & libraries we covered during the bootcamp:-->
 							<ul class="text-align-bullet">
-								<li>PHP, including OO & SOLID design principles</li>
+								<li>JavaScript, including Node, Express & React</li>
+								<li>RESTful and GraphQL APIs</li>
+								<li>Mongo DB</li>
 								<li>MySQL</li>
-								<li>JavaScript</li>
-								<li>HTML & CSS</li>
+								<li>PHP, including OO, SOLID & MVC design principles</li>
+								<li>CSS</li>
+								<li>HTML</li>
 							</ul>
-						<br>Tools & Software:
+						<br>Tools & Software we used on Mac:
 						<ul class="text-align-bullet">
 							<li>Git & GitHub</li>
 							<li>PHPStorm</li>
 							<li>Docker</li>
-							<li>SequelPro</li>
+							<li>Mongo DB Compass</li>
+							<li>Sequel Pro</li>
+							<li>Postman</li>
 						</ul>
 					</article>
 					<article class=" section__box">
 						<h3>Programming</h3>
 						<p>Previous programming & application design experience:</p>
 							<ul class="text-align-bullet">
-								<li>Powershell scripting to manipulate Active Directory users & groups and Exchange mailboxes</li>
-								<li>Designed web front end for a resource management system, including 3 different levels of access</li>
-								<li>Learned Java, JSP, JDBC & SQL to create a conference registration website</li>
+								<li>2017: Powershell scripting to manipulate Active Directory users & groups and Exchange mailboxes</li>
+								<li>2010: Designed web front end for a resource management system, including 3 different levels of access</li>
+								<li>2003: Learned Java, JSP, JDBC & SQL to create a conference registration website</li>
 							</ul>
 					</article>
 				</div>
@@ -205,7 +229,7 @@
 	
 		</main>
 
-<!-- Footer -->
+
 		<footer>
 			<a href="#About">About</a> |
 			<a href="#Portfolio">Portfolio</a> |
