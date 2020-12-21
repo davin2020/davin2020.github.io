@@ -1,9 +1,11 @@
-@import url(//db.onlinewebfonts.com/c/d85e6ab19860a0a1cc2c3d7a3eb7f98c?family=Monotype+Corsiva);
+/*@import url(//db.onlinewebfonts.com/c/d85e6ab19860a0a1cc2c3d7a3eb7f98c?family=Monotype+Corsiva);*/
 
 @font-face{
 	font-family: AppleChancery;
 	src: url('AppleChancery.woff'), url('AppleChancery.woff') format('woff');}
-
+@font-face{
+	font-family: 'LucidaCallig';
+	src: url('fonts/LCALLIG/LCALLIG.woff') format('woff');}
 /* CSS File for Davin's Portfolio Website */
 
 /* -------------------------------------------------------------
@@ -38,7 +40,7 @@ nav {
 	padding: 32px;
 	background-color: #571867;
 	color: #FFFFFF;
-	font-family:'Monotype Corsiva','AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-family: 'AppleChancery','LucidaCallig','ITC Zapf Chancery','URW Chancery L',cursive;
 	font-size: 200%;
 }
 
@@ -125,7 +127,7 @@ nav a:hover {
 }
 
 .section__title {
-	font-family:'Monotype Corsiva','AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-family: 'AppleChancery', 'LucidaCallig', 'ITC Zapf Chancery','URW Chancery L',cursive;
  	color: #571867;
  	text-align: center;
 }
@@ -151,13 +153,15 @@ nav a:hover {
 }
 
 .layout__porfolio {
-	background-color: #4C90BD;
+	/*background-color: #4C90BD;*/
+	background-color: #9cc3d5ff;
 	padding-bottom: 20px;
 	padding-top: 20px;
 }
 
 .layout__skills {
-	background-color: #3D7BA4;
+	/*background-color: #3D7BA4;*/
+	background-color: #85b3d1ff;
 	padding-bottom: 20px;
 	padding-top: 20px;
 }
@@ -172,14 +176,15 @@ nav a:hover {
 }
 
 .layout__bkgImage {
-	background-color: rgba(61,123,164,0.8);
+	/*background-color: rgba(61,123,164,0.8);*/
+	background-color: rgba(133,179,209,0.8);
 	padding-top: 10px;
 	padding-bottom: 20px;
 }
 
 .section__box {
 	padding: 10px;
-	margin: 20px;
+	margin: 10px 20px;
 	flex: 1 1 260px;
 	text-align: center;
 }
@@ -190,11 +195,12 @@ nav a:hover {
 	flex: 1 1 300px; /* was 250 - try a rem amt?? */
 	text-align: center;
 	border-radius: 10px;
-	box-shadow: inset 0 0 10px #fff;
+	box-shadow: inset 0 0 10px #000;
 	/* need this to flex & center items, so that tech icons stay at bottom */
 	display: flex;
 	flex-direction: column;
 	align-items: center; /* need this as some pics in flex are not being centered properly */
+	background-color: #85b3d1ff;
 }
 
 .section__box-emphasis-noflex {
@@ -206,7 +212,7 @@ nav a:hover {
 
 @media screen and (min-width: 700px) {
 	.section__box {
-		margin: 30px;
+		margin: 10px 30px;
 	}
 	.section__box-emphasis {
 		max-width: 70%;
@@ -215,7 +221,7 @@ nav a:hover {
 
 @media screen and (min-width: 1080px) { 
 	.section__box {
-		margin: 40px;
+		margin: 10px 40px;
 	}
 	.section__box-emphasis {
 		margin-left: 30px;
@@ -275,7 +281,7 @@ h1 {
 	margin-bottom: 0;
 	padding: 20px;
 	font-size: 260%;
-	font-family:'Monotype Corsiva','AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-family: 'AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
 	text-align: center;
 	letter-spacing: 0.1rem;
 }
@@ -314,8 +320,8 @@ h2 {
 }
 
 h3 {
-	font-family: AppleChancery;
-	font-size: 1.7rem;
+	/*font-family: AppleChancery;*/
+	font-size: 1.5rem;
 }
 
 .text-align-bullet {
