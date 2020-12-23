@@ -71,6 +71,10 @@ nav a:hover {
 /*	color: #571867;*/
 /*}*/
 
+.layout__skills a:visited {
+	color: purple;
+}
+
 .layout__contact-me i {
 	color: #000;
 }
