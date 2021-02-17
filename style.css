@@ -40,8 +40,11 @@ nav {
 	padding: 32px;
 	background-color: #571867;
 	color: #FFFFFF;
-	font-family: 'AppleChancery','LucidaCallig','ITC Zapf Chancery','URW Chancery L',cursive;
-	font-size: 200%;
+	font-family: 'Courier New', 'AppleChancery','LucidaCallig','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-size: 175%;
+	font-weight: bold;
+	/* maybe add some kerning and more line height than in body */
+	line-height: 2rem;
 }
 
 nav a {
@@ -136,9 +139,11 @@ nav a:hover {
 }
 
 .section__title {
-	font-family: 'AppleChancery', 'LucidaCallig', 'ITC Zapf Chancery','URW Chancery L',cursive;
+	font-family: 'Courier New', 'AppleChancery', 'LucidaCallig', 'ITC Zapf Chancery','URW Chancery L',cursive;
  	color: #571867;
  	text-align: center;
+	/* bold not working here*/
+	font-weight: bold;
 }
 
 .layout__title {
@@ -290,9 +295,10 @@ h1 {
 	margin-bottom: 0;
 	padding: 20px;
 	font-size: 260%;
-	font-family: 'AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
+	font-family: 'Courier New', 'AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
 	text-align: center;
 	letter-spacing: 0.1rem;
+	line-height: 2rem;
 }
 
 .title-subheading {
@@ -320,12 +326,12 @@ h1 {
 		font-size: 180%; /* clashing with MyName font size */
 	}
 }
-	
 
 h2 {
 	margin: 0;
 	padding: 10px 0;
-	font-size: 2.2rem;
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
 }
 
 h3 {
