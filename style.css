@@ -209,6 +209,7 @@ em {
 }
 
 .section__box-emphasis {
+	position: relative;
 	padding: 20px;
 	margin: 20px;
 	flex: 1 1 340px; /* was 250 - try a rem amt?? */
@@ -311,7 +312,7 @@ h1 {
 	color: #FFFFFF;
 	background-color: #571867;
 	vertical-align: middle;
-/* need to set top & bottom margins to 0 so there is no space between the text for the Title-Name and Title-Subheading */
+	/* need to set top & bottom margins to 0 so there is no space between the text for the Title-Name and Title-Subheading */
 	margin-top: 0;
 	margin-bottom: 0;
 	padding: 20px;
@@ -344,6 +345,29 @@ h3 {
 	/*font-family: AppleChancery;*/
 	font-size: 1.5rem;
 	margin-bottom: 10px;
+}
+
+/* Comin Soon label for new projects */
+.coming_soon::before {
+	content: "coming soon!";
+	background-color: #571867;
+	color: white;
+	font-family: 'Courier New', cursive;
+	font-size: 1.4rem;
+	padding: 10px;
+	display: inline-block; /* must be block or inline-block */
+	transform: rotate(-20deg);
+ 	/* absolute element is relative to its parent, so had to add relative to section__box-emphasis - but should i have made a separate parent div whose only job was to have a relative position? */
+ 	position: absolute;
+    top: -10px;
+    left: -30px;
+    z-index: 100;
+}
+/* not much point changing top pos or it will jump between MQs */
+@media screen and (max-width: 550px) {
+	.coming_soon::before {
+		font-size: 1rem;
+	}
 }
 
 .text-align-bullet {
