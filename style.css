@@ -336,7 +336,7 @@ h1 {
 
 h2 {
 	margin: 0;
-	padding: 10px 0;
+	padding: 15px 0;
 	font-size: 2.3rem;
 	letter-spacing: 0.1rem;
 }
@@ -348,7 +348,7 @@ h3 {
 }
 
 /* Comin Soon label for new projects */
-.coming_soon::before {
+.label_coming_soon::before {
 	content: "coming soon!";
 	background-color: #571867;
 	color: white;
@@ -361,12 +361,36 @@ h3 {
  	position: absolute;
     top: -10px;
     left: -30px;
-    z-index: 100;
+    z-index: 10;
+    border-radius: 10px;
 }
+
+.label_in_progress::before {
+	content: "work in progress";
+	background-color: #1C384A;
+	color: #fff;
+	font-family: 'Courier New', cursive;
+	font-size: 1.2rem;
+	padding: 10px;
+	display: inline-block; /* must be block or inline-block */
+	transform: rotate(-20deg);
+ 	position: absolute;
+    top: -10px;
+    left: -30px;
+    z-index: 10;
+    border: 3px solid #fff;
+    border-radius: 10px;
+}
+
 /* not much point changing top pos or it will jump between MQs */
 @media screen and (max-width: 550px) {
-	.coming_soon::before {
+	.label_coming_soon::before {
 		font-size: 1rem;
+		padding: 7px;
+	}
+	.label_in_progress::before {
+		font-size: 0.9rem;
+		padding: 7px;
 	}
 }
 
