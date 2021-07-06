@@ -2,19 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>REDESIGN Portfolio Website for Davin Stirling</title>
+  <title>Portfolio Website for Davin Stirling</title>
   <link href="normalize.css" type="text/css" rel="stylesheet">
-  <!-- website looks horrible without stylesheet!  -->
   <link href="style.css" type="text/css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--  add font awesomem back in and see how GH octo logo looks?  -->
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">  -->
 </head>
 
 <body>
 	<div class="mainContainerGrid">
 
-		<!-- Header & Navigation - if i get rid of top nav, shoudl i make h2 navs aswell? h2 are missing anchor tags! -->
 		<header>
 			<!-- <nav>
 				<a href="#About">About</a>
@@ -37,11 +33,6 @@
 
 			<!-- Section About Me -->
 			<section class="layout__about-me">
-
-				<!--  	What this means for us is that, when we place a heading inside a <summary>, we can style the heading’s appearance. But we cannot guarantee our heading will actually be interpreted as a heading!
-
-				In other words, it probably doesn’t hurt to put a heading there. It just may not always help 
-				Can i add aria to h2 instead? . -->
 				<details>
 					<summary>
 						<!--  TODO add  in anchor tags here for headers & footer! -->
@@ -60,7 +51,6 @@
 								<p>I'm open to new opportunities in 2021 - here's my 
 								<a href="DavinStirlingDeveloperCV2021.pdf" target="_blank">Developer CV</a>
 							</p>
-								<!--  TODO add in dev cv -->
 							</div>
 						</div>
 
@@ -75,7 +65,6 @@
 							</div>
 						</div>
 					
-						<!-- maybe look at how the craft agency site does their boxes? -->
 						<div class="section_child">
 							<div class="box_basic_top accent_bkg">
 								<h3>Interests</h3>
@@ -114,7 +103,6 @@
 								<p>I'm interested in psychology so decided to digitise  the GP-CORE form where you can answer questions about subjective wellbeing.</p>
 								<p>CORE Forms from the <a href="https://www.coresystemtrust.org.uk/">CORE Systems Trust</a> can be used to monitor changes in wellbeing over time in health care situations. There are different versions, like <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> for the General Population which has 14 questions.</p>
 								<details>
-									<!-- MORE in TEAL doesnt stand out so well, try making teal darker? 3.4 for Ally, but WAVE doesnt work on localhost atm!  -->
 									<summary>More</summary>
 									<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library.</p>
 									<p>This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.
@@ -129,7 +117,6 @@
 								CSS3 <span class="accent">|</span>
 								<a href="http://bit.ly/ghCOREmvc" target="_blank"  aria-label="Link to GitHub Repo for Wellbeing Tracking Form">GitHub&nbspRepo
 									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
-									<!-- add GH logo here but keep words -->
 								</a>
 								</p>
 							</div>
@@ -254,12 +241,6 @@
 							<div class="box_basic">
 								<p>I volunteered as Scrum Master and facilitated our team to create an e-commerce site based on existing product data. I used my previous OO experience to assist the team with creating the architecture plan for the site. </p>
 								<p>We decided to use the Hydrator Entity design pattern along with a PDO Connection in our LAMP stack, with HTML, CSS & Bootstrap for the frontend. We also reviewed the SOLID principles and adjusted the plan accordingly. I did pair programming to create some of the classes and peer reviewed colleagues code in GitHub. During  Sprint Review I gave a non-technical overview of the site's architecture.</p>
-								<!-- <details>
-									<summary>More</summary>
-									<p>xxx</p>
-									<p>yyy</p>
-									<p>zzzz</p>
-								</details> -->
 							</div>
 							<div class="box_basic">
 								<p>PHP <span class="accent">|</span> 
@@ -334,7 +315,6 @@
 
 						<div class="section_child">
 							<div class="box_basic_top">
-								<!-- <img src="images/davin_skills_cloud2.png" class="portfolio-images"> -->
 								<img src="images/davin_skills_cloud3.png"  alt="Word Cloud of Tech Skills which are also listed below" class="portfolio-images">
 							</div>
 							<div class="box_basic accent_bkg">
@@ -376,7 +356,6 @@
 						<div class="section_parent_col"> 
 
 							<div class="box_basic_top_contact">
-								<!-- do i need all these extra divs? -->
 								<div class="section_child">
 									<div class="box_basic_top accent_bkg">
 										<h3>Email</h3>
@@ -411,53 +390,12 @@
 								</svg>
 							</div>
 	
-						</div> <!-- end of section_parent_col -->
-
-						<!-- see how original site does boxes -->
-						<!-- <div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<p>Email: davin.stirling@gmail.com</p>
-							</div>
-							<div class="box_basic">
-								<p>GitHub Profile: https://github.com/davin2020</p>
-							</div>
-						</div> -->
-
-						<!-- HIDE THIS, but avatar has better flow as it goes under other boxes on narrow screens -->
-						<!-- <div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Email</h3>
-							</div>
-							<div class="box_basic">
-								<a class="contactme" href="mailto:davin.stirling+portfolio@gmail.com?subject=Email from Portfolio site" aria-label="Email address for Davin is davin.stirling+portfolio@gmail.com">davin.stirling+portfolio@gmail.com</a>
-							</div>
-						</div>
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>GitHub Profile</h3>
-							</div>
-							<div class="box_basic">
-								<a href="https://github.com/davin2020/" target="_blank" aria-label="Link to GitHub account for Davin2020" class="contactme">https://github.com/davin2020
-								</a>
-							</div>
-						</div>
-
-						<div class="logo_container">
-							<svg height="100%" width="100%" viewBox="0 0 350 350" preserveAspectRatio="xMidYMid meet">
-								<rect x="50" y="50" width="250" height="200"  fill="#2F8890" class="logo_fill" />
-								<rect x="100" y="49" width="50" height="50" stroke="white" fill="transparent"  class="logo_negative" />
-								<rect x="200" y="49" width="50" height="50" stroke="white" fill="transparent"  class="logo_negative" />
-								<rect x="150" y="200" width="50" height="50" stroke="white" fill="transparent"  class="logo_negative" />
-								<rect x="150" y="250" width="50" height="50" stroke="#2F8890" fill="transparent" class="logo_fill" />
-							</svg>
-						</div> -->
+						</div> 
 
 					</div>
 				</details>
 			</section>
 				
-			<!-- could make divider same color as bkg if need more bottom margin only? -->
 			<div class="visual-separator width_100"> </div>
 
 		</main>
@@ -473,5 +411,3 @@
 	</div>
 </body>
 </html>
-
-<!-- 533 lines, now 346 lines, could be 40 line less once contact stuff sorted  -->
