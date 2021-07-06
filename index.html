@@ -2,361 +2,465 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Portfolio Website for Davin Stirling</title>
+  <title>REDESIGN Portfolio Website for Davin Stirling</title>
   <link href="normalize.css" type="text/css" rel="stylesheet">
+  <!-- website looks horrible without stylesheet!  -->
   <link href="style.css" type="text/css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <!--  add font awesomem back in and see how GH octo logo looks?  -->
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">  -->
 </head>
 
 <body>
 	<div class="mainContainerGrid">
-<!-- Header & Navigation -->
+
+		<!-- Header & Navigation - if i get rid of top nav, shoudl i make h2 navs aswell? h2 are missing anchor tags! -->
 		<header>
-			<nav>
+			<!-- <nav>
 				<a href="#About">About</a>
 				<a href="#Portfolio">Portfolio</a>
 				<a href="#Skills">Skills</a>
 				<a href="#Contact">Contact</a>
-			</nav>
+			</nav> -->
+
+			<div class="accent_bkg"> 
+				<section class="layout__title">
+					<h1 class="section__title ">Davin Stirling</h1>
+					<p class="subtitle">detail orientated web developer, with diverse life experience</p>
+				</section>
+			<div>
 		</header>
 
 		<main>
-<!-- Section: MyName & Background Picture -->
-			<section class="layout__title">
-				<span class="background-image" role="img" aria-label="Background image of code on a monitor"> </span>
-				<div class="section__container">
-					<article class="section__box container__title">
-							<h1>Davin Stirling</h1>
-						<div>
-							<p class="title-subheading">detail orientated web developer,<wbr> with diverse life experience
+			
+			<div class="visual-separator width_20"> </div>
 
-							<!-- Web Developer in UK & NZ -->
-						</p>
-						</div>	
-					</article>
-				</div>
-			</section>
-			
-			<div class="visual-separator"> </div>
-			
-<!-- Section About Me -->
+			<!-- Section About Me -->
 			<section class="layout__about-me">
-				<div class="layout__bkgImage">
-				<a name="About">
-				<h2 class="section__title ">About</h2>
-				</a>
-				<div class="section__container">
-					<article class="section__box">
-						<p>I'm an IT Professional  with over 12 years experience, pivoting into web development with an interest in backend technologies </p>
-						<p>I'm eligible to work in the UK, where I'm currently based, and also in New Zealand where I lived for 12 years pre-covid</p>
-					</article>
-					<article class="section__box">
-						<p><b>I'm open to new opportunities in 2021
-- here's my <a href="DavinStirlingDeveloperCV2021.pdf" target="_blank">Developer CV</a></b></p>
-						<p>I'm interested in good design & architecture, psychology, sci-fi shows, travelling and making short films</p>
-					</article>
-					<article class="section__box">
-						<p>Certified Scrum Master - 2020</p>
-						<p>Completed an intensive 4 month Full Stack Web Development Bootcamp - 2020</p>
-						<p>BSc (Hons) in Computer Science integrated with IBM UK</p>
-						<!-- <p>Certificate in Applied Film-Making & TV Production</p> -->
-					</article>
-				</div>
-				</div>
+
+				<!--  	What this means for us is that, when we place a heading inside a <summary>, we can style the heading’s appearance. But we cannot guarantee our heading will actually be interpreted as a heading!
+
+				In other words, it probably doesn’t hurt to put a heading there. It just may not always help 
+				Can i add aria to h2 instead? . -->
+				<details>
+					<summary>
+						<!--  TODO add  in anchor tags here for headers & footer! -->
+						<h2 class="section__title">About</h2>
+					</summary>
+
+					<div class="section_parent"> 
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Background</h3>
+							</div>
+							<div class="box_basic">
+								<p>Hiya, I'm Davin, an IT Professional with over 12 years experience pivoting into web development</p>
+								<p>I'm interested in backend technologies including GraphQL API, and keen to build on my experience wiht LAMP and MERN stacks.
+								<p>I'm eligible to work in the UK, where I'm currently based, and also in New Zealand where I lived for 12 years pre-covid</p>
+								<p>I'm open to new opportunities in 2021 - here's my 
+								<a href="DavinStirlingDeveloperCV2021.pdf" target="_blank">Developer CV</a>
+							</p>
+								<!--  TODO add in dev cv -->
+							</div>
+						</div>
+
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Qualifications</h3>
+							</div>
+							<div class="box_basic">
+								<p>Certified Scrum Master - 2020</p>
+								<p>Completed an intensive 4 month Full Stack Web Development Bootcamp - 2020</p>
+								<p>BSc (Hons) in Computer Science integrated with IBM UK</p>
+							</div>
+						</div>
+					
+						<!-- maybe look at how the craft agency site does their boxes? -->
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Interests</h3>
+							</div>
+							<div class="box_basic">
+								<p>I'm interested in good design & architecture, psychology, sci-fi shows, travelling and making short films</p>
+							</div>
+						</div>
+					</div>
+
+				</details>
 			</section>
 			
-			<div class="visual-separator"> </div>
 
-<!-- Section: Portfolio-->
+			<div class="visual-separator width_40"> </div>
+
+			<!-- Section: Portfolio-->
 			<section class="layout__portfolio">
-				<a name="Portfolio">
-				<h2 class="section__title">Portfolio</h2>
-				</a>
-				<div class="section__container">
+				<details>
+					<summary>
+						<h2 class="section__title">Portfolio</h2>
+					</summary>
+				
+					<div class="section_parent"> 
 
-					<article class="section__box-emphasis">
-						<div class="label_in_progress"></div>
-						<h3>Form to Track Wellbeing</h3>
-						<em>Work in Progress - June 2021</em>
-<!-- <a href="https://wellbeing.2020-davin.dev.io-academy.uk" target="_blank"> -->
-<!--					img src tag normally goes here	-->
-<!--</a>-->
-						<a href="wellbeing/default.html" target="_blank">
-						<img src="images/wellbeing_tracker_questions.png" alt="Screenshot of Wellbeing Tracking Form website" class="portfolio-images">
-						</a>
-						<p>I'm interested in psychology so decided to digitise  the GP-CORE form where you can answer questions about subjective wellbeing.</p>
-						<p>CORE Forms from the <a href="https://www.coresystemtrust.org.uk/">CORE Systems Trust</a> can be used to monitor changes in wellbeing over time in health care situations. There are different versions, like <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> for the General Population which has 14 questions.</p>
-						<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library.</p>
-						<p>This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.
-						During May I restructured the app into separate pages in a feature branch, and added register/login functionality. In June  I've been working on protecting the routes with sessions, while also redesigning this portfolio website</p>
-
-						 <!-- At present I have restructured the app into separate pages in a feature branch, and added register/login functionality but am still having issues with getting JWT to work properly. -->
-						<!-- At present most of the funtionality is on one page, so I need to restructure it into separate pages and add a login/signup option. -->
-						<p>My biggest challenges have been working out how to better use the graph plotting library, and learning more about using Git eg cherry picking & stashing in order to resolve certain branching issues I came across. I've also discovered that some tech  isn't meant to work together - like trying to add JWT to my project without realising its only intended for APIs when I've written a (small) monolith...</p>
-						<!-- and now tryng to protect routes with web tokens.</p> -->
-						<div class="group_icons">
-							<span class="tech_icons_group">
-								<i class="fab fa-php fa-2x" title="PHP" aria-label="Project made with PHP"></i>
-								<i class="fab fa-html5 fa-2x " title="HTML 5" aria-label="Project made with HTML 5"></i>
-								<i class="fab fa-css3-alt fa-2x" title="CSS 3" aria-label="Project made with CSS 3"></i>
-							</span>
-							<span class="github_link">
-								<a href="http://bit.ly/ghCOREmvc" target="_blank"  aria-label="Link to GitHub Repo for Wellbeing Tracking Form">
-									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Form to Track Wellbeing using PHP and MVC</h3>
+							</div>
+							<div class="box_basic">
+								<a href="wellbeing/default.html" target="_blank">
+									<img src="images/screenshot_core_gp.png" alt="Screenshot of the Wellbeing Tracking website - which is a list of questions on the left, eg 'I have felt ok about myself', with groups on radio buttons on the right where you can choose an answer on a frequency scale between 'Not At All' and 'Most of the Time'" class="portfolio-images">
 								</a>
-							</span>
+							</div>
+							<div class="box_basic">
+								<p>I'm interested in psychology so decided to digitise  the GP-CORE form where you can answer questions about subjective wellbeing.</p>
+								<p>CORE Forms from the <a href="https://www.coresystemtrust.org.uk/">CORE Systems Trust</a> can be used to monitor changes in wellbeing over time in health care situations. There are different versions, like <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> for the General Population which has 14 questions.</p>
+								<details>
+									<!-- MORE in TEAL doesnt stand out so well, try making teal darker? 3.4 for Ally, but WAVE doesnt work on localhost atm!  -->
+									<summary>More</summary>
+									<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library.</p>
+									<p>This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.
+									During May I have restructured the app into separate pages in a feature branch, and added register/login functionality. I'm currently working on protecting the routes with sessions</p>
+									<p>My biggest challenges have been working out how to better use the graph plotting library, learning more about using Git eg cherry picking & stashing in order to resolve certain branching issues I came across, and discovering that some tech isn't meant to work together - like trying to add JWT to my project without realising its only intended for APIs and I'd written a (small) monolith...</p>
+								</details>
+							</div>
+							<div class="box_basic">
+								<p>PHP <span class="accent">|</span> 
+								Slim4 <span class="accent">|</span> 
+								HMTL5 <span class="accent">|</span> 
+								CSS3 <span class="accent">|</span>
+								<a href="http://bit.ly/ghCOREmvc" target="_blank"  aria-label="Link to GitHub Repo for Wellbeing Tracking Form">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
+									<!-- add GH logo here but keep words -->
+								</a>
+								</p>
+							</div>
 						</div>
-					</article>
 
-					<article class="section__box-emphasis">
-						<div class="label_coming_soon"></div>
-						<h3>Space Flight Booking Site</h3>
-						<em>Added April 2021</em>
-<!--<a href="https://github.com/davin2020/banking-api/tree/master" target="_blank">-->
-<!--					img src tag normally goes here	-->
-<!--</a>-->
-						<img src="images/space_hacknight.png" alt="Screenshot of Space Booking website" class="portfolio-images">
-						<p>I attended a mini hack night in April, where teams of 3 were challenged to create a system that allows people to book a space flight, all in under 90mins!</p>
-						<p>We decided to make a website where you could select dates, and I was able to contribute ideas & code from my previous solar system animation, plus async/await for calls to the deliberatly flaky external API.</p>
-						<p>Although we didn't finish the website that evening, I really enjoyed the experience of being thrown together to create something tangible within a short timeframe.</p>
-						<p>When I have more free time, I want to finish my take on the site by adding suitable booking success & failure images and making them appear & disappear at the right time.</p>
-						<div class="group_icons">
-							<span class="tech_icons_group">
-								<i class="fab fa-js-square fa-2x" title="JavaScript" aria-label="Project made with JavaScript"></i>
-								<i class="fab fa-html5 fa-2x " title="HTML 5" aria-label="Project made with HTML 5"></i>
-								<i class="fab fa-css3-alt fa-2x" title="CSS 3" aria-label="Project made with CSS 3"></i>
-							</span>
-							<span class="github_link">
-								<!-- Repo is currently private! and nothings in master 23Apr -->
-								<!-- <a href="https://github.com/davin2020/mini_hack_space" target="_blank"  aria-label="Link to GitHub Repo for Space Flight Booking Site">
-									<i class="fab fa-github-square fa-3x" title="Space Flight Booking Repo"></i>
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Hack Night - Space Flight Booking Site</h3>
+							</div>
+							<div class="box_basic">
+								<!-- <a href="wellbeing/default.html" target="_blank"> -->
+									<img src="images/space_hacknight.png" alt="Screenshot of the Space Flight Booking Site - An outer space background with many small stars, with 3 orbiting planets indicating the day, month and year that you can book your space flight, and a central Check button representing the sun" class="portfolio-images">
+								<!-- </a> -->
+							</div>
+							<div class="box_basic">
+								<p>I attended a mini hack night in April, where teams of 3 were challenged to create a system that allows people to book a space flight, all in under 90mins!</p>
+								<p>We decided to make a website where you could select dates, and I was able to contribute ideas & code from my previous solar system animation, plus async/await for calls to the deliberatly flaky external API.</p>
+								<p>Although we didn't finish the website that evening, I really enjoyed the experience of being thrown together to create something tangible within a short timeframe.</p>
+								<p>I want to finish my take on the site by adding suitable booking success & failure images and making them appear & disappear at the right time.</p>
+							</div>
+							<div class="box_basic">
+								<p>JavaScript <span class="accent">|</span>
+								HMTL5 <span class="accent">|</span>
+								CSS3 
+								<!-- <span class="accent">|</span>  -->
+								<!-- <a href="https://github.com/davin2020/mini_hack_space" target="_blank"  aria-label="Link to GitHub Repo for Space Flight Booking Site">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
+									
 								</a> -->
-							</span>
+								</p>
+							</div>
 						</div>
-					</article>
 
-					<article class=" section__box-emphasis">
-						<h3>Banking API</h3>
-						<em>Finished March 2021</em>
-<!--<a href="https://github.com/davin2020/banking-api/tree/master" target="_blank">-->
-<!--					img src tag normally goes here	-->
-<!--</a>-->
-						<img src="images/banking_api.png" alt="Screenshot of Banking API" class="portfolio-images">
-						<p>After learning about RESTful APIs and Node, I finished created a Banking API, themed with characters from the TV series Killjoys.</p>
-						<p>I later documented the API by adding routes, example requests, and local install instructions to the Readme</p>
-						<p>.</p>
-						<div class="group_icons">
-							<span class="tech_icons_group">
-								<i class="fab fa-node fa-3x" title="Node JS" aria-label="Project made with Node JS" ></i>
-								<i class="fab fa-html5 fa-2x " title="HTML 5" aria-label="Project made with HTML 5"></i>
-								<i class="fab fa-css3-alt fa-2x" title="CSS 3" aria-label="Project made with CSS 3"></i>
-							</span>
-							<span class="github_link">
-								<a href="http://bit.ly/ghBankingAPI" target="_blank"  aria-label="Link to GitHub Repo for Banking API">
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>RESTful Banking API</h3>
+							</div>
+							<div class="box_basic">
+								<!-- <a href="xxx" target="_blank"> -->
+									<img src="images/banking_api.png" alt="Screenshot of RESTful Banking API" class="portfolio-images">
+								<!-- </a> -->
+							</div>
+							<div class="box_basic">
+								<p>After learning about RESTful APIs and Node, I finished created a Banking API, themed with characters from the TV series Killjoys.</p>
+								<p>I later documented the API by adding routes, example requests, and local install instructions to the Readme</p>
+							</div>
+							<div class="box_basic">
+								<p>Node.js <span class="accent">|</span> 
+								HMTL5 <span class="accent">|</span> 
+								CSS3 <span class="accent">|</span>
+								<a href="http://bit.ly/ghBankingAPI" target="_blank"  aria-label="Link to GitHub Repo for RESTful Banking API">GitHub&nbspRepo
 									<i class="fab fa-github-square fa-3x" title="Banking API Repo"></i>
 								</a>
-							</span>
+								</p>
+							</div>
 						</div>
-					</article>
 
-					<article class=" section__box-emphasis">
-						<h3>Social Media Site</h3>
-						<em>Updated March 2021</em>
-						<a href="https://bit.ly/socialmdemo"  target="_blank"><img src="images/knowsy_app.png" alt="Screenshot of Social Media Website" class="portfolio-images"></a>
-						<p>As a team of 4 we made a 'Today I Learned' social media site called Knowsy. We decided to use the MERN stack, with separate repos for the front & backend, and GraphQL for the API calls to MongoDB.</p>
-						<p>We mostly did pair programming and I chose to work on the backend API. I was heavily involved in researching & creating the GraphQL queries & mutations, and later integrating the front & backends. We handled login manually, using the jsonwebtoken and  bcrypt node modules</p>
-						<p>This was our first scrum project working unsupervised, and I learned that I definitely prefer a more structured environment. Next time I would allocate time for researching before sprint/task planning, as we hadn't used GraphQL before. I would also allow more time when estimating tasks, to deal with the inevitable issues that crop up when trying to integrate different repos worked on by different people.
-						</p>
-						<p>On the demo site above, you can currently create an account or login with an existing account. The demo database is hosted in MongoDB Atlas</p>
-						<div class="group_icons">
-							<span class="tech_icons_group">
-								<i><img src="images/icon_graphql.svg" alt="Project made with GraphQL" title="GraphQL" class="tech_icon"></i>
-								<i class="fab fa-node fa-3x" title="Node JS" aria-label="Project made with Node JS" ></i>
-								<i class="fab fa-react fa-3x" title="React JS" aria-label="Project made with React JS"></i>
-							</span>
-							<span class="github_link">
-								<a href="https://bit.ly/ghSocialAPI" target="_blank" aria-label="Link to GitHub Repo for the Backend API of the Social Media website">
-									<i class="fab fa-github-square fa-3x" title="Knowsys Backend API Repo"></i></a>&nbsp
-								<!-- <a href="https://github.com/iO-Academy/2020-sept-knowsys-ui" target="_blank" aria-label="Link to GitHub Repo for the Frontend of the Social Media website">
-									<i class="fab fa-github-square fa-3x" title="Knowsys User Interface Repo"></i>
-								</a> -->
-							</span>
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Social Media Site using GraphQL</h3>
+							</div>
+							<div class="box_basic">
+								<a href="https://bit.ly/socialmdemo" target="_blank">
+									<img src="images/knowsy_app.png" alt="Screenshot of Social Media Site" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>As a team of 4 we made a 'Today I Learned' social media site called Knowsy. We decided to use the MERN stack, with separate repos for the front & backend, and GraphQL for the API calls to MongoDB.</p>
+								<details>
+									<summary>More</summary>
+									<p>We mostly did pair programming and I chose to work on the backend API. I was heavily involved in researching & creating the GraphQL queries & mutations, and later integrating the front & backends. We handled login manually, using the jsonwebtoken and  bcrypt node modules</p>
+									<p>This was our first scrum project working unsupervised, and I learned that I definitely prefer a more structured environment. Next time I would allocate time for researching before sprint/task planning, as we hadn't used GraphQL before. I would also allow more time when estimating tasks, to deal with the inevitable issues that crop up when trying to integrate different repos worked on by different people.
+									</p>
+									<p>On the demo site above, you can currently create an account or login with an existing account. The demo database is hosted in MongoDB Atlas</p>
+								</details>
+							</div>
+							<div class="box_basic">
+								<p>GraphQL <span class="accent">|</span> 
+								Node <span class="accent">|</span> 
+								React <span class="accent">|</span> 
+								<a href="https://bit.ly/ghSocialAPI" target="_blank"  aria-label="Link to GitHub Repo for for the Backend API of the Social Media website">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Knowsys Backend API Repo"></i>
+								</a>
+								</p>
+							</div>
 						</div>
-					</article>
 
-					<article class=" section__box-emphasis">
-						<h3>To Do App</h3>
-						<em>Finished December 2020</em>
-						<a href="https://bit.ly/todoslim" target="_blank">
-							<img src="images/todo_app.png" alt="Screenshot of To Do App" class="portfolio-images">
-						</a>
-						<p>We learned about MVC & PHP frameworks, then used them as part of an exercise to create a To Do app. We cloned an existing repo that contained the Slim 4 framework, and worked through the architecture plan as a group. I then worked independently to create the functionality to add, complete or delete a task from the underlying MySQL DB, using Routing, the Dependency Injection Container, Factories, Controllers & Views.</p>
-						<div class="group_icons">
-							<span class="tech_icons_group">
-								<i class="fab fa-php fa-2x" title="PHP" aria-label="Project made with PHP"></i>
-								<i class="fab fa-html5 fa-2x" title="HTML 5" aria-label="Project made with HTML 5"></i>
-								<i class="fab fa-css3-alt fa-2x" title="CSS 3" aria-label="Project made with CSS 3"></i>
-							</span>
-							<span class="github_link">
-								<a href="https://bit.ly/GHDtodo" target="_blank" aria-label="Link to GitHub Repo for To Do App">
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>To Do App using PHP MVC</h3>
+							</div>
+							<div class="box_basic">
+								<a href="https://bit.ly/todoslim" target="_blank">
+									<img src="images/todo_app.png" alt="Screenshot of To Do App" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>We learned about MVC & PHP frameworks, then used them as part of an exercise to create a To Do app. We cloned an existing repo that contained the Slim 4 framework, and worked through the architecture plan as a group. I then worked independently to create the functionality to add, complete or delete a task from the underlying MySQL DB, using Routing, the Dependency Injection Container, Factories, Controllers & Views.</p>
+							</div>
+							<div class="box_basic">
+								<p>PHP <span class="accent">|</span> 
+								Slim4 <span class="accent">|</span> 
+								HMTL5 <span class="accent">|</span> 
+								CSS3 <span class="accent">|</span>
+								<a href="https://bit.ly/GHDtodo" target="_blank"  aria-label="Link to GitHub Repo for To Do App using PHP and MVC">GitHub&nbspRepo
 									<i class="fab fa-github-square fa-3x" title="To Do App Repo"></i>
 								</a>
-							</span>
+								</p>
+							</div>
 						</div>
-					</article>
 
-					<article class=" section__box-emphasis">
-						<h3>Ecommerce Site</h3>
-						<em>Finished November 2020</em>
-						<a href="https://bit.ly/robotstores" target="_blank"><img src="images/robot_stores2.png" alt="Screenshot of Ecommerce Website" class="portfolio-images"></a>
-						<p>I volunteered as Scrum Master and facilitated our team to create an e-commerce site based on existing product data. I used my previous OO experience to assist the team with creating the architecture plan for the site. </p>
-							<p>We decided to use the Hydrator Entity design pattern along with a PDO Connection in our LAMP stack, with HTML, CSS & Bootstrap for the frontend. We also reviewed the SOLID principles and adjusted the plan accordingly. I did pair programming to create some of the classes and peer reviewed colleagues code in GitHub. During  Sprint Review I gave a non-technical overview of the site's architecture.</p>
-						<div class="group_icons">
-							<span class="tech_icons_group">
-								<i class="fab fa-php fa-2x" title="PHP" aria-label="Project made with PHP"></i>
-								<i class="fab fa-html5 fa-2x" title="HTML 5" aria-label="Project made with HTML 5"></i>
-								<i class="fab fa-css3-alt fa-2x" title="CSS 3" aria-label="Project made with CSS 3"></i>
-							</span>
-							<span class="github_link">
-								<a href="https://bit.ly/ghStores" target="_blank"  aria-label="Link to GitHub Repo for Ecommerce website">
-									<i class="fab fa-github-square fa-3x" title="Ecommerce site Repo"></i>
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Scrum Master for Ecommerce Site using Design Patterns</h3>
+								<!-- dates completed? -->
+							</div>
+							<div class="box_basic">
+								<a href="https://bit.ly/robotstores" target="_blank">
+									<img src="images/robot_stores2	.png" alt="Screenshot of Ecommerce Website" class="portfolio-images">
 								</a>
-							</span>
+							</div>
+							<div class="box_basic">
+								<p>I volunteered as Scrum Master and facilitated our team to create an e-commerce site based on existing product data. I used my previous OO experience to assist the team with creating the architecture plan for the site. </p>
+								<p>We decided to use the Hydrator Entity design pattern along with a PDO Connection in our LAMP stack, with HTML, CSS & Bootstrap for the frontend. We also reviewed the SOLID principles and adjusted the plan accordingly. I did pair programming to create some of the classes and peer reviewed colleagues code in GitHub. During  Sprint Review I gave a non-technical overview of the site's architecture.</p>
+								<!-- <details>
+									<summary>More</summary>
+									<p>xxx</p>
+									<p>yyy</p>
+									<p>zzzz</p>
+								</details> -->
+							</div>
+							<div class="box_basic">
+								<p>PHP <span class="accent">|</span> 
+								<!-- Slim4 <span class="accent">|</span>  -->
+								HMTL5 <span class="accent">|</span> 
+								CSS3 <span class="accent">|</span>
+								<a href="https://bit.ly/ghStores" target="_blank"  aria-label="Link to GitHub Repo for Ecommerce website">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Ecommerce Site Repo"></i>
+								</a>
+								</p>
+							</div>
 						</div>
-					</article>
 
-					<article class=" section__box-emphasis">
-						<h3>Maze Game</h3>
-						<em>Finished October 2020</em>
-						<a href="https://bit.ly/jsmaze" target="_blank"><img src="images/maze_game.png" alt="Screenshot of Maze Game" class="portfolio-images"></a>
-						<p>As part of a scrum team of 8 people, we designed & created a maze game using Javascript. I did some pair programming to design the splash screen wireframe & code that, and coded the eventListeners to detect collisions with the path & ghost obstacles. I also implemented changes after our tutor's code reviews</p>
-						<div class="group_icons">
-							<span class="tech_icons_group">
-								<i class="fab fa-js-square fa-2x" title="JavaScript" aria-label="Project made with JavaScript"></i>
-								<i class="fab fa-html5 fa-2x" title="HTML 5" aria-label="Project made with HTML 5"></i>
-								<i class="fab fa-css3-alt fa-2x" title="CSS 3" aria-label="Project made with CSS 3"></i>
-							</span>
-							<span class="github_link">
-								<a href="https://bit.ly/ghMaze" target="_blank"  aria-label="Link to GitHub Repo for Maze Game">
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Jarver's Crypt Maze Game</h3>
+							</div>
+							<div class="box_basic">
+								<a href="https://bit.ly/jsmaze" target="_blank">
+									<img src="images/maze_game.png" alt="Screenshot of Jarver's Crypt Maze Game" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>As part of a scrum team of 8 people, we designed & created a maze game using Javascript. I did some pair programming to design the splash screen wireframe & code that, and coded the eventListeners to detect collisions with the path & ghost obstacles. I also implemented changes after our tutor's code reviews</p>
+							</div>
+							<div class="box_basic">
+								<p>JavaScript <span class="accent">|</span> 
+								HMTL5 <span class="accent">|</span> 
+								CSS3 <span class="accent">|</span>
+								<a href="https://bit.ly/ghMaze" target="_blank"  aria-label="Link to GitHub Repo for Jarver's Crypt Maze Game">GitHub&nbspRepo
 									<i class="fab fa-github-square fa-3x" title="Maze Game Repo"></i>
 								</a>
-							</span>
-						</div>
-					</article>
+								</p>
+							</div>
+						</div> 
 
-					<article class=" section__box-emphasis">
-						<h3>Solar System Animation</h3>
-						<em>Finished October 2020</em>
-						<a href="https://davin2020.github.io/milkyway/" target="_blank"><img src="images/solar_system.png" alt="Screenshot of Solar System Animation" class="portfolio-images"></a>
-						<p>As part of learning Advanced FrontEnd techniques, we created an animation of our solar system, using SVGs and keyframes & animations in CSS</p>
-						<div class="group_icons">
-							<span class="tech_icons_group">
-								<!--	Using aria class sr-only here for testing via screen readers, using aria-labels for other items in tech_icon_group  -->
-								<i class="fab fa-css3-alt fa-2x" title="CSS 3" aria-hidden="true"></i>
-								<span class="sr-only">Animation made with CSS 3</span>
-							</span>
-							<span class="github_link">
-								<a href="https://github.com/davin2020/milkyway" target="_blank" aria-label="Link to GitHub Repo for Solar System Animation code">
-									<i class="fab fa-github-square fa-3x" title="Solar System Animation Repo" aria-hidden="true"></i>
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Solar System Animation using only CSS and SVGs</h3>
+							</div>
+							<div class="box_basic">
+								<a href="https://davin2020.github.io/milkyway/" target="_blank">
+									<img src="images/solar_system.png" alt="Screenshot of Solar System Animation" class="portfolio-images">
 								</a>
-							</span>
-						</div>
-					</article>
-
-					<article class=" section__box-emphasis">
-						<h3>Powershell Scripts</h3>
-						<em>Updated November 2020</em>
-						<img src="images/powershell_publicfolder.jpg" alt="Screenshot of PowerShell script to create a Public Folder" class="portfolio-images">
-						<p>While working on a service desk during 2017-8, I created several Powershell scripts. One example was a script to create Public Folders in Exchange, as that was a common but time consuming task.</p>
-						<p>Another example was a script to move security groups from one manager to another. This script was used during a restructuring period when multiple managers were moving departments, and reduced the amount of time my Team Leader had to spend on admin work after hours.</p>
-						<div class="group_icons">
-							<span class="tech_icons_group">
-								<i><img src="images/icon_powershell.svg" alt="Project made with PowerShell" title="PowerShell" class="tech_icon" /></i>
-							</span>
-							<span class="github_link">
-								<a href="https://github.com/davin2020/powershell/" target="_blank" aria-label="Link to GitHub Repo for Powershell Scripts">
-									<i class="fab fa-github-square fa-3x" title="Powershell Scripts Repo" aria-hidden="true"></i>
+							</div>
+							<div class="box_basic">
+								<p>As part of learning Advanced FrontEnd techniques, we created an animation of our solar system, using SVGs and keyframes & animations in CSS</p>
+							</div>
+							<div class="box_basic">
+								<p>CSS3 <span class="accent">|</span>
+								<a href="https://github.com/davin2020/milkyway" target="_blank"  aria-label="Link to GitHub Repo for Solar System Animation">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Solar System Animation Repo"></i>
 								</a>
-							</span>
-						</div>
-					</article>
-				</div>
-			</section>
-			
-<!-- Section: Skills-->
-			<div class="visual-separator"> </div>
+								</p>
+							</div>
+						</div> 
 
-			<section class="layout__skills ">			
-					<a name="Skills">
-						<h2 class="section__title ">Skills</h2>
-					</a>
-				<div class="section__container">
-					<article class="section__box">
-						<h3>Web Development</h3>
-						<p>In December 2020 I graduated from the 16 week Full Stack Web Development bootcamp run by <a href="https://io-academy.uk/" target="_blank">iO Academy</a> (previously known as Mayden Academy).
-							<br>In October 2020, iO were voted the <a href="https://io-academy.uk/io-academy-ranked-in-the-top-10-best-coding-bootcamps-in-the-world/" target="_blank">#2nd best bootcamp in the UK and 6th in the world by SwitchUp</a></p>
-						<p>Main topics we covered during the bootcamp:</p>
-<!--						<br>Languages, frameworks & libraries we covered during the bootcamp:-->
-							<ul class="text-align-bullet">
-								<li>JavaScript, including Node, Express & React</li>
-								<li>RESTful and GraphQL APIs</li>
-								<li>Mongo DB</li>
-								<li>MySQL</li>
-								<li>PHP, including Slim framework & UnitTesting, plus OO, SOLID & MVC design principles</li>
-								<li>CSS3</li>
-								<li>HTML5</li>
-								<li>Scrum/agile working</li>
-							</ul>
-						<br>Tools & Software we used on Mac:
-						<ul class="text-align-bullet">
-							<li>Git & GitHub</li>
-							<li>PHPStorm</li>
-							<li>Docker</li>
-							<li>Mongo DB Compass</li>
-							<li>Sequel Pro</li>
-							<li>Postman</li>
-							<li>npm</li>
-						</ul>
-					</article>
-					<article class=" section__box">
-						<h3>Programming</h3>
-						<p>Previous programming & application design experience:</p>
-							<ul class="text-align-bullet">
-								<li>2017: Powershell scripting to manipulate Active Directory users & groups and Exchange mailboxes</li>
-								<li>2010: Designed web front end for a resource management system, including 3 different levels of access</li>
-								<li>2003: Learned Java, JSP, JDBC & SQL to create a conference registration website</li>
-							</ul>
-					</article>
-				</div>
-			</section>
-			
-			<div class="visual-separator"> </div>
-<!-- Section: Contact-->
-			<section class="layout__contact-me ">
-				<div class="layout__bkgImage">
-					<a name="Contact">
-					<h2 class="section__title">Contact</h2>
-					</a>
-					<div class="section__container">
-						<article class="section__box">
-							<a href="mailto:davin.stirling+portfolio@gmail.com?subject=Email from Portfolio site" aria-label="Email address for Davin is davin.stirling+portfolio@gmail.com">
-								<i class="fas fa-envelope-square fa-4x" aria-hidden="true"></i>
-<!--								<br>davin.stirling+portfolio@gmail-->
-							</a>
-						</article>
-						<article class="section__box">
-							<a href="https://github.com/davin2020/" target="_blank" aria-label="Link to GitHub account for Davin2020">
-								<i class="fab fa-github-square fa-4x" aria-hidden="true"></i>
-<!--								<br>https://github.com/davin2020-->
-							</a>
-						</article>
 					</div>
-				</div>
+				</details>
 			</section>
-	
-		</main>
+			
 
+			<!-- Section: Skills-->
+			<div class="visual-separator width_60"> </div>
+			
+			<section class="layout__skills ">	
+				<details>
+					<summary>
+						<h2 class="section__title ">Skills</h2>
+					</summary>
+					<div class="section_parent"> 
+
+						<div class="section_child">
+							<div class="box_basic_top">
+								<!-- <img src="images/davin_skills_cloud2.png" class="portfolio-images"> -->
+								<img src="images/davin_skills_cloud3.png"  alt="Word Cloud of Tech Skills which are also listed below" class="portfolio-images">
+							</div>
+							<div class="box_basic accent_bkg">
+								<p class="skills">
+								LAMP <span class="accent">|</span>
+								MERN <span class="accent">|</span>
+								PHP7 including Slim4 & PHPUnit <span class="accent">|</span>
+								JavaScript ES6 including React <span class="accent">|</span>
+								Node.js & Express <span class="accent">|</span>
+								GraphQL API <span class="accent">|</span>
+								RESTful APIs & Postman <span class="accent">|</span>
+								MongoDB & Compass & Atlas <span class="accent">|</span>
+								MySQL <span class="accent">|</span>
+								HTML5 <span class="accent">|</span>
+								CSS3 <span class="accent">|</span>
+								OOP,&nbspSOLID & MVC design
+								principles <span class="accent">|</span>
+								Git & GitHub <span class="accent">|</span>
+								Docker <span class="accent">|</span>
+								Scrum & Agile</p>
+							</div>
+						</div>
+
+					</div>
+				</details>
+			</section>
+				
+
+			<div class="visual-separator width_80"> </div>
+
+			<!-- Section: Contact-->
+			<section class="layout__contact-me">	
+				<details>
+					<summary>
+						<h2 class="section__title ">Contact</h2>
+					</summary>
+					<div class="section_parent"> 
+						
+						<div class="section_parent_col"> 
+
+							<div class="box_basic_top_contact">
+								<!-- do i need all these extra divs? -->
+								<div class="section_child">
+									<div class="box_basic_top accent_bkg">
+										<h3>Email</h3>
+									</div>
+									<div class="box_basic">
+										<a class="contactme" href="mailto:davin.stirling+portfolio@gmail.com?subject=Email from Portfolio site" aria-label="Email address for Davin is davin.stirling+portfolio@gmail.com">davin.stirling<wbr>+portfolio<wbr>@gmail.com</a>
+									</div>
+								</div>
+
+								<div class="section_child">
+									<div class="box_basic_top accent_bkg">
+										<h3>GitHub Profile</h3>
+									</div>
+									<div class="box_basic">
+										<a href="https://github.com/davin2020/" target="_blank" aria-label="Link to GitHub account for Davin2020" class="contactme">https://github<wbr>.com/<wbr>davin2020
+
+										</a>
+									</div>
+								</div>
+							</div>
+									
+							<div class="logo_container">
+								<svg height="100%" width="100%" viewBox="0 0 350 350" preserveAspectRatio="xMidYMid meet">
+									<!-- big teal box for castle shape -->
+									<rect x="50" y="50" width="250" height="200"  fill="#2F8890" class="logo_fill" />
+									<!-- square beige cutouts -->
+									<rect x="100" y="49" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
+									<rect x="200" y="49" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
+									<rect x="150" y="200" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
+									<!-- small teal entrance square -->
+									<rect x="150" y="250" width="50" height="50" stroke="#2F8890" fill="transparent" class="logo_fill" />
+								</svg>
+							</div>
+	
+						</div> <!-- end of section_parent_col -->
+
+						<!-- see how original site does boxes -->
+						<!-- <div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<p>Email: davin.stirling@gmail.com</p>
+							</div>
+							<div class="box_basic">
+								<p>GitHub Profile: https://github.com/davin2020</p>
+							</div>
+						</div> -->
+
+						<!-- HIDE THIS, but avatar has better flow as it goes under other boxes on narrow screens -->
+						<!-- <div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Email</h3>
+							</div>
+							<div class="box_basic">
+								<a class="contactme" href="mailto:davin.stirling+portfolio@gmail.com?subject=Email from Portfolio site" aria-label="Email address for Davin is davin.stirling+portfolio@gmail.com">davin.stirling+portfolio@gmail.com</a>
+							</div>
+						</div>
+
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>GitHub Profile</h3>
+							</div>
+							<div class="box_basic">
+								<a href="https://github.com/davin2020/" target="_blank" aria-label="Link to GitHub account for Davin2020" class="contactme">https://github.com/davin2020
+								</a>
+							</div>
+						</div>
+
+						<div class="logo_container">
+							<svg height="100%" width="100%" viewBox="0 0 350 350" preserveAspectRatio="xMidYMid meet">
+								<rect x="50" y="50" width="250" height="200"  fill="#2F8890" class="logo_fill" />
+								<rect x="100" y="49" width="50" height="50" stroke="white" fill="transparent"  class="logo_negative" />
+								<rect x="200" y="49" width="50" height="50" stroke="white" fill="transparent"  class="logo_negative" />
+								<rect x="150" y="200" width="50" height="50" stroke="white" fill="transparent"  class="logo_negative" />
+								<rect x="150" y="250" width="50" height="50" stroke="#2F8890" fill="transparent" class="logo_fill" />
+							</svg>
+						</div> -->
+
+					</div>
+				</details>
+			</section>
+				
+			<!-- could make divider same color as bkg if need more bottom margin only? -->
+			<div class="visual-separator width_100"> </div>
+
+		</main>
 
 		<footer>
 			<a href="#About">About</a> |
@@ -369,3 +473,5 @@
 	</div>
 </body>
 </html>
+
+<!-- 533 lines, now 346 lines, could be 40 line less once contact stuff sorted  -->

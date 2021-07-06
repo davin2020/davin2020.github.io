@@ -1,140 +1,67 @@
-/*@import url(//db.onlinewebfonts.com/c/d85e6ab19860a0a1cc2c3d7a3eb7f98c?family=Monotype+Corsiva);*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
 
-@font-face{
-	font-family: AppleChancery;
-	src: url('AppleChancery.woff'), url('AppleChancery.woff') format('woff');}
-@font-face{
-	font-family: 'LucidaCallig';
-	src: url('fonts/LCALLIG/LCALLIG.woff') format('woff');}
-/* CSS File for Davin's Portfolio Website */
-
-/* -------------------------------------------------------------
-	Generic Body Stuff 
----------------------------------------------------------------- */
-
+/* consider SCSS that compiles into CSS so i can use variable names for colors etc - add MQs ! */
 * {
 	box-sizing: border-box;
 }
 
+/* COLORS
+beige w 5% saturuadion e9eade, with 11%  E8EBD0 original, witih 15%  e5e8c5, 20% saturaiton is e5eabb
+teal  #2F8890
+purple  #400068
+*/
+
 body {
 	padding: 0;
 	margin: 0;
-	background-color: #1C384A;
+	background-color: #e9eade ;
 	font-family: Verdana;
-	font-size: 100%;
-	line-height: 1.4rem;
+	font-size: 1rem;
+	/*seting thsi here make the h3 headings too close when the longer lines wrap*/
+	/*line-height: 1.4rem;*/
+	color: #400068;
 }
 
+/* ACCORDIN OR EXPANDING SECTIONS */
+/*Accessible Accordion
+https://www.hassellinclusion.com/blog/accessible-accordions-part-2-using-details-summary/*/
 
-/* ------------------------------------------
-	HEADER & NAV 
---------------------------------------------- */
-
-header {
-	text-align: center;
-	font-size: 120%;
+details summary { 
+	cursor: pointer;
+	/* will show little twisty arrow next to item */
+	display: list-item;
+	/*doesnt show little arrow next to item */
+	/*display: flex; */
+ 	/*background-color: white;*/
+ 	/*this changes the color of the twisty triangle to teal 2F8890 or purple 400068 */
+ 	color: #2F8890 ;
 }
 
-nav {
-	padding: 32px;
-	background-color: #571867;
-	color: #FFFFFF;
-	font-family: 'Courier New', 'AppleChancery','LucidaCallig','ITC Zapf Chancery','URW Chancery L',cursive;
-	font-size: 175%;
-	font-weight: bold;
-	/* maybe add some kerning and more line height than in body */
-	line-height: 2rem;
+/*. First, I recommend using inline, and not inline-block, as the line wrapping issue still occurs with inline-block when the heading text extends beyond one line.*/
+details summary > * {
+  display: inline;
 }
 
-nav a {
-	padding: 15px;
-	color: #FFFFFF;
-	text-decoration: none;
+/*
+details  div {
+	this applies padding to ALL/each div within details
+if i add the > symbol, then it applies to direct descendants only?
+*/
+
+details > div {
+  /*border: 2px dashed black;*/
+  margin-top: 0;
+  padding: 1rem;
 }
 
-nav a:hover {
-	background-color: #3D7BA5;
+/*this would work but h2 over rides it - so added :hover to h2; */
+/*summary:hover {
+	 color: #2F8890;
+}*/
+
+.mainContainerGrid {
+	/*margin-left: 5px*/
 }
-
-/* links to GH & other external sites - was #0E1C25 1C384A */
-.github_link a i {
-	color: #ffffff;
-}
-
-.github_link a:hover i {
-	color: #571867;
-}
-
-/*a i {*/
-/*	color: #ffffff;*/
-/*}*/
-
-/*a:hover i {*/
-/*	color: #571867;*/
-/*}*/
-
-.layout__skills a:visited {
-	color: #571867;
-}
-
-.layout__contact-me i {
-	color: #000;
-}
-
-.layout__contact-me a:hover i {
-	color: #571867;
-}
-.group_icons {
-	color: #000000;
-	margin-top: auto;
-}
-
-.tech_icons_group i {
-	padding: 5px 10px;
-}
-
-.tech_icon {
-	/*padding: 5px 10px;*/
-	width: 2rem;
-}
-
-@media screen and (max-width: 700px) {
-	nav {
-		font-size: 150%;
-		padding: 24px;
-	}
-}
-
-@media screen and (max-width: 550px) {
-	nav a {
-		padding: 7px;
-	}
-	nav {
-		font-size: 120%;
-		padding: 15px;
-	}
-}
-
-@media screen and (max-width: 350px) {
-	nav a {
-		padding: 5px;
-	}
-	nav {
-		font-size: 100%;
-		padding: 10px;
-	}
-}
-
-em {
-	margin-bottom: 5px;
-	font-size: 0.8rem;
-}
-
-/* ---------------------------------------------------------------------
-	MAIN Section with containers & background images & content formatting etc
------------------------------------------------------------------------- */
-
-
 @media screen and (min-width: 1080px) {
 	.mainContainerGrid {
 		width: 80%;
@@ -142,309 +69,340 @@ em {
 	}
 }
 
-.section__title {
-	font-family: 'Courier New', 'AppleChancery', 'LucidaCallig', 'ITC Zapf Chancery','URW Chancery L',cursive;
- 	color: #571867;
- 	text-align: center;
-	/* bold not working here*/
+main {
+	/*need some space before twisy triangles on narrower screens */
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+header {
+	text-align: center;
+}
+
+nav {
+	padding: 20px;
+	background-color: #400068 ;
+	color: #FFFFFF;
+	font-family: 'Ubuntu Mono', monospace;
 	font-weight: bold;
+	/*this helps items on 2 lines not be on top of each other! */
+	/*line-height: 2rem;*/ 
+}
+
+nav a {
+	padding: 15px;
+	color: #E8EBD0  ;
+	text-decoration: none;
+	letter-spacing: 0.2rem;
+	/*font looks squahsed when i set size in nav rather than in nav a */
+	font-size: 2rem;
+	/*text-align: center;*/
+}
+
+nav a:hover {
+	background-color: #170B3B ;
+}
+
+p {
+	line-height: 1.4rem;
+}
+
+.skills {
+	font-size: 1.2rem;
+}
+/*margin isnt affecting anyting visualy, not sure why - padding isnt doing much either, only box_basic css is being applied  */
+.contactme {
+	font-size: 1.2rem;
+	color: #400068;
+	padding: 15px;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	word-wrap: break-word;
+	/* ths is over flowing instead of wrapping cos its considerd one long word ie email addres or GH url ! could also add MQ to amke font smaller - both of these options seem to work ok */
+	/*overflow-wrap: break-word; */
+}
+.contactme:hover {
+	background-color: #2F8890 ;
+	padding: 15px;
+	color: #E8EBD0 ;
+	text-decoration: none;
+}
+
+/*@media screen and (max-width: 400px) {
+	.contactme {
+		font-size: 1rem;
+		width: 80%;
+		//margin: 0 auto;
+	}
+}
+*/
+/* HEADERS AND FONTS */
+h1 {
+	font-size: 4.2rem;
+	letter-spacing: 0.1rem;
+	color: #E8EBD0;
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: 700;
+	margin: 40px 10px;
+}
+h2 {
+	margin: 10px;
+	padding: 15px 0;
+	font-size: 2.2rem;
+	letter-spacing: 0.1rem;
+	color: #400068;
+	font-family: 'Ubuntu Mono', monospace;
+	font-weight: 700;
+}
+/* change teal in order to increase color contrast for WAVE? */
+h2:hover {
+	color: #2F8890;
+}
+h3 {
+	font-size: 1.4rem;
+	margin: 5px 0;
+	line-height: 2rem;
+	/*padding: 15px 0;*/
+}
+
+.accent {
+	color: #2F8890;
+	font-style: bold;
+	font-size: 1.4rem;
+	vertical-align: center;
+}
+.accent_bkg {
+	background-color: #e5e8c5;
+}
+
+.subtitle {
+	color: #E8EBD0;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 1.7rem;
+}
+section {
+	/*border: 1px solid green;*/
+}
+
+div {
+	/*padding: 0px;*/
+	/*border: 2px solid yellow;*/
 }
 
 .layout__title {
-	background-color: #3D7BA4;
-	background-image: url("images/bkg_dav_coding_dark_v2.jpeg");
 	width: 100%;
-	height: auto;	
-	background-size: cover; /* use cover to get full width, instead of contain */
-	background-repeat: no-repeat;
-	padding-bottom: 20px;
-	padding-top: 20px;
-}
-
-.layout__about-me {
-	background-color: #3D7BA4;
-	background-image: url("images/keyboard_chair2_v2.jpeg");
-	width: 100%;
-	height: auto;	
-	background-size: cover; /* use cover to get full width, instead of contain */
-	background-repeat: no-repeat;
-}
-
-.layout__portfolio {
-	/*background-color: #4C90BD;*/
-	background-color: #9cc3d5ff;
-	padding-bottom: 30px;
-	padding-top: 30px;
-}
-
-.layout__skills {
-	/*background-color: #3D7BA4;*/
-	background-color: #85b3d1ff;
-	padding-bottom: 20px;
-	padding-top: 30px;
-}
-
-.layout__contact-me {
-	background-color: #3D7BA4;
-	background-image: url("images/blue_book_mac2_v2.jpeg");
-	width: 100%;
-	height: auto;	
-	background-size: cover; /* use cover to get full width, instead of contain */
-	background-repeat: no-repeat;
-	/*padding-top: 30px;*/
-}
-
-.layout__bkgImage {
-	/*background-color: rgba(61,123,164,0.8);*/
-	background-color: rgba(133,179,209,0.8);
-	padding-top: 30px;
-	padding-bottom: 20px;
-}
-
-.section__box {
+	background-color: #400068;
 	padding: 10px;
-	margin: 10px 20px;
-	flex: 1 1 260px;
-	text-align: center;
+	margin-top: 10px;
+	/*padding-top: 10px;*/
+	/*accent_bkg*/
+	/*margin: 10px;*/
 }
 
-.section__box-emphasis {
-	position: relative;
-	padding: 20px;
-	margin: 20px;
-	flex: 1 1 340px; /* was 250 - try a rem amt?? */
-	text-align: center;
-	border-radius: 10px;
-	border: 5px solid #000;
-	/*box-shadow: inset 0 0 10px #000; 571867 */
-	/* need this to flex & center items, so that tech icons stay at bottom */
+/* FLEX BOX GRID STUFF */
+/* still need some MQ for these for smaller screens, otherwise logo overflows, need to shrink instead of overflow=hidden, other options dont work well either!  - need to make pattern boxes hidden, or maybe make the wholel left side a flex instead of a grid?
+maybe call one of the classes pattern or art and collapse the pattern on MQ with narrow browsers etc
+ */
+.section_parent_col_4060 {
+	display: grid;
+	/*flex-wrap: wrap;*/
+	/*justify-content: space-evenly;*/
+	/*align-content: space-around;*/
+	/*width: 100%;*/
+	/*border: 1px red solid;*/
+	/*display: grid;*/
+  	grid-template-columns: 40% 60%;
+  	padding: 0px;
+}
+/* does using grid cause the problems w overflowing ?? */
+.section_parent_col {
+	/* flex seems better than grid here ? */
 	display: flex;
-	flex-direction: column;
-	align-items: center; /* need this as some pics in flex are not being centered properly */
-	background-color: #85b3d1ff;
+	/*flex-wrap: wrap;*/
+	/*justify-content: space-evenly;*/
+	/*align-content: space-around;*/
+	/*width: 100%;*/
+	/*border: 1px red solid;*/
+	/*display: grid;*/
+  	grid-template-columns: 70% 30%;
+  	padding: 0px;
+  	width: 100%;
 }
-
-.section__box-emphasis-noflex {
-	padding: 20px;
-	margin: 20px;
-	border-radius: 10px;
-	box-shadow: inset 0 0 10px #fff;
-}
-
-@media screen and (min-width: 700px) {
-	.section__box {
-		margin: 10px 30px;
-	}
-	.section__box-emphasis {
-		max-width: 70%;
-	}
-}
-
-@media screen and (min-width: 1080px) { 
-	.section__box {
-		margin: 10px 40px;
-	}
-	.section__box-emphasis {
-		margin-left: 30px;
-		margin-right: 30px;
-		max-width: 50%;
-	}
-}
-/*parent*/
-.section__container {
+.section_parent {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-content: space-around;
 	width: 100%;
+	/*border: 1px solid green;*/
 }
-
-.container__title {
+.section_child {
+	position: relative;
+	/*padding: 20px;*/ /* pad within item */
+	margin: 10px; /* space arou nd/between other items */
+	flex: 1 1 350px;
+	text-align: center;
+	/* need this to flex & center items, so that tech icons stay at bottom */
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
-	width: 50%;
-	padding-left: 300px;
+	align-items: center; /* need this as some pics in flex are not being centered properly */
+}
+.section_child_row {
+	position: relative;
+	display: grid;
+	flex-direction: row;
 }
 
-@media screen and (max-width: 550px) {
-	.container__title {
-		padding-left: 150px;
-	}
+.section_child_col {
+	position: relative;
+	display: grid;
+	flex-direction: column;
+	grid-template-columns: 50% 50%;
 }
 
-@media screen and (max-width: 350px) {
-	.container__title {
-		padding-left: 0;
-	}
+.row {
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.portfolio-images {
-	max-width: 90%;
-	border-radius: 10px;
-	/* show a transparent border around clickable images */
-	border: 5px solid rgba(87, 24, 103, 0);
+.column {
+  flex: 50%;
 }
 
-a:hover .portfolio-images {
-	border-radius: 10px;
-	/* show an opaque border around clickable images on hover */
-	border: 7px solid rgba(87, 24, 103, 1);
-}
-
-h1 {
-	color: #FFFFFF;
-	background-color: #571867;
-	vertical-align: middle;
-/* need to set top & bottom margins to 0 so there is no space between the text for the Title-Name and Title-Subheading  */
-	margin-top: 0;
-	margin-bottom: 0;
-	padding: 20px;
-	font-size: 260%;
-	font-family: 'Courier New', 'AppleChancery','ITC Zapf Chancery','URW Chancery L',cursive;
-	text-align: center;
-	letter-spacing: 0.1rem;
-	line-height: 2rem;
-}
-
-.title-subheading {
-	color: #FFFFFF;
-	background-color: #571867;
-	vertical-align: middle;
-	/* need to set top & bottom margins to 0 so there is no space between the text for the Title-Name and Title-Subheading */
-	margin-top: 0;
-	margin-bottom: 0;
-	padding: 20px;
-	font-size: 110%;
-}
-
-@media screen and (max-width: 700px) {
-	.title-subheading {
-		font-size: 100%;
-	}
-	h1  {
-		font-size: 200%;
-	}
-}
-
-@media screen and (max-width: 550px) {
-	h1 {
-		font-size: 180%; /* clashing with MyName font size */
-	}
-}
-
-h2 {
-	margin: 0;
-	padding: 15px 0;
-	font-size: 2.3rem;
-	letter-spacing: 0.1rem;
-}
-
-h3 {
-	/*font-family: AppleChancery;*/
-	font-size: 1.5rem;
-	margin-bottom: 10px;
-}
-
-/* Comin Soon label for new projects */
-.label_coming_soon::before {
-	content: "coming soon!";
-	background-color: #571867;
-	color: white;
-	font-family: 'Courier New', cursive;
-	font-size: 1.4rem;
-	padding: 10px;
-	display: inline-block; /* must be block or inline-block */
-	transform: rotate(-20deg);
- 	/* absolute element is relative to its parent, so had to add relative to section__box-emphasis - but should i have made a separate parent div whose only job was to have a relative position? */
- 	position: absolute;
-    top: -10px;
-    left: -30px;
-    z-index: 10;
-    border-radius: 10px;
-}
-
-.label_in_progress::before {
-	content: "work in progress";
-	background-color: #1C384A;
-	color: #fff;
-	font-family: 'Courier New', cursive;
-	font-size: 1.2rem;
-	padding: 10px;
-	display: inline-block; /* must be block or inline-block */
-	transform: rotate(-20deg);
- 	position: absolute;
-    top: -10px;
-    left: -30px;
-    z-index: 10;
-    border: 3px solid #fff;
-    border-radius: 10px;
-}
-
-/* not much point changing top pos or it will jump between MQs */
-@media screen and (max-width: 550px) {
-	.label_coming_soon::before {
-		font-size: 1rem;
-		padding: 7px;
-	}
-	.label_in_progress::before {
-		font-size: 0.9rem;
-		padding: 7px;
-	}
-}
-
-.text-align-bullet {
-	text-align: left;
-	/* need this so text is left aligned, as parent flex content is centered */
-	align-self: flex-start;
-}
-
+/* VISUAL HR */
+/* perhaps add an arrow pointing right at end of each separator? */
 .visual-separator {
 		/*border: 5px solid #000000;  1C384A */
-		border-top: 15px solid #1C384A;
+		border-top: 10px solid #400068;
+		/*width: 80%;*/
+		align-items: center;
+		align-content: center;
+		align-self: center;
+		/*this only gives space above teh separator itself, so maybe need to place it insdie its own div?*/
+		margin: 20px 0px;
+		/*text-align: center;*/
 		/*margin-bottom: 10px;*/
 }
 
-/* ------------------------------------------
-	FOOTER 
---------------------------------------------- */
+.width_20 {
+	width: 20%;
+}
+.width_30 {
+	width: 30%;
+}
+.width_40 {
+	width: 40%;
+}
+.width_50 {
+	width: 50%;
+}
+.width_60 {
+	width: 60%;
+}
+.width_70 {
+	width: 70%;
+}
+.width_80 {
+	width: 80%;
+}
+.width_90 {
+	width: 90%;
+}
+
+.portfolio-images {
+	max-width: 100%;
+	border-radius: 20px;
+	/* show a transparent border around clickable images, so when border is shown on hover it doesnt make content below image jump */
+	border: 8px solid rgba(87, 24, 103, 0);
+	max-height: 300px;
+}
+a:hover .portfolio-images {
+	border-radius: 20px;
+	/* show an opaque border around clickable images on hover */
+	border: 8px solid  #2F8890;
+	/*border: 7px solid rgba(87, 24, 103, 1);*/
+}
+
+
+/* BORDERS */
+/*
+or try names like
+box_border_title
+box_border_full
+box_border_rbl or box_border_right_bottom_left
+box_image
+box_title x2 
+box_blurb or box_content x2
+box_icons
+
+or call it border1, borderRBL, as will need vert dividers in contact box & tech icons
+*/
+
+.box_basic_top_contact {
+	/*border: 3px solid blue;*/
+	width: 100%;
+	padding: 15px 5px;
+	overflow: none;
+	
+}
+.box_basic_top {
+	border: 3px solid #400068;
+	width: 100%;
+	padding: 15px;
+	/* beige w 5% saturuadion e9eade, with 11%  E8EBD0, witih 15%  e5e8c5, 20% saturaiton is e5eabb*/
+	
+}
+.box_basic {
+	border-right: 3px solid #400068;
+	border-bottom: 3px solid #400068;
+	border-left: 3px solid #400068;
+	/*border: 2px solid #400068;*/
+	width: 100%;
+	padding: 15px;
+	/*border-top: 0px solid black;*/
+}
+.box_blurb {
+
+}
+
+.box_project {
+
+}
+
 footer {
 	text-align: center;
-	padding: 20px ;
+	padding: 15px ;
 	font-size: 80%;
-	background-color: #571867;
-	color: #FFFFFF;
+	background-color: #400068;
+	color: #E8EBD0  ;
 }
 footer a {
-	color: #FFFFFF;
+	color: #E8EBD0  ;
 	text-decoration: none;
 }
 
+/* GH Logo Avatar */
+/* svg of my GH logo/avatar - border is too tall compared to box_basics on left so they dont line up at the top */
+.logo_container {
+	/*background-color: white;*/
+	width: 350px;
+	/*border: 4px solid #2F8890;*/
+}
+.logo_fill {
+	/* teal */
+	fill: #2F8890;
+}
+/* fill w beige ie bkg color */
+.logo_negative {
+	fill: #e9eade;
+}
 
-/* ------------------------------------------
-	COLOR Referencces 
---------------------------------------------- */
-/*
-purple
-rgb(87, 24, 103)
+.square {
 
-dark blue
-rgb(61, 123, 165)
+}
+/*what does it do, or what is it?*/
+eg header vs blue header?
+BEM Block Element Modifier
 
-light blue
-rgb(82, 165, 224)
-#571867
-
-light blue (same hue but more light)
-background-color:  hsl(205, 70%, 75%); 
-
-dark blue (same hue but more dark)
-background-color:  hsl(205, 70%, 60%);
-
-darker stone blue
-background-color:  hsl(204, 46%, 52%);
-		
-lighter stone blue
-background-color: hsl(204, 46%, 44%);
-*/
+/* 395 lines */
