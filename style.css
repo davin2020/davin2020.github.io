@@ -146,6 +146,16 @@ h1 {
 	font-weight: 700;
 	margin: 40px 10px;
 }
+/*when width is UNDER 550 ie max=under, and min=over */
+@media screen and (max-width: 500px) {
+	h1 {
+		font-size: 4rem;
+		margin: 20px 0;
+		/*width: 80%;*/
+		/*margin: 0 auto;*/
+	}
+}
+
 h2 {
 	margin: 10px;
 	padding: 15px 0;
@@ -181,6 +191,13 @@ h3 {
 	font-family: 'Ubuntu Mono', monospace;
 	font-size: 1.7rem;
 }
+@media screen and (max-width: 500px) {
+	.subtitle {
+		font-size: 1.5rem;
+		margin: 10px 0;
+	}
+}
+
 section {
 	/*border: 1px solid green;*/
 }
@@ -339,6 +356,20 @@ box_icons
 or call it border1, borderRBL, as will need vert dividers in contact box & tech icons
 */
 
+.box_basic_top_title {
+	/*border: 3px solid blue;*/
+	/*width: 100%;*/
+	padding: 15px 5px;
+	overflow: none;
+	/*position: relative;*/
+
+	/*this works to vertically center stuff in heading*/
+	display: flex;
+	/*now looks bad  in contact me section but ok in title section!*/
+  	flex-direction: column;
+  	justify-content: center;
+}
+
 .box_basic_top_contact {
 	/*border: 3px solid blue;*/
 	width: 100%;
@@ -389,6 +420,16 @@ footer a {
 	width: 350px;
 	/*border: 4px solid #2F8890;*/
 }
+.logo_container_purple {
+	background-color: #400068;
+	/*max-height: 350px;*/
+	max-width: 250px;
+	/*border: 4px solid #2F8890;*/
+
+	/*display: table-cell;
+  	vertical-align: middle;*/
+
+}
 .logo_fill {
 	/* teal */
 	fill: #2F8890;
@@ -402,7 +443,7 @@ footer a {
 
 }
 /*what does it do, or what is it?*/
-eg header vs blue header?
-BEM Block Element Modifier
+/*eg header vs blue header?*/
+/*BEM Block Element Modifier*/
 
 /* 395 lines */

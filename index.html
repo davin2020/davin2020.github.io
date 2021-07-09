@@ -21,10 +21,31 @@
 
 			<div class="accent_bkg"> 
 				<section class="layout__title">
-					<h1 class="section__title ">Davin Stirling</h1>
-					<p class="subtitle">detail orientated web developer, with diverse life experience</p>
+
+					<div class="section_parent_col"> 
+						<div class="box_basic_top_title width_70">
+							<h1 class="section__title ">Davin Stirling</h1>
+							<p class="subtitle">detail orientated <wbr>web developer, <wbr>with diverse <wbr>life experience</p>
+						</div>
+
+						<!--  beige castle avatar from GitHub profile, with transparent ie purple bkg -->
+						<div class="logo_container_purple">
+							<svg height="100%" width="100%" viewBox="0 0 350 350" preserveAspectRatio="xMidYMid meet">
+								<!-- big beige box for main castle shape -->
+								<rect x="50" y="50" width="250" height="200"  fill="#e5e8c5" />
+								<!-- square purple cutouts -->
+								<rect x="100" y="49" width="50" height="50" stroke="#400068" fill="#400068"   />
+								<rect x="200" y="49" width="50" height="50" stroke="#400068" fill="#400068"  />
+								<rect x="150" y="200" width="50" height="50" stroke="#400068"  fill="#400068" />
+								<!-- small beige entrance square/drawbridge at bottom of castle -->
+								<rect x="150" y="250" width="50" height="50" stroke="#e5e8c5" fill="#e5e8c5"  />
+							</svg>
+						</div>
+					</div>
+
 				</section>
-			<div>
+			</div>
+
 		</header>
 
 		<main>
@@ -35,7 +56,7 @@
 			<section class="layout__about-me">
 				<details>
 					<summary>
-						<!--  TODO add  in anchor tags here for headers & footer! -->
+						<!--  TODO add  in anchor tags here for headers & footer when using traditional nav bar -->
 						<h2 class="section__title">About</h2>
 					</summary>
 
@@ -111,8 +132,8 @@
 								</details>
 							</div>
 							<div class="box_basic">
-								<p>PHP <span class="accent">|</span> 
-								Slim4 <span class="accent">|</span> 
+								<p>PHP & Slim4 <span class="accent">|</span> 
+								<!-- Slim4 <span class="accent">|</span>  -->
 								HMTL5 <span class="accent">|</span> 
 								CSS3 <span class="accent">|</span>
 								<a href="http://bit.ly/ghCOREmvc" target="_blank"  aria-label="Link to GitHub Repo for Wellbeing Tracking Form">GitHub&nbspRepo
@@ -127,7 +148,7 @@
 								<h3>Hack Night - Space Flight Booking Site</h3>
 							</div>
 							<div class="box_basic">
-								<!-- <a href="wellbeing/default.html" target="_blank"> -->
+								<!-- <a href="live_url_when_ready" target="_blank"> -->
 									<img src="images/space_hacknight.png" alt="Screenshot of the Space Flight Booking Site - An outer space background with many small stars, with 3 orbiting planets indicating the day, month and year that you can book your space flight, and a central Check button representing the sun" class="portfolio-images">
 								<!-- </a> -->
 							</div>
@@ -144,7 +165,6 @@
 								<!-- <span class="accent">|</span>  -->
 								<!-- <a href="https://github.com/davin2020/mini_hack_space" target="_blank"  aria-label="Link to GitHub Repo for Space Flight Booking Site">GitHub&nbspRepo
 									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
-									
 								</a> -->
 								</p>
 							</div>
@@ -155,9 +175,8 @@
 								<h3>RESTful Banking API</h3>
 							</div>
 							<div class="box_basic">
-								<!-- <a href="xxx" target="_blank"> -->
+								<!-- could i make a link to postman workspaces in lieu of a demo site? -->
 									<img src="images/banking_api.png" alt="Screenshot of RESTful Banking API" class="portfolio-images">
-								<!-- </a> -->
 							</div>
 							<div class="box_basic">
 								<p>After learning about RESTful APIs and Node, I finished created a Banking API, themed with characters from the TV series Killjoys.</p>
@@ -217,8 +236,8 @@
 								<p>We learned about MVC & PHP frameworks, then used them as part of an exercise to create a To Do app. We cloned an existing repo that contained the Slim 4 framework, and worked through the architecture plan as a group. I then worked independently to create the functionality to add, complete or delete a task from the underlying MySQL DB, using Routing, the Dependency Injection Container, Factories, Controllers & Views.</p>
 							</div>
 							<div class="box_basic">
-								<p>PHP <span class="accent">|</span> 
-								Slim4 <span class="accent">|</span> 
+								<p>PHP & Slim4 <span class="accent">|</span> 
+								<!-- Slim4 <span class="accent">|</span>  -->
 								HMTL5 <span class="accent">|</span> 
 								CSS3 <span class="accent">|</span>
 								<a href="https://bit.ly/GHDtodo" target="_blank"  aria-label="Link to GitHub Repo for To Do App using PHP and MVC">GitHub&nbspRepo
@@ -231,7 +250,6 @@
 						<div class="section_child">
 							<div class="box_basic_top accent_bkg">
 								<h3>Scrum Master for Ecommerce Site using Design Patterns</h3>
-								<!-- dates completed? -->
 							</div>
 							<div class="box_basic">
 								<a href="https://bit.ly/robotstores" target="_blank">
@@ -267,7 +285,7 @@
 								<p>As part of a scrum team of 8 people, we designed & created a maze game using Javascript. I did some pair programming to design the splash screen wireframe & code that, and coded the eventListeners to detect collisions with the path & ghost obstacles. I also implemented changes after our tutor's code reviews</p>
 							</div>
 							<div class="box_basic">
-								<p>JavaScript <span class="accent">|</span> 
+								<p>JavaScript ES6<span class="accent">|</span> 
 								HMTL5 <span class="accent">|</span> 
 								CSS3 <span class="accent">|</span>
 								<a href="https://bit.ly/ghMaze" target="_blank"  aria-label="Link to GitHub Repo for Jarver's Crypt Maze Game">GitHub&nbspRepo
@@ -298,10 +316,11 @@
 							</div>
 						</div> 
 
+						<!-- add in Powershelll repo egs or not? -->
+
 					</div>
 				</details>
 			</section>
-			
 
 			<!-- Section: Skills-->
 			<div class="visual-separator width_60"> </div>
@@ -385,7 +404,7 @@
 									<rect x="100" y="49" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
 									<rect x="200" y="49" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
 									<rect x="150" y="200" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
-									<!-- small teal entrance square -->
+									<!-- small teal entrance square -at bottom -->
 									<rect x="150" y="250" width="50" height="50" stroke="#2F8890" fill="transparent" class="logo_fill" />
 								</svg>
 							</div>
