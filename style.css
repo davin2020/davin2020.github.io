@@ -146,6 +146,16 @@ h1 {
 	font-weight: 700;
 	margin: 40px 10px;
 }
+/*when width is UNDER 550 ie max=under, and min=over */
+@media screen and (max-width: 500px) {
+	h1 {
+		font-size: 4rem;
+		margin: 20px 0;
+		/*width: 80%;*/
+		/*margin: 0 auto;*/
+	}
+}
+
 h2 {
 	margin: 10px;
 	padding: 15px 0;
@@ -181,6 +191,13 @@ h3 {
 	font-family: 'Ubuntu Mono', monospace;
 	font-size: 1.7rem;
 }
+@media screen and (max-width: 500px) {
+	.subtitle {
+		font-size: 1.5rem;
+		margin: 10px 0;
+	}
+}
+
 section {
 	/*border: 1px solid green;*/
 }
@@ -426,7 +443,7 @@ footer a {
 
 }
 /*what does it do, or what is it?*/
-eg header vs blue header?
-BEM Block Element Modifier
+/*eg header vs blue header?*/
+/*BEM Block Element Modifier*/
 
 /* 395 lines */
