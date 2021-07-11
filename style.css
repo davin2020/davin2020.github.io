@@ -137,9 +137,6 @@ p {
 	}
 }
 */
-em {
-	font-size: 0.9rem;
-}
 /* HEADERS AND FONTS */
 h1 {
 	font-size: 4.2rem;
@@ -147,7 +144,7 @@ h1 {
 	color: #E8EBD0;
 	font-family: 'Ubuntu Mono', monospace;
 	font-weight: 700;
-	margin: 30px 10px;
+	margin: 40px 10px;
 }
 /*when width is UNDER 550 ie max=under, and min=over */
 @media screen and (max-width: 500px) {
@@ -193,7 +190,6 @@ h3 {
 	color: #E8EBD0;
 	font-family: 'Ubuntu Mono', monospace;
 	font-size: 1.7rem;
-	margin: 20px 10px;
 }
 @media screen and (max-width: 500px) {
 	.subtitle {
@@ -294,16 +290,16 @@ maybe call one of the classes pattern or art and collapse the pattern on MQ with
 /* VISUAL HR */
 /* perhaps add an arrow pointing right at end of each separator? */
 .visual-separator {
-	/*border: 5px solid #000000;  1C384A */
-	border-top: 10px solid #400068;
-	/*width: 80%;*/
-	align-items: center;
-	align-content: center;
-	align-self: center;
-	/*this only gives space above teh separator itself, so maybe need to place it insdie its own div?*/
-	margin: 20px 0px;
-	/*text-align: center;*/
-	/*margin-bottom: 10px;*/
+		/*border: 5px solid #000000;  1C384A */
+		border-top: 10px solid #400068;
+		/*width: 80%;*/
+		align-items: center;
+		align-content: center;
+		align-self: center;
+		/*this only gives space above teh separator itself, so maybe need to place it insdie its own div?*/
+		margin: 20px 0px;
+		/*text-align: center;*/
+		/*margin-bottom: 10px;*/
 }
 
 .width_20 {
@@ -337,7 +333,6 @@ maybe call one of the classes pattern or art and collapse the pattern on MQ with
 	/* show a transparent border around clickable images, so when border is shown on hover it doesnt make content below image jump */
 	border: 8px solid rgba(87, 24, 103, 0);
 	max-height: 300px;
-	margin-top: 10px;
 }
 a:hover .portfolio-images {
 	border-radius: 20px;
@@ -347,7 +342,7 @@ a:hover .portfolio-images {
 }
 
 
-/* names for BORDERS ? */
+/* BORDERS */
 /*
 or try names like
 box_border_title
