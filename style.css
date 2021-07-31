@@ -250,6 +250,19 @@ maybe call one of the classes pattern or art and collapse the pattern on MQ with
   	padding: 0px;
   	width: 100%;
 }
+
+/* MQ to make avatar display below main title or contact details*/
+@media screen and (max-width: 400px) {
+	.section_parent_col {
+		display: grid;
+		grid-template-columns: 100%;
+		/*remove 70 from here*/
+		/*<div class="box_basic_top_title width_70">*/
+		/*still need to center avatar buut not working */
+	}
+}
+
+
 .section_parent {
 	display: flex;
 	flex-wrap: wrap;
