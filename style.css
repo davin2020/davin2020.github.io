@@ -194,6 +194,7 @@ h3 {
 	font-family: 'Ubuntu Mono', monospace;
 	font-size: 1.7rem;
 	margin: 20px 10px;
+	line-height: 1.8rem;
 }
 @media screen and (max-width: 500px) {
 	.subtitle {
@@ -250,18 +251,7 @@ maybe call one of the classes pattern or art and collapse the pattern on MQ with
   	padding: 0px;
   	width: 100%;
 }
-
-/* MQ to make avatar display below main title or contact details*/
-@media screen and (max-width: 400px) {
-	.section_parent_col {
-		display: grid;
-		grid-template-columns: 100%;
-		/*remove 70 from here*/
-		/*<div class="box_basic_top_title width_70">*/
-		/*still need to center avatar buut not working */
-	}
-}
-
+/* MQ is later on */
 
 .section_parent {
 	display: flex;
@@ -446,7 +436,6 @@ footer a {
 
 	/*display: table-cell;
   	vertical-align: middle;*/
-
 }
 .logo_fill {
 	/* teal */
@@ -460,7 +449,33 @@ footer a {
 .square {
 
 }
-/*what does it do, or what is it?*/
+
+/* MQ to make castle avatar display below main title or contact details on mobile screens */
+@media screen and (max-width: 450px) {
+	.section_parent_col {
+		display: grid;
+		grid-template-columns: 100%;
+		text-align: center;
+	}
+	.box_basic_top_title {
+		/*needed to override class width_70*/
+		width: 100%;
+	}
+	.logo_container_purple {
+		/* center is done by making width 100% */
+		max-width: 100%;
+		max-height: 250px;
+	}
+	.logo_container {
+		width: 100%;
+		max-height: 250px;
+	}
+	.section_parent {
+		padding: 0;
+	}
+}
+
+/* NAMING - what does it do, or what is it?*/
 /*eg header vs blue header?*/
 /*BEM Block Element Modifier*/
 
