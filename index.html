@@ -67,7 +67,7 @@
 								<h3>Background</h3>
 							</div>
 							<div class="box_basic">
-								<p>Hiya, I'm Davin, an IT Professional with over 12 years experience pivoting into web development</p>
+								<p>Hiya, I'm Davin, an IT Professional with over 12 years experience, pivoting into web development</p>
 								<p>I'm interested in backend technologies including GraphQL API, and keen to build on my experience with LAMP and MERN stacks.
 								<p>I'm eligible to work in the UK, where I'm currently based, and also in New Zealand where I lived for 12 years pre-covid</p>
 								<p>I'm open to new opportunities in 2021 - here's my 
@@ -111,6 +111,40 @@
 					</summary>
 				
 					<div class="section_parent"> 
+						
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Wellbeing Tracker using PHP and MVC</h3>
+							</div>
+							<div class="box_basic">
+								<em>Work in Progress - August 2021</em><br>
+								<a href="wellbeing/demo.html" target="_blank">
+									<!-- PLESK https://wellbeing.2020-davin.dev.io-academy.uk/ -->
+									<img src="images/screenshot_core_gp.png" alt="Screenshot of the Wellbeing Tracking website - which is a list of questions on the left, eg 'I have felt ok about myself', with groups on radio buttons on the right where you can choose an answer on a frequency scale between 'Not At All' and 'Most of the Time'" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>I'm interested in psychology so decided to digitise  the GP-CORE form where you can answer questions about subjective wellbeing.</p>
+								<p>CORE Forms from the <a href="https://www.coresystemtrust.org.uk/">CORE Systems Trust</a> can be used to monitor changes in wellbeing over time in health care situations. There are different versions, like <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> for the General Population which has 14 questions.</p>
+								<details>
+									<summary>More</summary>
+									<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library. This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.</p>
+									<p>
+									I've recently restructured the app into separate pages within a feature branch, and added register/login functionality. In August I finished protecting the routes and indivdual pages with sessions. Next I need to investigate Git and squashing, or maybe rebasing, to get all the feature commits into the main branch in a tidy way.</p>
+									<p>Some of my bigger challenges have been working out how to better use the graph plotting library, and learning more about using Git (eg cherry picking & stashing) in order to resolve certain branching issues I came across. I also discovered that some tech isn't meant to work together - like trying to add JWT to my project without realising its mainly intended for APIs and I'd written a (small) monolith...</p>
+								</details>
+							</div>
+							<div class="box_basic">
+								<p>PHP & Slim4 <span class="accent">|</span> 
+								<!-- Slim4 <span class="accent">|</span>  -->
+								HMTL5 <span class="accent">|</span> 
+								CSS3 <span class="accent">|<wbr></span>
+								<a href="https://github.com/davin2020/core_questions_mvc/tree/main_comments" target="_blank"  aria-label="Link to GitHub Repo Feature Branch for Wellbeing Tracker">GitHub&nbspRepo&nbspFeature&nbspBranch
+									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
+								</a>
+								</p>
+							</div>
+						</div>
 
 						<div class="section_child">
 							<div class="box_basic_top accent_bkg">
@@ -125,7 +159,7 @@
 							<div class="box_basic">
 								<p>I took part in my first 48 Hour hackathon over the weekend 16-18 July 2021, as part of <a href="https://level-up-society-13094.devpost.com/" target="_blank">Level Up Society Hackathon</a></p>
 								<p>It was both exciting and challenging to work with new people to try and design & build a prototype with gamification elements, all within 48 Hours!</p>
-								<p>We choose the categories of Mental Health and Learning and made a website where you can complete exercises based off a Dialectical Behaviour Therapy workbook</p>
+								<p>We choose the categories of Mental Health and Learning and made a website where you can complete exercises based on a Dialectical Behaviour Therapy workbook</p>
 								<p>I mainly worked on setting up & designing the Firebase cloud DB, and writing functions using async/await in vanilla JS to add and get data from the DB. I also tried to integrate that with the Vue front end, but ran out of time.<p>
 								<p>Our Submission - <a href="https://devpost.com/software/team-awesome-force" target="_blank">Lemonie: Self Reflection for Recovery, by Team Awesome Force</a></p>
 							</div>
@@ -155,9 +189,8 @@
 									<img src="images/vue_killjoys.png" alt="Screenshot of the xxx" class="portfolio-images">
 								<!-- </a> -->
 							</div>
-
 							<div class="box_basic">
-								<p>I attended a webinar about Vue and then googled for some tutorials to make a few examples using the Vue framework, themed around characters from the TV series Killjoys</p>
+								<p>I attended a webinar about Vue and then googled for some further tutorials to make an example page, themed around characters & situations from the TV series Killjoys</p>
 							</div>
 							<div class="box_basic">
 								<p>
@@ -167,40 +200,6 @@
 								<span class="accent">|</span> 
 								<a href="https://github.com/davin2020/vue_example" target="_blank"  aria-label="Link to GitHub Repo for Vue Examples">GitHub&nbspRepo
 									<i class="fab fa-github-square fa-3x" title="Vue Examples  Repo"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Form to Track Wellbeing using PHP and MVC</h3>
-							</div>
-							<div class="box_basic">
-								<em>Work in Progress - June 2021</em><br>
-								<a href="wellbeing/default.html" target="_blank">
-									<img src="images/screenshot_core_gp.png" alt="Screenshot of the Wellbeing Tracking website - which is a list of questions on the left, eg 'I have felt ok about myself', with groups on radio buttons on the right where you can choose an answer on a frequency scale between 'Not At All' and 'Most of the Time'" class="portfolio-images">
-								</a>
-							</div>
-							<div class="box_basic">
-								<p>I'm interested in psychology so decided to digitise  the GP-CORE form where you can answer questions about subjective wellbeing.</p>
-								<p>CORE Forms from the <a href="https://www.coresystemtrust.org.uk/">CORE Systems Trust</a> can be used to monitor changes in wellbeing over time in health care situations. There are different versions, like <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> for the General Population which has 14 questions.</p>
-								<details>
-									<summary>More</summary>
-									<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library.</p>
-									<p>This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.
-									During May I have restructured the app into separate pages in a feature branch, and added register/login functionality. I'm currently working on protecting the routes with sessions</p>
-									<p>My biggest challenges have been working out how to better use the graph plotting library, learning more about using Git eg cherry picking & stashing in order to resolve certain branching issues I came across, and discovering that some tech isn't meant to work together - like trying to add JWT to my project without realising its only intended for APIs and I'd written a (small) monolith...</p>
-								</details>
-							</div>
-							<div class="box_basic">
-								<p>PHP & Slim4 <span class="accent">|</span> 
-								<!-- Slim4 <span class="accent">|</span>  -->
-								HMTL5 <span class="accent">|</span> 
-								CSS3 <span class="accent">|</span>
-								<a href="http://bit.ly/ghCOREmvc" target="_blank"  aria-label="Link to GitHub Repo for Wellbeing Tracking Form">GitHub&nbspRepo
-									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
 								</a>
 								</p>
 							</div>
@@ -393,6 +392,7 @@
 					</div>
 				</details>
 			</section>
+
 
 			<!-- Section: Skills-->
 			<div class="visual-separator width_60"> </div>
