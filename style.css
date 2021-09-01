@@ -127,7 +127,6 @@ p {
 	padding: 10px;
 }
 
-/* my cv */
 .lowkey_accent {
 	font-weight: bold;
 	font-size: 1.1rem;
@@ -139,15 +138,11 @@ p {
 	text-decoration: none;
 	padding: 5px;
 	color: #2F8890; 
-	/*background-color: #400068;*/
-	/*color: #E8EBD0;*/
 }
 
 .lowkey_accent a:hover {
 	background-color: #2F8890;
 	color: #E8EBD0;
-	/*background-color: #E8EBD0;*/
-	/*color: #400068;*/
 	padding: 5px;
 }
 
