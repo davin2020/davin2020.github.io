@@ -70,8 +70,7 @@
 								<p>Hiya, I'm Davin, an IT Professional with over 12 years experience, pivoting into web development</p>
 								<p>I'm interested in backend technologies including GraphQL API, and keen to build on my experience with LAMP and MERN stacks.
 								<p>I'm eligible to work in the UK, where I'm currently based, and also in New Zealand where I lived for 12 years pre-covid</p>
-								<p>I'm open to new opportunities in 2021 - here's my 
-								<a href="DavinStirling_DeveloperCV2021August.pdf" target="_blank">CV</a>
+								<p class="lowkey_accent">I'm open to new opportunities in 2021 - here's my <a href="DavinStirling_DeveloperCV2021August.pdf" target="_blank">Developer CV</a>
 							</p>
 							</div>
 						</div>
@@ -118,21 +117,21 @@
 							</div>
 							<div class="box_basic">
 								<em>Work in Progress - August 2021</em><br>
-								<em><strong>DEMO Available</strong></em>
 								<a href="https://wellbeing.2020-davin.dev.io-academy.uk" target="_blank">
-									<div title="View Demo">
-										<img src="images/screenshot_wellbeing_tracker.png" alt="Screenshot of the Wellbeing Tracking website - which is a list of questions on the left, eg 'I have felt ok about myself', with groups on radio buttons on the right where you can choose an answer on a frequency scale between 'Not At All' and 'Most of the Time'" class="portfolio-images">
+									<div title="View Live Demo">
+										<img src="images/screenshot_wellbeing_graph.png" alt="Screenshot of the Wellbeing Tracking website - which is a list of questions on the left, eg 'I have felt ok about myself', with groups on radio buttons on the right where you can choose an answer on a frequency scale between 'Not At All' and 'Most of the Time'" class="portfolio-images">
 									</div>
 								</a>
 							</div>
 							<div class="box_basic">
+								<p class="livedemo_accent"><a href="https://wellbeing.2020-davin.dev.io-academy.uk" target="_blank">View Live Demo</a></p>
 								<p>I'm interested in psychology so decided to digitise  the GP-CORE form where you can answer questions about subjective wellbeing.</p>
 								<p>CORE Forms from the <a href="https://www.coresystemtrust.org.uk/">CORE Systems Trust</a> can be used to monitor changes in wellbeing over time in health care situations. There are different versions, like <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> for the General Population which has 14 questions.</p>
 								<details>
 									<summary>More</summary>
 									<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library. This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.</p>
-									<p>
-									I've recently restructured the app into separate pages within a feature branch, and added register/login functionality. In August I finished protecting the routes and indivdual pages with sessions. Next I need to investigate Git and squashing, or maybe rebasing, to get all the feature commits into the main branch in a tidy way.</p>
+									<p>In June I started restructuring the app into separate pages within a feature branch, and added register/login functionality. In August I finished protecting the routes and indivdual pages with sessions, and the app now has enough features that Ive got a live demo available</p>
+									<p>Next I need to tidy up my git branches so that all the feature commits in different branches get merged into main, and then I can start work on adding more features</p>
 									<p>Some of my bigger challenges have been working out how to better use the graph plotting library, and learning more about using Git (eg cherry picking & stashing) in order to resolve certain branching issues I came across. I also discovered that some tech isn't meant to work together - like trying to add JWT to my project without realising its mainly intended for APIs and I'd written a (small) monolith...</p>
 								</details>
 							</div>
@@ -154,6 +153,7 @@
 							</div>
 							<div class="box_basic">
 								<em>Submitted 18 July 2021</em><br>
+								<!-- add View Live Demo title to other images -->
 								<a href="https://awesome-dbt.web.app/" target="_blank">
 									<img src="images/hackathon_lemonie.png" alt="Screenshot of the Lemonie Mental Health Exercises website - the prototype contains 2 exercises and elements of gamification" class="portfolio-images">
 								</a>

@@ -107,9 +107,49 @@ p {
 	line-height: 1.4rem;
 }
 
+/* live demo text in teal (or 400068 purpl) - or try before & after items over image instead ? */
+.livedemo_accent {
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #2F8890; 
+	line-height: 1.5rem;
+}
+
+.livedemo_accent a {
+	text-decoration: none;
+	padding: 10px;
+	color: #2F8890; 
+}
+
+.livedemo_accent a:hover {
+	background-color: #2F8890;
+	color: #E8EBD0;
+	padding: 10px;
+}
+
+.lowkey_accent {
+	font-weight: bold;
+	font-size: 1.1rem;
+	color: #400068; 
+	line-height: 1.8rem;
+}
+
+.lowkey_accent a {
+	text-decoration: none;
+	padding: 5px;
+	color: #2F8890; 
+}
+
+.lowkey_accent a:hover {
+	background-color: #2F8890;
+	color: #E8EBD0;
+	padding: 5px;
+}
+
 .skills {
 	font-size: 1.2rem;
 }
+
 /*margin isnt affecting anyting visualy, not sure why - padding isnt doing much either, only box_basic css is being applied  */
 .contactme {
 	font-size: 1.2rem;
@@ -123,9 +163,9 @@ p {
 	/*overflow-wrap: break-word; */
 }
 .contactme:hover {
-	background-color: #2F8890 ;
+	background-color: #2F8890;
 	padding: 15px;
-	color: #E8EBD0 ;
+	color: #E8EBD0;
 	text-decoration: none;
 }
 
