@@ -389,6 +389,12 @@ a:hover .portfolio-images {
 	/*border: 7px solid rgba(87, 24, 103, 1);*/
 }
 
+.certificate-images {
+	max-width: 100%;
+	border-radius: 20px;
+	max-height: 300px;
+	margin-top: 10px;
+}
 
 /* names for BORDERS ? */
 /*
