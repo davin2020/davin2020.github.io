@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Portfolio Website for Davin Stirling</title>
+
 	<!-- Link Preview uisng meta tags and Open Graph Protocol tags -->
 	<meta name="description" content="Davin Stirling is an IT Professional pivoting into web development. Their portfolio contains projects from the iO Academy web dev bootcamp, as well as personal projects, mainly in the LAMP, WAMP and MERN stacks.">
 	<link rel="canonical" href="https://davin2020.github.io/" />
@@ -18,6 +19,12 @@
 	<link href="normalize.css" type="text/css" rel="stylesheet">
 	<link href="style.css" type="text/css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script
+	  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+	</script>
+	<!-- CSS for GH Contributions Calendar (originally from https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css) but with customised Teal colors & adjusted formatting -->
+	<link rel="stylesheet" href="github-calendar-responsive.css" />
 </head>
 
 <body>
@@ -38,7 +45,6 @@
 						<div class="box_basic_top_title width_70">
 							<h1 class="section__title ">Davin Stirling</h1>
 							<p class="subtitle">detail orientated <wbr>web&nbsp;developer, <wbr>with&nbsp;diverse <wbr>life experience</p>
-								<!-- TODO add carraige return before WITH -->
 						</div>
 
 						<!--  beige castle avatar from GitHub profile, with transparent ie purple bkg -->
@@ -504,25 +510,34 @@
 										<h3>GitHub Profile</h3>
 									</div>
 									<div class="box_basic">
-										<a href="https://github.com/davin2020/" target="_blank" aria-label="Link to GitHub account for Davin2020" class="contactme">https://github<wbr>.com/<wbr>davin2020
-
-										</a>
+										<a href="https://github.com/davin2020/" target="_blank" aria-label="Link to GitHub account for Davin2020" class="contactme">https://github<wbr>.com/<wbr>davin2020</a>
+										<!-- Add GH Contributions Graph as an image -->
+										<!-- <img src="http://ghchart.rshah.org/2F8890/davin2020" alt="Davin's Teal Github Contributions Chart" /> -->
+										<div class="calendar">
+										    Loading the data just for you.
+										</div>
+										<script>
+										    // Enable GH Calendar with responsive functionality:
+										    GitHubCalendar(".calendar", "davin2020", { responsive: true });
+										</script>
 									</div>
 								</div>
+
 							</div>
 									
+							<!-- Removed Teal Castle Avatar so that GH Calendar Chart can take up the full width
 							<div class="logo_container">
-								<svg height="100%" width="100%" viewBox="0 0 350 350" preserveAspectRatio="xMidYMid meet">
+								<svg height="100%" width="100%" viewBox="0 0 350 350" preserveAspectRatio="xMidYMid meet"> -->
 									<!-- big teal box for castle shape -->
-									<rect x="50" y="50" width="250" height="200"  fill="#2F8890" class="logo_fill" />
+									<!-- <rect x="50" y="50" width="250" height="200"  fill="#2F8890" class="logo_fill" /> -->
 									<!-- square beige cutouts -->
-									<rect x="100" y="49" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
+									<!-- <rect x="100" y="49" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
 									<rect x="200" y="49" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
-									<rect x="150" y="200" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" />
+									<rect x="150" y="200" width="50" height="50" stroke="#e9eade" fill="transparent"  class="logo_negative" /> -->
 									<!-- small teal entrance square -at bottom -->
-									<rect x="150" y="250" width="50" height="50" stroke="#2F8890" fill="transparent" class="logo_fill" />
-								</svg>
-							</div>
+									<!-- <rect x="150" y="250" width="50" height="50" stroke="#2F8890" fill="transparent" class="logo_fill" /> -->
+								<!--</svg>
+							</div> -->
 	
 						</div> 
 
