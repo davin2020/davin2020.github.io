@@ -48,6 +48,15 @@ rect.ContributionCalendar-day[data-level='4'] {
     min-height: 243px;
     text-align: center;
     padding: 10px;
+    /* so calendar is easier to see when space is available*/
+    min-width: 650px;
+}
+
+/* needs MQ so calendar is smaller on devices under 750px, else it will overflow (when width is UNDER 750 ie max=under, and min=over) */
+@media screen and (max-width: 750px) {
+    .calendar {
+        min-width: 100%;
+    }
 }
 
 .calendar-graph text.wday,
