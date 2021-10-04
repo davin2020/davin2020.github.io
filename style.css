@@ -42,6 +42,8 @@ details summary > * {
   display: inline;
 }
 
+/*details tag has attribute called open=open, needs JS to get it working dynamcally tho; is details:target a valid thing?  */
+
 /*
 details  div {
 	this applies padding to ALL/each div within details
@@ -212,11 +214,17 @@ h2 {
 h2:hover {
 	color: #2F8890;
 }
+
 h3 {
 	font-size: 1.4rem;
 	margin: 5px 0;
 	line-height: 2rem;
 	/*padding: 15px 0;*/
+}
+
+h4 {
+	text-decoration: underline;
+	padding-top: 10px;
 }
 
 .accent {
