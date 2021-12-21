@@ -158,6 +158,69 @@
 
 						<div class="section_child">
 							<div class="box_basic_top accent_bkg">
+								<h3>Laravel TShirt App</h3>
+							</div>
+							<div class="box_basic">
+								<em>Work in Progress - Dec 2021</em><br>
+								<a href="https://bit.ly/LaraTshirts" target="_blank">
+									<img src="images/lara_tshirts.png" alt="Screenshot of the Laravel TShirt App" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>I've started learning Laravel 8 by following a tutorial about making a CRUD app, but customising the fields to make a TShirt App instead. I've also recently added an Image Uploader and deployed it as a demo site.</p> 
+								<p>I actually own a lot of tshirts, as I collect them whenever I go travelling, so they are usually about events or places I've been to. Sadly most of my tshirts are still in Auckland, as I only had a few with me when I travelled to the UK.</p>
+								<p>So far I've noticed that, compared to the Slim framework, there's a lot less boiler plate code required to get basic functionality up and running.</p>
+							</div>
+							<div class="box_basic">
+								<p>
+								PHP <span class="accent">|</span>
+								Laravel 8 <span class="accent">|</span>
+								Blade Templates <span class="accent">|</span> 
+								<a href="https://bit.ly/ghLaraTshirtsDev" target="_blank"  aria-label="Link to GitHub Repo for Laravel TShirts App">GitHub&nbspRepo&nbspDev&nbspBranch
+									<!-- GH icons arent visible any more, why? -->
+									<i class="fab fa-github-square fa-3x" title="Laravel TShirts App"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Wellbeing Tracker using PHP and MVC</h3>
+							</div>
+							<div class="box_basic">
+								<em>Updated Dec 2021</em><br>
+								<a href="https://bit.ly/WellbeingLive" target="_blank">
+									<div title="View Live Demo">
+										<img src="images/screenshot_wellbeing_graph.png" alt="Screenshot of the Wellbeing Tracking website - which is a list of questions on the left, eg 'I have felt ok about myself', with groups on radio buttons on the right where you can choose an answer on a frequency scale between 'Not At All' and 'Most of the Time'" class="portfolio-images">
+									</div>
+								</a>
+							</div>
+							<div class="box_basic">
+								<p class="livedemo_accent"><a href="https://bit.ly/WellbeingLive" target="_blank">View Live Demo</a></p>
+								<p>I'm interested in psychology so decided to digitise  the GP-CORE form where you can answer questions about subjective wellbeing.</p>
+								<p>CORE Forms from the <a href="https://www.coresystemtrust.org.uk/">CORE Systems Trust</a> can be used to monitor changes in wellbeing over time in health care situations. There are different versions, like <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> for the General Population which has 14 questions.</p>
+								<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library. This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.</p>
+								<details>
+									<summary>More</summary>
+									<p>In June I started restructuring the app into separate pages within a feature branch, and added register/login functionality. In August I finished protecting the routes and indivdual pages with sessions, and the app now has enough features that I've deployed a live demo version. In September I deployed a more mobile friendly version with better Media Queries and improved formatting of the Question Form</p>
+									<p>Next I need to tidy up my git branches so that all the feature commits in different branches get merged into main, and then I can start work on adding more features, like a password reset option and additional forms.</p>
+									<p>Some of my bigger challenges have been working out how to better use the graph plotting library, and learning more about using Git (eg cherry picking & stashing) in order to resolve certain branching issues I came across. I also discovered that some tech isn't meant to work together - like trying to add JWT to my project without realising its mainly intended for APIs and I'd written a (small) monolith...</p>
+								</details>
+							</div>
+							<div class="box_basic">
+								<p>PHP <span class="accent">|</span> 
+								Slim 4 <span class="accent">|</span> 
+								MVC <span class="accent">|</span> 
+								<a href="https://bit.ly/ghWellbeingWIp" target="_blank"  aria-label="Link to GitHub Repo Feature Branch for Wellbeing Tracker">GitHub&nbspRepo&nbspFeature&nbspBranch
+									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
 								<h3>Cat-themed PWA ToDo App</h3>
 							</div>
 							<div class="box_basic">
@@ -234,41 +297,6 @@
 								<span class="accent">|</span> 
 								<a href="https://github.com/davin2020/php_boilerplate" target="_blank"  aria-label="Link to GitHub Repo for PHP Template with Unit Tests for Code Katas">GitHub&nbspRepo
 									<i class="fab fa-github-square fa-3x" title="PHP Template with Unit Tests for Code Katas"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Wellbeing Tracker using PHP and MVC</h3>
-							</div>
-							<div class="box_basic">
-								<em>Work in Progress - August 2021</em><br>
-								<a href="https://wellbeing.2020-davin.dev.io-academy.uk" target="_blank">
-									<div title="View Live Demo">
-										<img src="images/screenshot_wellbeing_graph.png" alt="Screenshot of the Wellbeing Tracking website - which is a list of questions on the left, eg 'I have felt ok about myself', with groups on radio buttons on the right where you can choose an answer on a frequency scale between 'Not At All' and 'Most of the Time'" class="portfolio-images">
-									</div>
-								</a>
-							</div>
-							<div class="box_basic">
-								<p class="livedemo_accent"><a href="https://wellbeing.2020-davin.dev.io-academy.uk" target="_blank">View Live Demo</a></p>
-								<p>I'm interested in psychology so decided to digitise  the GP-CORE form where you can answer questions about subjective wellbeing.</p>
-								<p>CORE Forms from the <a href="https://www.coresystemtrust.org.uk/">CORE Systems Trust</a> can be used to monitor changes in wellbeing over time in health care situations. There are different versions, like <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> for the General Population which has 14 questions.</p>
-								<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library. This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.</p>
-								<details>
-									<summary>More</summary>
-									<p>In June I started restructuring the app into separate pages within a feature branch, and added register/login functionality. In August I finished protecting the routes and indivdual pages with sessions, and the app now has enough features that I've deployed a live demo version. In September I deployed a more mobile friendly version with better Media Queries and improved formatting of the Question Form</p>
-									<p>Next I need to tidy up my git branches so that all the feature commits in different branches get merged into main, and then I can start work on adding more features, like a password reset option and additional forms.</p>
-									<p>Some of my bigger challenges have been working out how to better use the graph plotting library, and learning more about using Git (eg cherry picking & stashing) in order to resolve certain branching issues I came across. I also discovered that some tech isn't meant to work together - like trying to add JWT to my project without realising its mainly intended for APIs and I'd written a (small) monolith...</p>
-								</details>
-							</div>
-							<div class="box_basic">
-								<p>PHP & Slim4 <span class="accent">|</span> 
-								HMTL5 <span class="accent">|</span> 
-								CSS3 <span class="accent">|<wbr></span>
-								<a href="https://github.com/davin2020/core_questions_mvc/tree/main_comments" target="_blank"  aria-label="Link to GitHub Repo Feature Branch for Wellbeing Tracker">GitHub&nbspRepo&nbspFeature&nbspBranch
-									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
 								</a>
 								</p>
 							</div>
