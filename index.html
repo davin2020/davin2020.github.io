@@ -160,16 +160,20 @@
 								<h3>Wellbeing Tracker Questions using Node, GraphQL API and MySQL</h3>
 							</div>
 							<div class="box_basic">
-								<em>COMING SOON - Jan 2022</em><br>
+								<em>Added Jan 2022</em><br>
 								<!-- <a href="https://bit.ly/xxx" target="_blank"> -->
-									<img src="images/core_graphql_api.png" alt="GraphQL API used to provide Wellbeing Tracker Questions" class="portfolio-images">
+									<img src="images/core_questions_graphql_api.png" alt="GraphQL API used to provide Wellbeing Tracker Questions" class="portfolio-images">
 								<!-- </a> -->
 							</div>
 							<div class="box_basic">
 								<p>I liked working with GraphQL on the bootcamp, so wanted to practise using it to make a Wellbeing Tracker last year.</p>
-								<p>However at that time I could not get GraphQL to work with either Node and MySQL, nor with PHP and MySQL. As the Tracker's only tech requirement was a relational database, I looked at my existing repos that used MySQL and the most suitable was a PHP app that used the MVC framework. So thats why my original Wellbeing Tracker uses that tech stack.</p>
+								<p>However at that time I could not get GraphQL to work with either Node and MySQL, nor with PHP and MySQL. As the Tracker's only tech requirement was a relational database, I looked at my existing repos that used MySQL, and the most suitable was a PHP app that used the MVC framework. So thats why my original Wellbeing Tracker uses that tech stack.</p>
 								<p>However I was later able to get Node and GraphQL to work with MySQL, after being advised that I needed to use the promise-mysql npm package, which was not mentioned in the online tutorial that I had found and was following.</p>
-								<p>So I'm currently tidying up the repo and adding a few more queries, before commiting to the master branch.</p>
+								<details>
+									<summary>More</summary>
+									<p>The Tracker lets users answer questions from the <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> form about how they have been feeling over the last week. I've tidied up the repo and included 2 queries for now, to get all the Questions or a single Question.</p>
+									<p>Next I'd like to add in some new queries to get Users and Questions together, add in some mutations so that a given User's Answers can be saved, and find a better way of refactoring and structuring the code that connects to the DB.</p>
+								</details>
 							</div>
 							<div class="box_basic">
 								<p>
