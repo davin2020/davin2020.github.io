@@ -154,38 +154,65 @@
 						<h2 class="section__title">Projects</h2>
 					</summary>
 				
-					<div class="section_parent"> 
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Delorean themed Random Quotes Template</h3>
-							</div>
-							<div class="box_basic">
-								<em>Added Dec 2021</em><br>
-								<a href="https://bit.ly/RandomQuotesTemplate" target="_blank">
-									<img src="images/screenshot_random_quotes.png" alt="Screenshot of the Delorean Random Quote Generator Template website" class="portfolio-images">
-								</a>
-							</div>
-							<div class="box_basic">
-								<p>I created a unicorn themed Random Quote generator with positive affirmations and then decided to turn it into a GitHub Template that others can use to generate their own Random Quotes.</p>
-								<p>Since I made this pre-Christmas, I also added a Toggle button to give a Snowing effect and make it more festive!</p>
-								<p>You can customise the template by adding your own text and images into the relevant arrays. For the Template repo I've used a Delorean theme, with quotes from the film Back to the Future.</p> 
-							</div>
-							<div class="box_basic">
-								<p>
-								<!-- Template <span class="accent">|</span> -->
-								Frontend <span class="accent">|</span>
-								JavaScript <span class="accent">|</span>
-								CSS3<span class="accent">|</span>
-								HTML5<span class="accent">|</span>
-								<a href="https://bit.ly/ghRandomQuotesTemplate" target="_blank"  aria-label="Link to GitHub Repo for Delorean Random Quote Generator Template website">GitHub&nbspRepo
-									<!-- GH icons arent visible any more, why? -->
-									<i class="fab fa-github-square fa-3x" title="Delorean Random Quote Generator Template website"></i>
-								</a>
-								</p>
-							</div>
+
+				<!--  FILTER BY KEYWRODS 29 DEC 2021
+				need to have array of data that is easy to filter and option to show/hide block when filter tag/keyword is clicked ie event harndler 
+				should i also store all my data in an array/jsono?
+
+				29jan22 need thmml toggle buttons
+
+				 -->
+					<div class="section_child">
+						<div class="box_basic_top accent_bkg">
+							<h3>Key Word Search</h3>
+						</div>
+						<div class="box_basic">
+							<p>PHP | JavaScript </p>
+							<button>PHP</button>
+							 <input type="submit" id="btnPHP" value="PHP Again">
 						</div>
 
-						<div class="section_child">
+						<script>
+							let keywordPHP = document.getElementById("btnPHP");
+							keywordPHP.addEventListener("click", function() {
+								console.log('keyword php event listener');
+							  	showProjectsWith("php");
+							});
+
+							function showProjectsWith(techItem) {
+								let techKeyword = techItem;
+								if (techKeyword == "php") {
+									//need to make this dynamic
+									let targetDiv = document.getElementById("php-laravel-tshirts");
+
+									
+									console.log('trying to do display none');
+									//this isnt working
+									let result = targetDiv.getAttribute("data-keyword");
+									console.log(result);
+
+									// let value = document.getElementById("myId").getAttribute("class");
+									//need to for each over items in class array class allowKeywords, then check for matching data-keyword
+									// let targetDiv = document.getElementByClass("allowKeywords");
+									if (result == "php7") {
+										if (targetDiv.style.display == "none") {
+									    targetDiv.style.display = "block";
+									  } else {
+									    targetDiv.style.display = "none";
+									  }
+									}
+									
+									// targetDiv.style.display = "none";
+									
+									// document.getElementById(element).src = "images/icon-rock.svg";
+								}
+							}
+
+						</script>
+
+					</div>
+
+					<div class="section_child allowKeywords" id="php-laravel-tshirts" data-keyword="php7">
 							<div class="box_basic_top accent_bkg">
 								<h3>Laravel TShirt App</h3>
 							</div>
@@ -215,7 +242,41 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+
+					<div class="section_parent"> 
+						<div class="section_child allowKeywords">
+							<div class="box_basic_top accent_bkg">
+								<h3>Delorean themed Random Quotes Template</h3>
+							</div>
+							<div class="box_basic">
+								<em>Added Dec 2021</em><br>
+								<a href="https://bit.ly/RandomQuotesTemplate" target="_blank">
+									<img src="images/screenshot_random_quotes.png" alt="Screenshot of the Delorean Random Quote Generator Template website" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>I created a unicorn themed Random Quote generator with positive affirmations and then decided to turn it into a GitHub Template that others can use to generate their own Random Quotes.</p>
+								<p>Since I made this pre-Christmas, I also added a Toggle button to give a Snowing effect and make it more festive!</p>
+								<p>You can customise the template by adding your own text and images into the relevant arrays. For the Template repo I've used a Delorean theme, with quotes from the film Back to the Future.</p> 
+							</div>
+							<div class="box_basic">
+								<p>
+								<!-- Template <span class="accent">|</span> -->
+								Frontend <span class="accent">|</span>
+								JavaScript <span class="accent">|</span>
+								CSS3<span class="accent">|</span>
+								HTML5<span class="accent">|</span>
+								<a href="https://bit.ly/ghRandomQuotesTemplate" target="_blank"  aria-label="Link to GitHub Repo for Delorean Random Quote Generator Template website">GitHub&nbspRepo
+									<!-- GH icons arent visible any more, why? -->
+									<i class="fab fa-github-square fa-3x" title="Delorean Random Quote Generator Template website"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+
+
+						<div class="section_child allowKeywords">
 							<div class="box_basic_top accent_bkg">
 								<h3>Wellbeing Tracker using PHP and MVC</h3>
 							</div>
