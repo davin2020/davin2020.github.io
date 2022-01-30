@@ -169,44 +169,74 @@
 						<div class="box_basic">
 							<p>PHP | JavaScript </p>
 							<button>PHP</button>
-							 <input type="submit" id="btnPHP" value="PHP Again">
+							 <input type="submit" id="btnPHP" value="Show PHP">
+							 <input type="submit" id="btnJS" value="Show JS">
 						</div>
 
 						<script>
 							let keywordPHP = document.getElementById("btnPHP");
 							keywordPHP.addEventListener("click", function() {
 								console.log('keyword php event listener');
-							  	showProjectsWith("php");
+								//make it bold/visually different
+							  	showProjectsWith("php7");
+							});
+							let keywordJS = document.getElementById("btnJS");
+							keywordJS.addEventListener("click", function() {
+								console.log('keyword php event listener');
+								//make it bold/visually different
+							  	showProjectsWith("js6");
 							});
 
 							function showProjectsWith(techItem) {
 								let techKeyword = techItem;
-								if (techKeyword == "php") {
+								// if (techKeyword == "php") {
 									//need to make this dynamic
-									let targetDiv = document.getElementById("php-laravel-tshirts");
+										// let targetDiv = document.getElementById("php-laravel-tshirts");
 
 									
-									console.log('trying to do display none');
+									// console.log('trying to do display none');
 									//this isnt working
-									let result = targetDiv.getAttribute("data-keyword");
-									console.log(result);
+										// let result = targetDiv.getAttribute("data-keyword");
+										// console.log(result);
 
 									// let value = document.getElementById("myId").getAttribute("class");
 									//need to for each over items in class array class allowKeywords, then check for matching data-keyword
-									// let targetDiv = document.getElementByClass("allowKeywords");
-									if (result == "php7") {
-										if (targetDiv.style.display == "none") {
-									    targetDiv.style.display = "block";
-									  } else {
-									    targetDiv.style.display = "none";
-									  }
+									let targetDivNodeList = document.querySelectorAll(".allowKeywords");
+									//need to check for matching keywords eg php !
+									//works ok for PHP keyword, but JS keywords actually hides it - cos i want to hide the ontes that are NOT the keyword
+									for (let i = 0; i < targetDivNodeList.length; i++) {
+										let currentTerm = targetDivNodeList[i].getAttribute("data-keyword");
+											console.log('currentTerm: ' + currentTerm);
+										//if dkeyword isnt the one u want, then hide it
+										if (currentTerm != techKeyword) {
+											if (targetDivNodeList[i].style.display == "none") {
+											    targetDivNodeList[i].style.display = "block";
+											    console.log('set dispaly block');
+											  } else {
+											    targetDivNodeList[i].style.display = "none";
+											    console.log('set dispaly none: ');
+											  }
+										}
+
+									  // targetDivNodeList[i].style.display = "none";
 									}
+									//  querySelector / querySelectorAll
+									// document.querySelector(".example");
+
+
+									// if (result == "php7") {
+									// 	if (targetDiv.style.display == "none") {
+									//     targetDiv.style.display = "block";
+									//   } else {
+									//     targetDiv.style.display = "none";
+									//   }
+									// }
 									
 									// targetDiv.style.display = "none";
 									
 									// document.getElementById(element).src = "images/icon-rock.svg";
 								}
-							}
+							// } IF
 
 						</script>
 
@@ -244,7 +274,7 @@
 
 
 					<div class="section_parent"> 
-						<div class="section_child allowKeywords">
+						<div class="section_child allowKeywords"  data-keyword="js6">
 							<div class="box_basic_top accent_bkg">
 								<h3>Delorean themed Random Quotes Template</h3>
 							</div>
@@ -276,7 +306,7 @@
 
 
 
-						<div class="section_child allowKeywords">
+						<div class="section_child allowKeywords"  data-keyword="php7">
 							<div class="box_basic_top accent_bkg">
 								<h3>Wellbeing Tracker using PHP and MVC</h3>
 							</div>
