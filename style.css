@@ -546,4 +546,11 @@ footer a {
 /*eg header vs blue header?*/
 /*BEM Block Element Modifier*/
 
-/* 395 lines */
+.blog_text {
+	text-align: justify;
+  	text-justify: inter-word;
+}
+
+.blog_tags {
+	margin: 5px;
+}
