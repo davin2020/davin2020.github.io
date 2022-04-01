@@ -3,6 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Portfolio Website for Davin Stirling</title>
+	<style>
+		button {
+			background-color: lightgray;
+		}
+	</style>
 
 	<!-- Link Preview uisng meta tags and Open Graph Protocol tags -->
 	<meta name="description" content="Davin Stirling is an IT Professional pivoting into web development. Their portfolio contains projects from the iO Academy web dev bootcamp, as well as personal projects, mainly in the LAMP, WAMP and MERN stacks.">
@@ -167,28 +172,67 @@
 							<h3>Key Word Search</h3>
 						</div>
 						<div class="box_basic">
-							<p>PHP | JavaScript </p>
-							<button>PHP</button>
-							 <input type="submit" id="btnPHP" value="Show PHP">
-							 <input type="submit" id="btnJS" value="Show JS">
+							<!-- <p>PHP | JavaScript </p>
+							<button>PHP</button> -->
+							<br>
+							 <input type="submit" id="btnPHP" value="PHP" style="background-color: lightgray">
+							 <input type="submit" id="btnJS" value="JS">
+							 <input type="submit" id="btnCSS" value="CSS">
 						</div>
+
+							<!-- 
+							<div class="section_child allowKeywords" id="php-laravel-tshirts" data-keyword="php7">
+							<li data-languages="php js">PHP/JS</li>
+							try it with single keywords first? 
+							-->
+						<p>Temp Fake Projects are here<p>
+							<!-- when u click it, u want to show the matching ones, NOT hide the matching ones -->
+							<div id="projects">
+								
+								<div class="box_basic_top accent_bkg allowKeywords" data-keyword="php7">
+									<p data-keyword="php7">Laravel TShirt App</p>
+								</div>
+								<div class="box_basic_top accent_bkg allowKeywords" data-keyword="js6 css">
+									<p data-keyword="js6">Delorean Random Quote Generator</p>
+								</div>
+							</div>
+
 
 						<script>
 							let keywordPHP = document.getElementById("btnPHP");
 							keywordPHP.addEventListener("click", function() {
 								console.log('keyword php event listener');
+								if (keywordPHP.style.background == "lightgray") {
+									keywordPHP.style.background = "lightgreen"
+								}
+								else {
+									keywordPHP.style.background = "lightgray";
+								}
+								//keywordPHP.style.background = "lightyellow";
 								//make it bold/visually different
 							  	showProjectsWith("php7");
 							});
+
 							let keywordJS = document.getElementById("btnJS");
 							keywordJS.addEventListener("click", function() {
 								console.log('keyword php event listener');
+								keywordJS.style.background = "lightyellow"
+								keywordJS.style.background = ("lightyellow" ? 'lightblue' : 'lightyellow');
+								//keywordJS.style.colors = "lightblue"
 								//make it bold/visually different
 							  	showProjectsWith("js6");
 							});
 
+							//let keywordJS = document.getElementById("btnCSS");
+							document.getElementById("btnCSS").addEventListener("click", function() {
+								console.log('keyword _css event listener');
+								//make it bold/visually different
+							  	showProjectsWith("css");
+							});
+
 							function showProjectsWith(techItem) {
 								let techKeyword = techItem;
+								console.log('wanted keyword is : ' + techKeyword);
 								// if (techKeyword == "php") {
 									//need to make this dynamic
 										// let targetDiv = document.getElementById("php-laravel-tshirts");
@@ -204,17 +248,20 @@
 									let targetDivNodeList = document.querySelectorAll(".allowKeywords");
 									//need to check for matching keywords eg php !
 									//works ok for PHP keyword, but JS keywords actually hides it - cos i want to hide the ontes that are NOT the keyword
+
+									//1Apr22 change logic - if it matches, display-block it, regardless of toggle status , as multiple projects may have the same tech keyword
 									for (let i = 0; i < targetDivNodeList.length; i++) {
-										let currentTerm = targetDivNodeList[i].getAttribute("data-keyword");
-											console.log('currentTerm: ' + currentTerm);
+										//1Apr22 need to go another level deeper, as this return 'php,css' instead of separate words
+										let currentTerm = targetDivNodeList[i].getAttribute("data-keyword").split(' ');
+											console.log('.split currentTerm: ' + currentTerm);
 										//if dkeyword isnt the one u want, then hide it
 										if (currentTerm != techKeyword) {
 											if (targetDivNodeList[i].style.display == "none") {
 											    targetDivNodeList[i].style.display = "block";
-											    console.log('set dispaly block');
+											    console.log('set dispaly to block');
 											  } else {
 											    targetDivNodeList[i].style.display = "none";
-											    console.log('set dispaly none: ');
+											    console.log('set dispaly to none: ');
 											  }
 										}
 
@@ -274,7 +321,7 @@
 
 
 					<div class="section_parent"> 
-						<div class="section_child allowKeywords"  data-keyword="js6">
+						<div class="section_child allowKeywords"  data-keyword="js6 css">
 							<div class="box_basic_top accent_bkg">
 								<h3>Delorean themed Random Quotes Template</h3>
 							</div>
@@ -306,7 +353,7 @@
 
 
 
-						<div class="section_child allowKeywords"  data-keyword="php7">
+						<div class="section_child allowKeywords"  data-keyword="php7 css">
 							<div class="box_basic_top accent_bkg">
 								<h3>Wellbeing Tracker using PHP and MVC</h3>
 							</div>
