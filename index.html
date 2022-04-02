@@ -175,6 +175,13 @@
 							<!-- <p>PHP | JavaScript </p>
 							<button>PHP</button> -->
 							<br>
+							<div id="checkTechStack">
+								<input type="checkbox" name="techstack" value="php" />PHP
+								<label><input type="checkbox" name="techstack" value="js" />JS</label>
+							</div>
+
+							<br>
+							<br>
 							 <input type="submit" id="btnPHP" value="PHP" style="background-color: lightgray">
 							 <input type="submit" id="btnJS" value="JS">
 							 <input type="submit" id="btnCSS" value="CSS">
@@ -190,15 +197,110 @@
 							<div id="projects">
 								
 								<div class="box_basic_top accent_bkg allowKeywords" data-keyword="php7">
-									<p data-keyword="php7">Laravel TShirt App</p>
+									<p data-keyword="php7">Laravel TShirt App - PHP7</p>
 								</div>
 								<div class="box_basic_top accent_bkg allowKeywords" data-keyword="js6 css">
-									<p data-keyword="js6">Delorean Random Quote Generator</p>
+									<p data-keyword="js6">Delorean Random Quote Generato - JS6 CSSr</p>
+								</div>
+								<br>
+
+								<!-- keywords should be on project-level div that u want to hide -->
+								<div class="box_basic_top accent_bkg allowKeywords" data-tech="css">
+									<p>Solar System - CSS</p>
+								</div>
+								<br>
+								<div class="box_basic_top accent_bkg allowKeywords" data-tech="js">
+									<p>Just JS project</p>
+								</div>
+								<br>
+								<div class="box_basic_top accent_bkg allowKeywords" data-tech="js css">
+									<p>JS and CSS Project</p>
+								</div>
+								<br>
+								<div class="box_basic_top accent_bkg allowKeywords" data-tech="php">
+									<p>Wellbeing PHP Project</p>
 								</div>
 							</div>
 
 
 						<script>
+
+							//new stuff 2 April
+							let techstack_checkboxes = document.querySelectorAll('#checkTechStack input');
+
+							console.log('..about to add event listeners to csheckboxes : ');
+							for (let i=0; i<techstack_checkboxes.length; i++) {
+								techstack_checkboxes[i].addEventListener('change', findTechStackProjects)
+							}
+
+							let all_projects = document.querySelectorAll('#projects div[data-tech]');
+							console.log('all_projects length : ' + all_projects.length);
+							let all_projects2 = document.querySelectorAll('#projects data-tech');
+							console.log('all_projects2 length : ' + all_projects2.length);
+
+
+							//ticking the box hides the projets that DONT contain taht keyword
+							//BUT UNTICKING DOES NOTHING AT PRESENT !  > sSOLVED
+							//BUT cant select both php and js projects at same time
+							function findTechStackProjects() {
+								let techstacks = []; //aka languages
+								let project_languages = []; // mine was project_stack
+
+								
+
+								console.log(' __findTechStackProjects : ');
+								//get all the tech stacks that user wants to view and add them to a temp array
+								for (let i=0; i<techstack_checkboxes.length; i++) {
+									if (techstack_checkboxes[i].checked) {
+											techstacks.push(techstack_checkboxes[i].value);
+											console.log('..checkbox value : ' + techstack_checkboxes[i].value);
+									}
+								}
+								console.log('techstacks length : ' + techstacks.length);
+								//if thi is zero then show ALL the projects
+								
+
+								for (let z=0; z < all_projects.length; z++) {
+									//wht is this??
+									console.log('inside z, project length : ' + all_projects.length);
+									console.log('inside z, project value : ' + all_projects[z].value);
+									// project_languages = project_wrappers[k].getAttribute('data-languages').split(' ');
+									project_languages = all_projects[z].getAttribute('data-tech');
+									console.log('_project_languages length : ' + project_languages.length);
+									console.log('_project_languages value : ' + project_languages.value);
+
+									if (techstacks.length == 0) {
+										console.log(' display ALL projects as techstacks.length is zero ');
+										all_projects[z].style.display = 'block';
+									}
+
+									for (let j=0; j<techstacks.length; j++) {
+										if ( !project_languages.includes(techstacks[j]) ) {
+											console.log('..stackd doesnt match, setting display to none ' + techstacks[j]);
+											all_projects[z].style.display = 'none';
+
+										}
+										else {
+											//do i need the find_all option?
+											console.log('..stack MATCHES, setting display to BLOCK' + techstacks[j]);
+											all_projects[z].style.display = 'block';
+										}
+									}
+
+								}
+
+								
+
+								//loop over each project and if its data-keywords includes/contains a given techstack, then display block
+							}
+
+							// function showProjectsWith(techItem) {
+							// 	let techKeyword = techItem;
+							// 	console.log('wanted keyword is : ' + techKeyword);
+
+
+
+							//  original stuff
 							let keywordPHP = document.getElementById("btnPHP");
 							keywordPHP.addEventListener("click", function() {
 								console.log('keyword php event listener');
