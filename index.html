@@ -214,6 +214,10 @@
 								<div class="box_basic_top accent_bkg allowKeywords" data-tech="php">
 									<p>Wellbeing PHP Project</p>
 								</div>
+								<br>
+								<div class="box_basic_top accent_bkg allowKeywords" data-tech="php js">
+									<p>Project with JS and PHP </p>
+								</div>
 
 
 								<!-- prev older stuff  -->
@@ -304,16 +308,19 @@
 										//ISSUE if a project includes JS and PHP, finding PHP will show the project, but not finding JS will then HIDE the same project!
 										if ( !current_proj_techstack.includes(techstacks[j]) ) {
 											console.log('..stack doesnt match/include, '+ techstacks[j] +' thus setting display to NONE ' );
-											all_projects[z].style.display = 'none';
+											//all_projects[z].style.display = 'none';
 											found_all_keywords = false;
 											//is boolean actually being used correctly??
 										}
 										else {
 											//do i need the find_all option?
 											console.log('..stack MATCHES/includes tech user is after, so setting display to BLOCK ie showing ' + techstacks[j]);
-											all_projects[z].style.display = 'block';
+											//all_projects[z].style.display = 'block';
 										}
 									}
+									//project_wrappers[k].style.display = (found_all ? 'list-item' : 'none');
+									// NOW do the displaying here  - this is what i was missing! once ALL occurances of keywords have been found, finally do the actual displaying of projects
+									all_projects[z].style.display = (found_all_keywords ? 'block' : 'none');
 
 								}
 
