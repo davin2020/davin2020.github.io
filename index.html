@@ -196,13 +196,7 @@
 							<!-- when u click it, u want to show the matching ones, NOT hide the matching ones -->
 							<div id="projects">
 								
-								<div class="box_basic_top accent_bkg allowKeywords" data-keyword="php7">
-									<p data-keyword="php7">Laravel TShirt App - PHP7</p>
-								</div>
-								<div class="box_basic_top accent_bkg allowKeywords" data-keyword="js6 css">
-									<p data-keyword="js6">Delorean Random Quote Generato - JS6 CSSr</p>
-								</div>
-								<br>
+								
 
 								<!-- keywords should be on project-level div that u want to hide -->
 								<div class="box_basic_top accent_bkg allowKeywords" data-tech="css">
@@ -220,6 +214,18 @@
 								<div class="box_basic_top accent_bkg allowKeywords" data-tech="php">
 									<p>Wellbeing PHP Project</p>
 								</div>
+
+
+								<!-- prev older stuff  -->
+								<br>
+								<br>
+								<div class="box_basic_top accent_bkg allowKeywords" data-keyword="php7">
+									<p data-keyword="php7">Laravel TShirt App - PHP7</p>
+								</div>
+								<div class="box_basic_top accent_bkg allowKeywords" data-keyword="js6 css">
+									<p data-keyword="js6">Delorean Random Quote Generato - JS6 CSSr</p>
+								</div>
+								<br>
 							</div>
 
 
@@ -228,7 +234,7 @@
 							//new stuff 2 April
 							let techstack_checkboxes = document.querySelectorAll('#checkTechStack input');
 
-							console.log('..about to add event listeners to csheckboxes : ');
+							console.log('..about to add event listeners to checkboxes : ');
 							for (let i=0; i<techstack_checkboxes.length; i++) {
 								techstack_checkboxes[i].addEventListener('change', findTechStackProjects)
 							}
@@ -239,50 +245,72 @@
 							console.log('all_projects2 length : ' + all_projects2.length);
 
 
+
 							//ticking the box hides the projets that DONT contain taht keyword
 							//BUT UNTICKING DOES NOTHING AT PRESENT !  > sSOLVED
 							//BUT cant select both php and js projects at same time
 							function findTechStackProjects() {
 								let techstacks = []; //aka languages
 								let project_languages = []; // mine was project_stack
-
+								let current_proj_techstack = "";
+								var found_all_keywords = false;
 								
-
-								console.log(' __findTechStackProjects : ');
+								console.log("");
+								console.log(' __func findTechStackProjects ');
 								//get all the tech stacks that user wants to view and add them to a temp array
 								for (let i=0; i<techstack_checkboxes.length; i++) {
 									if (techstack_checkboxes[i].checked) {
 											techstacks.push(techstack_checkboxes[i].value);
-											console.log('..checkbox value : ' + techstack_checkboxes[i].value);
+											console.log('..checkbox value, ie what user wants to see : ' + techstack_checkboxes[i].value);
 									}
 								}
-								console.log('techstacks length : ' + techstacks.length);
+								console.log('techstacks length, of lang to find: ' + techstacks.length);
 								//if thi is zero then show ALL the projects
 								
 
+								//try getting this here 30Apr
+								//project_languages = all_projects[z].getAttribute('data-tech');
 								for (let z=0; z < all_projects.length; z++) {
 									//wht is this??
-									console.log('inside z, project length : ' + all_projects.length);
-									console.log('inside z, project value : ' + all_projects[z].value);
+									console.log('inside z for loop, all_projects length : ' + all_projects.length);
+									//im getting the whole div here, so i can later call DISPLAY BLOCK or NONE - the content is likely under getAttribute('data-tech') ?
+									console.log('inside z, all_projects value ALL : ' + all_projects[z].innerText);
 									// project_languages = project_wrappers[k].getAttribute('data-languages').split(' ');
+									
+									//all avail projects, should this be nested under FOR EACH project?
+									//is thsi actually the lang tech stack for the current proejct?
 									project_languages = all_projects[z].getAttribute('data-tech');
+									console.log('project_languages: ' + project_languages);
+									current_proj_techstack = all_projects[z].getAttribute('data-tech');
+									console.log('current_proj_techstack: ' + current_proj_techstack);
+
 									console.log('_project_languages length : ' + project_languages.length);
 									console.log('_project_languages value : ' + project_languages.value);
 
+									//outputs css
+									// for (let i=0; i<project_languages.length; i++) {
+									// 	console.log('_FOR project_languages value ' + project_languages[i] );
+									// }
+
+
 									if (techstacks.length == 0) {
-										console.log(' display ALL projects as techstacks.length is zero ');
+										console.log('_NOW_ display ALL projects as techstacks.length is ZERO ');
 										all_projects[z].style.display = 'block';
 									}
 
+									found_all_keywords = true;
+									//this isnt working when multiple check boxes are checked/ticked
 									for (let j=0; j<techstacks.length; j++) {
-										if ( !project_languages.includes(techstacks[j]) ) {
-											console.log('..stackd doesnt match, setting display to none ' + techstacks[j]);
+										//ISSUE if a project includes JS and PHP, finding PHP will show the project, but not finding JS will then HIDE the same project!
+										if ( !current_proj_techstack.includes(techstacks[j]) ) {
+											console.log('..stack doesnt match/include, '+ techstacks[j] +' thus setting display to NONE ' );
 											all_projects[z].style.display = 'none';
-
+											found_all_keywords = false;
+											//is boolean actually being used correctly??
 										}
 										else {
 											//do i need the find_all option?
-											console.log('..stack MATCHES, setting display to BLOCK' + techstacks[j]);
+											console.log('..stack MATCHES/includes tech user is after, so setting display to BLOCK ie showing ' + techstacks[j]);
 											all_projects[z].style.display = 'block';
 										}
 									}
