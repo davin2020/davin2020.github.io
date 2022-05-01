@@ -169,22 +169,161 @@
 				 -->
 					<div class="section_child">
 						<div class="box_basic_top accent_bkg">
-							<h3>Key Word Search</h3>
+							<h3>Tech Keyword Filter</h3>
 						</div>
 						<div class="box_basic">
 							<!-- <p>PHP | JavaScript </p>
 							<button>PHP</button> -->
 							<br>
 							<div id="checkTechStack">
-								<input type="checkbox" name="techstack" value="php" />PHP
-								<label><input type="checkbox" name="techstack" value="js" />JS</label>
+								<!-- TODO Add GH Link and Live Demo Later - ALpbahetise -->
+								<label>
+									<input type="checkbox" name="techstack" value="backend" />
+									<span>Backend</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="bcrypt" />
+									<span>BCrypt</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="bootstrap" />
+									<span>Bootstrap</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="css" />
+									<span>CSS</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="express" />
+									<span>Express</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="firebase" />
+									<span>Firebase Firestore DB</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="frontend" />
+									<span>Front End</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="fullstack" />
+									<span>Full stack</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="graphql" />
+									<span>GraphQL API</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="js" /> 
+									<span>JavaScript</span>
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="jpgraph" />
+									<span>JP Graph</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="jwt" />
+									<span>JWT</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="mongodb" />
+									<span>MongoDB</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="atlas" />
+									<span>MongoDB Atlas</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="mvc" />
+									<span>MVC</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="mysql" />
+									<span>MYSQL</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="node" />
+									<span>Node</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="php" /> 
+									<span>PHP</span>
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="phpunit" />
+									<span>PHP Unit</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="react" />
+									<span>React</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="responsive" />
+									<span>Responsive</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="rest" />
+									<span>REST API</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="slim4" />
+									<span>Slim 4</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="solid" />
+									<span>SOLID</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="svg" />
+									<span>SVG</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="tailwindcss" />
+									<span>Tailwind CSS</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="template" />
+									<span>Template</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="vue" />
+									<span>Vue</span> 
+								</label>
+								
 							</div>
 
-							<br>
+							<!-- <br>
 							<br>
 							 <input type="submit" id="btnPHP" value="PHP" style="background-color: lightgray">
 							 <input type="submit" id="btnJS" value="JS">
-							 <input type="submit" id="btnCSS" value="CSS">
+							 <input type="submit" id="btnCSS" value="CSS"> -->
 						</div>
 
 							<!-- 
@@ -192,14 +331,12 @@
 							<li data-languages="php js">PHP/JS</li>
 							try it with single keywords first? 
 							-->
-						<p>Temp Fake Projects are here<p>
+						<!-- <p>Temp Fake Projects are here<p> -->
 							<!-- when u click it, u want to show the matching ones, NOT hide the matching ones -->
 							<div id="projects">
 								
-								
-
 								<!-- keywords should be on project-level div that u want to hide -->
-								<div class="box_basic_top accent_bkg allowKeywords" data-tech="css">
+								<!-- <div class="box_basic_top accent_bkg allowKeywords" data-tech="css">
 									<p>Solar System - CSS</p>
 								</div>
 								<br>
@@ -218,22 +355,495 @@
 								<div class="box_basic_top accent_bkg allowKeywords" data-tech="php js">
 									<p>Project with JS and PHP </p>
 								</div>
-
+ -->
+								<!-- new test -->
+									<!-- <div class="section_child allowKeywords" id="php-laravel-tshirts" data-keyword="php7" data-tech="fullstack php laravel8 blade mysql">
+										<div class="box_basic_top accent_bkg">
+											<h3>Laravel TShirt App</h3>
+										</div>
+									</div> -->
 
 								<!-- prev older stuff  -->
-								<br>
-								<br>
-								<div class="box_basic_top accent_bkg allowKeywords" data-keyword="php7">
-									<p data-keyword="php7">Laravel TShirt App - PHP7</p>
-								</div>
-								<div class="box_basic_top accent_bkg allowKeywords" data-keyword="js6 css">
-									<p data-keyword="js6">Delorean Random Quote Generato - JS6 CSSr</p>
-								</div>
-								<br>
+									<!-- <br>
+									<br>
+									<div class="box_basic_top accent_bkg allowKeywords" data-keyword="php7">
+										<p data-keyword="php7">Laravel TShirt App - PHP7</p>
+									</div>
+									<div class="box_basic_top accent_bkg allowKeywords" data-keyword="js6 css">
+										<p data-keyword="js6">Delorean Random Quote Generato - JS6 CSSr</p>
+									</div>
+									<br> -->
 							</div>
 
 
-						<script>
+						<!-- JS  SCRIPT WAS HERE  -->
+
+					</div>
+
+					<!-- <div class="box_basic_top accent_bkg allowKeywords" data-tech="js css"> -->
+
+	<div id="myprojects">
+					<div class="section_child allowKeywords" id="php-laravel-tshirts" data-keyword="php7" data-tech="fullstack php laravel8 blade mysql">
+							<div class="box_basic_top accent_bkg">
+								<h3>Laravel TShirt App</h3>
+							</div>
+							<div class="box_basic">
+								<em>Work in Progress - Dec 2021</em><br>
+								<a href="https://bit.ly/LaraTshirts" target="_blank">
+									<img src="images/lara_tshirts.png" alt="Screenshot of the Laravel TShirt App" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>I've started learning Laravel 8 by following a tutorial about making a CRUD app, but customising the fields to make a TShirt App instead. I've also recently added an Image Uploader and deployed it as a demo site.</p> 
+								<p>I actually own a lot of tshirts, as I collect them whenever I go travelling, so they are usually about events or places I've been to. Sadly most of my tshirts are still in Auckland, as I only had a few with me when I travelled to the UK.</p>
+								<p>So far I've noticed that, compared to the Slim framework, there's a lot less boiler plate code required to get basic functionality up and running.</p>
+							</div>
+							<div class="box_basic">
+								<p> 
+								Full Stack <span class="accent">|</span>
+								PHP <span class="accent">|</span>
+								Laravel 8 <span class="accent">|</span>
+								Blade Templates <span class="accent">|</span>
+								MYSQL <span class="accent">|</span>
+								<a href="https://bit.ly/ghLaraTshirtsDev" target="_blank"  aria-label="Link to GitHub Repo for Laravel TShirts App">GitHub&nbspRepo&nbspDev&nbspBranch
+									<!-- GH icons arent visible any more, why? -->
+									<i class="fab fa-github-square fa-3x" title="Laravel TShirts App"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+
+					<div class="section_parent"> 
+						<div class="section_child allowKeywords"  data-keyword="js6 css"  data-tech="frontend js css3 html5">
+							<div class="box_basic_top accent_bkg">
+								<h3>Delorean themed Random Quotes Template</h3>
+							</div>
+							<div class="box_basic">
+								<em>Added Dec 2021</em><br>
+								<a href="https://bit.ly/RandomQuotesTemplate" target="_blank">
+									<img src="images/screenshot_random_quotes.png" alt="Screenshot of the Delorean Random Quote Generator Template website" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>I created a unicorn themed Random Quote generator with positive affirmations and then decided to turn it into a GitHub Template that others can use to generate their own Random Quotes.</p>
+								<p>Since I made this pre-Christmas, I also added a Toggle button to give a Snowing effect and make it more festive!</p>
+								<p>You can customise the template by adding your own text and images into the relevant arrays. For the Template repo I've used a Delorean theme, with quotes from the film Back to the Future.</p> 
+							</div>
+							<div class="box_basic">
+								<p>
+								<!-- Template <span class="accent">|</span> -->
+
+								Frontend <span class="accent">|</span>
+								JavaScript <span class="accent">|</span>
+								CSS3<span class="accent">|</span>
+								HTML5<span class="accent">|</span>
+								<a href="https://bit.ly/ghRandomQuotesTemplate" target="_blank"  aria-label="Link to GitHub Repo for Delorean Random Quote Generator Template website">GitHub&nbspRepo
+									<!-- GH icons arent visible any more, why? -->
+									<i class="fab fa-github-square fa-3x" title="Delorean Random Quote Generator Template website"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+
+
+						<div class="section_child allowKeywords"  data-keyword="php7 css" data-tech="fullstack php slim4 mvc jpgraph mysql responsive">
+							<div class="box_basic_top accent_bkg">
+								<h3>Wellbeing Tracker using PHP and MVC</h3>
+							</div>
+							<div class="box_basic">
+								<em>Updated Dec 2021</em><br>
+								<a href="https://bit.ly/WellbeingLive" target="_blank">
+									<div title="View Live Demo">
+										<img src="images/screenshot_wellbeing_graph.png" alt="Screenshot of the Wellbeing Tracking website - which is a list of questions on the left, eg 'I have felt ok about myself', with groups on radio buttons on the right where you can choose an answer on a frequency scale between 'Not At All' and 'Most of the Time'" class="portfolio-images">
+									</div>
+								</a>
+							</div>
+							<div class="box_basic">
+								<p class="livedemo_accent"><a href="https://bit.ly/WellbeingLive" target="_blank">View Live Demo</a></p>
+								<p>I'm interested in psychology so decided to digitise  the GP-CORE form where you can answer questions about subjective wellbeing.</p>
+								<p>CORE Forms from the <a href="https://www.coresystemtrust.org.uk/">CORE Systems Trust</a> can be used to monitor changes in wellbeing over time in health care situations. There are different versions, like <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> for the General Population which has 14 questions.</p>
+								<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library. This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.</p>
+								<details>
+									<summary>More</summary>
+									<p>In June I started restructuring the app into separate pages within a feature branch, and added register/login functionality. In August I finished protecting the routes and indivdual pages with sessions, and the app now has enough features that I've deployed a live demo version. In September I deployed a more mobile friendly version with better Media Queries and improved formatting of the Question Form</p>
+									<p>Next I need to tidy up my git branches so that all the feature commits in different branches get merged into main, and then I can start work on adding more features, like a password reset option and additional forms.</p>
+									<p>Some of my bigger challenges have been working out how to better use the graph plotting library, and learning more about using Git (eg cherry picking & stashing) in order to resolve certain branching issues I came across. I also discovered that some tech isn't meant to work together - like trying to add JWT to my project without realising its mainly intended for APIs and I'd written a (small) monolith...</p>
+								</details>
+							</div>
+							<div class="box_basic">
+								<p> 
+								Full Stack <span class="accent">|</span>
+								PHP <span class="accent">|</span> 
+								Slim 4 <span class="accent">|</span> 
+								MVC <span class="accent">|</span> 
+								JPGraph <span class="accent">|</span>
+								MYSQL <span class="accent">|</span> 
+								Responsive <span class="accent">|</span> 
+								<a href="https://bit.ly/ghWellbeingWIp" target="_blank"  aria-label="Link to GitHub Repo Feature Branch for Wellbeing Tracker">GitHub&nbspRepo&nbspFeature&nbspBranch
+									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child" data-tech="fullstack php slim4 js pwa">
+							<div class="box_basic_top accent_bkg">
+								<h3>Cat-themed PWA ToDo App</h3>
+							</div>
+							<div class="box_basic">
+								<em>Updated Dec 2021</em><br>
+								<a href="https://bit.ly/PWAtodo" target="_blank">
+									<img src="images/pwa_todo_cats.png" alt="Screenshot of the PWA ToDo App" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>As part of the bootcamp last year we did a half day workshop on PWAs or Progressive Web Apps.</p>
+								<p>We took an existing ToDo app written using the Slim 4 framework, and turned it into a PWA by adding a Service Worker to provide offline support.</p>
+								<p>I've since updated it by improving the styling and adding a cat-theme. I've also now got the live demo site setup and working with the Offline browser option.</p>
+							</div>
+							<div class="box_basic">
+								<p>
+								Full Stack <span class="accent">|</span>
+								PHP <span class="accent">|</span>
+								Slim 4 <span class="accent">|</span>
+								JavaScript ES6 <span class="accent">|</span>
+								PWA <span class="accent">|</span>
+								<a href="https://bit.ly/ghPWAtodo" target="_blank"  aria-label="Link to GitHub Repo for PWA ToDo App">GitHub&nbspRepo
+									<!-- GH icons arent visible any more, why? -->
+									<i class="fab fa-github-square fa-3x" title="PWA ToDo App"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child" data-tech="frontend js css3 html5">
+							<div class="box_basic_top accent_bkg">
+								<h3>Rock Paper Scissors Game</h3>
+							</div>
+							<div class="box_basic">
+								<em>Work in Progress - Oct 2021</em><br>
+								<a href="https://bit.ly/RockPaperLive" target="_blank">
+									<img src="images/screenshot_rock_wip_v7p2.png" alt="Screenshot of the Rock Paper Scissors Game" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>I'm currently working through a FrontEnd Mentor Challenge to build the Rock Paper Scissors game, and I've recentlly improved the layout and styling.</p>
+								<p>I've deliberatly tried to break the challenge down into tiny tasks and put them in separate branches, and then documented in the Readme how I went about solving this challenge in an iterative way.</p>
+							</div>
+							<div class="box_basic">
+								<p>
+								Frontend <span class="accent">|</span>
+								JavaScript <span class="accent">|</span>
+								CSS3 <span class="accent">|</span>
+								HTML5 <span class="accent">|</span> 
+								<a href="https://bit.ly/ghRockPaper" target="_blank"  aria-label="Link to GitHub Repo for Rock Paper Scissors Game">GitHub&nbspRepo
+									<!-- GH icons arent visible any more, why? -->
+									<i class="fab fa-github-square fa-3x" title="Rock Paper Scissors Game"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+						
+						<div class="section_child" data-tech="template php phpunit">
+							<div class="box_basic_top accent_bkg">
+								<h3>PHP Template with Unit Tests for Code Katas</h3>
+							</div>
+							<div class="box_basic">
+								<em>Sept/Oct 2021</em><br>
+								<img src="images/screenshot_php_boilerplate.png" alt="Screenshot of the PHP Template with Unit Tests for Code Kata" class="portfolio-images">
+							</div>
+							<div class="box_basic">
+								<p>I was working on a PHP code kata with my mentor and couldn't remember how to setup unit tests. So I thought I would make a GH Template repo that was already setup with such tests, so I could easily reuse it when practising other code kata or challenges.</p>
+								<h4>Reversi Game Kata</h4>
+								<p>I've since cloned the repo and used it for a kata to work out the next legal moves for a game of <a href="https://github.com/davin2020/reversi_game" target="_blank"  aria-label="Link to GitHub Repo for a Code Kata about the Game of Reversi">Reversi</a>. 
+								<h4>Poker Hands Game Kata</h4>
+								I'm currently also working through implementing the rules of Poker for another kata with my mentor.<p>
+							</div>
+							<div class="box_basic">
+								<p>
+								Template <span class="accent">|</span>
+								PHP <span class="accent">|</span>
+								PHPUnit <span class="accent">|</span> 
+								<a href="https://bit.ly/ghPHPboilerplate" target="_blank"  aria-label="Link to GitHub Repo for PHP Template with Unit Tests for Code Katas">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="PHP Template with Unit Tests for Code Katas"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child" data-tech="fullstack firebase js vue2 bootstrap tailwindcss">
+							<div class="box_basic_top accent_bkg">
+								<h3>48 Hour Hackathon - Lemonie Mental Health Exercises</h3>
+							</div>
+							<div class="box_basic">
+								<em>Submitted 18 July 2021</em><br>
+								<!-- add View Live Demo title to other images. https://awesome-dbt.web.app/  -->
+								<a href="https://bit.ly/LemonieHackathon" target="_blank">
+									<img src="images/hackathon_lemonie.png" alt="Screenshot of the Lemonie Mental Health Exercises website - the prototype contains 2 exercises and elements of gamification" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>I took part in my first 48 Hour hackathon over the weekend 16-18 July 2021, as part of <a href="https://level-up-society-13094.devpost.com/" target="_blank">Level Up Society Hackathon</a></p>
+								<p>It was both exciting and challenging to work with new people to try and design & build a prototype with gamification elements, all within 48 Hours!</p>
+								<p>We choose the categories of Mental Health and Learning and made a website where you can complete exercises based on a Dialectical Behaviour Therapy workbook</p>
+								<p>I mainly worked on setting up & designing the Firebase cloud DB, and writing functions using async/await in vanilla JS to add and get data from the DB. I also tried to integrate that with the Vue front end, but ran out of time.<p>
+								<p>Our Submission is here - <a href="https://devpost.com/software/team-awesome-force" target="_blank">Lemonie: Self Reflection for Recovery, by Team Awesome Force</a></p>
+								<p>Next I'd like to finish integrating the front and back ends and setup proper access controls for the cloud database.</p>
+							</div>
+							<div class="box_basic">
+								<p> 
+								Full Stack <span class="accent">|</span>
+								Firebase Firestore DB <span class="accent">|</span>
+								JavaScript ES6 <span class="accent">|</span>
+								Vue v2 <span class="accent">|</span>
+								Bootstrap <span class="accent">|</span>
+								Tailwind CSS <span class="accent">|</span>
+								<a href="https://bit.ly/ghLemonie" target="_blank"  aria-label="Link to GitHub Repo for Lemonie Mental Health Exercises">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Lemonie Mental Health Exercises Repo"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child" data-tech="frontend vue3">
+							<div class="box_basic_top accent_bkg">
+								<h3>Killjoys Themed Vue Example</h3>
+							</div>
+							<div class="box_basic">
+								<em>Work in Progress - July 2021</em><br>
+								<!-- <a href="https://xxx" target="_blank"> -->
+									<img src="images/vue_killjoys.png" alt="Screenshot of the xxx" class="portfolio-images">
+								<!-- </a> -->
+							</div>
+							<div class="box_basic">
+								<p>I attended a webinar about Vue and then googled for some further tutorials to make an example page, themed around characters & situations from the TV series Killjoys</p>
+							</div>
+							<div class="box_basic">
+								<p>
+								Frontend <span class="accent">|</span>
+								Vue v3 <span class="accent">|</span>
+								<a href="https://bit.ly/ghVueKilljoys" target="_blank"  aria-label="Link to GitHub Repo for Vue Examples">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Vue Examples  Repo"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child" data-tech="frontend js html5 css3">
+							<div class="box_basic_top accent_bkg">
+								<h3>Hack Night - Space Flight Booking Site</h3>
+							</div>
+							<div class="box_basic">
+								<em>Added April 2021</em><br>
+								<!-- <a href="live_url_when_ready" target="_blank"> -->
+									<img src="images/space_hacknight.png" alt="Screenshot of the Space Flight Booking Site - An outer space background with many small stars, with 3 orbiting planets indicating the day, month and year that you can book your space flight, and a central Check button representing the sun" class="portfolio-images">
+								<!-- </a> -->
+							</div>
+							<div class="box_basic">
+								<p>I attended a mini hack night in April, where teams of 3 were challenged to create a system that allows people to book a space flight, all in under 90mins!</p>
+								<p>We decided to make a website where you could select dates, and I was able to contribute ideas & code from my previous solar system animation, plus async/await for calls to the deliberatly flaky external API.</p>
+								<p>Although we didn't finish the website that evening, I really enjoyed the experience of being thrown together to create something tangible within a short timeframe.</p>
+								<p>Next I'd like to finish my take on the site by adding suitable booking success & failure images and making them appear & disappear at the right time.</p>
+							</div>
+							<div class="box_basic">
+								<p> 
+								Frontend <span class="accent">|</span>
+								JavaScript <span class="accent">|</span>
+								HMTL5 <span class="accent">|</span>
+								CSS3 
+								<!-- <span class="accent">|</span>  -->
+								<!-- <a href="https://github.com/davin2020/mini_hack_space" target="_blank"  aria-label="Link to GitHub Repo for Space Flight Booking Site">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
+								</a> -->
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child" data-tech="backend node express mongodb rest">
+							<div class="box_basic_top accent_bkg">
+								<h3>RESTful Banking API</h3>
+							</div>
+							<div class="box_basic">
+								<em>Finished March 2021</em><br>
+								<!-- <a href="xxx" target="_blank"> -->
+								<!-- could i make a link to postman workspaces in lieu of a demo site? -->
+									<img src="images/banking_api.png" alt="Screenshot of RESTful Banking API" class="portfolio-images">
+							</div>
+							<div class="box_basic">
+								<p>After learning about RESTful APIs and Node, I finished created a Banking API, themed with characters from the TV series Killjoys.</p>
+								<p>I later documented the API by adding routes, example requests, and local install instructions to the Readme</p>
+							</div>
+							<div class="box_basic">
+								<p> 
+								Backend <span class="accent">|</span>
+								Node.js <span class="accent">|</span> 
+								Express <span class="accent">|</span> 
+								MongoDB <span class="accent">|</span>
+								REST API <span class="accent">|</span>
+								<a href="http://bit.ly/ghBankingAPI" target="_blank"  aria-label="Link to GitHub Repo for RESTful Banking API">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Banking API Repo"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child" data-tech="fullstack graphql js node express jwt bcrypt react atlas mongodb">
+							<div class="box_basic_top accent_bkg">
+								<h3>Social Media Site using GraphQL</h3>
+							</div>
+							<div class="box_basic">
+								<em>Updated March 2021</em><br>
+								<a href="https://bit.ly/socialmdemo" target="_blank">
+									<img src="images/knowsy_app.png" alt="Screenshot of Social Media Site" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>As a team of 4 we made a 'Today I Learned' social media site called Knowsy. We decided to use the MERN stack, with separate repos for the front & backend, and GraphQL for the API calls to MongoDB.</p>
+								<details>
+									<summary>More</summary>
+									<p>We mostly did pair programming and I chose to work on the backend API. I was heavily involved in researching & creating the GraphQL queries & mutations, and later integrating the front & backends. We handled login manually, using the jsonwebtoken and  bcrypt node modules</p>
+									<p>This was our first scrum project working unsupervised, and I learned that I definitely prefer a more structured environment. Next time I would allocate time for researching before sprint/task planning, as we hadn't used GraphQL before. I would also allow more time when estimating tasks, to deal with the inevitable issues that crop up when trying to integrate different repos worked on by different people.
+									</p>
+									<p>On the demo site above, you can currently create an account or login with an existing account. The demo database is hosted in MongoDB Atlas</p>
+								</details>
+							</div>
+							<div class="box_basic">
+								<p> 
+								Full Stack <span class="accent">|</span>
+								GraphQL <span class="accent">|</span>
+								JavaScript ES6 <span class="accent">|</span>
+								Node <span class="accent">|</span>
+								Express <span class="accent">|</span>
+								JWT <span class="accent">|</span>
+								BCrypt <span class="accent">|</span>
+								React <span class="accent">|</span>
+								Atlas MongoDB <span class="accent">|</span>
+								<a href="https://bit.ly/ghSocialAPI" target="_blank"  aria-label="Link to GitHub Repo for for the Backend API of the Social Media website">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Knowsys Backend API Repo"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child" data-tech="fullstack php slim4 mvc mysql">
+							<div class="box_basic_top accent_bkg">
+								<h3>To Do App using PHP MVC</h3>
+							</div>
+							<div class="box_basic">
+								<em>Finished December 2020</em><br>
+								<a href="https://bit.ly/todoslim" target="_blank">
+									<img src="images/todo_app.png" alt="Screenshot of To Do App" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>We learned about MVC & PHP frameworks, then used them as part of an exercise to create a To Do app. We cloned an existing repo that contained the Slim 4 framework, and worked through the architecture plan as a group. I then worked independently to create the functionality to add, complete or delete a task from the underlying MySQL DB, using Routing, the Dependency Injection Container, Factories, Controllers & Views.</p>
+							</div>
+							<div class="box_basic">
+								<p> 
+								Full Stack <span class="accent">|</span>
+								PHP <span class="accent">|</span>
+								Slim 4 <span class="accent">|</span>
+								MVC <span class="accent">|</span>
+								MYSQL <span class="accent">|</span>
+								<a href="https://bit.ly/GHDtodo" target="_blank"  aria-label="Link to GitHub Repo for To Do App using PHP and MVC">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="To Do App Repo"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child" data-tech="fullstack php bootstrap mysql solid">
+							<div class="box_basic_top accent_bkg">
+								<h3>Scrum Master for Ecommerce Site using Design Patterns</h3>
+							</div>
+							<div class="box_basic">
+								<em>Finished November 2020</em><br>
+								<a href="https://bit.ly/robotstores" target="_blank">
+									<img src="images/robot_stores2	.png" alt="Screenshot of Ecommerce Website" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>I volunteered as Scrum Master and facilitated our team to create an e-commerce site based on existing product data. I used my previous OO experience to assist the team with creating the architecture plan for the site. </p>
+								<p>We decided to use the Hydrator Entity design pattern along with a PDO Connection in our LAMP stack, with HTML, CSS & Bootstrap for the frontend. We also reviewed the SOLID principles and adjusted the plan accordingly. I did pair programming to create some of the classes and peer reviewed colleagues code in GitHub. During  Sprint Review I gave a non-technical overview of the site's architecture.</p>
+							</div>
+							<div class="box_basic">
+								<p> 
+								Full Stack <span class="accent">|</span>
+								PHP <span class="accent">|</span> 
+								Bootstrap <span class="accent">|</span>
+								MYSQL <span class="accent">|</span> 
+								SOLID <span class="accent">|</span>
+								<a href="https://bit.ly/ghStores" target="_blank"  aria-label="Link to GitHub Repo for Ecommerce website">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Ecommerce Site Repo"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child" data-tech="frontend js html5 css3">
+							<div class="box_basic_top accent_bkg">
+								<h3>Jarver's Crypt Maze Game</h3>
+							</div>
+							<div class="box_basic">
+								<em>Finished October 2020</em><br>
+								<a href="https://bit.ly/jsmaze" target="_blank">
+									<img src="images/maze_game.png" alt="Screenshot of Jarver's Crypt Maze Game" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>As part of a scrum team of 8 people, we designed & created a maze game using Javascript. I did some pair programming to design the splash screen wireframe & code that, and coded the eventListeners to detect collisions with the path & ghost obstacles. I also implemented changes after our tutor's code reviews</p>
+							</div>
+							<div class="box_basic">
+								<p> 
+								Frontend <span class="accent">|</span>
+								JavaScript ES6<span class="accent">|</span> 
+								HMTL5 <span class="accent">|</span> 
+								CSS3 <span class="accent">|</span>
+								<a href="https://bit.ly/ghMaze" target="_blank"  aria-label="Link to GitHub Repo for Jarver's Crypt Maze Game">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Maze Game Repo"></i>
+								</a>
+								</p>
+							</div>
+						</div> 
+
+						<div class="section_child" data-tech="frontend html5 css3 svg">
+							<div class="box_basic_top accent_bkg">
+								<h3>Solar System Animation using only CSS and SVGs</h3>
+							</div>
+							<div class="box_basic">
+								<em>Finished October 2020</em><br>
+								<!-- TODO add br after other dates, otherwise last odd-numbered item has date NEXT to image -->
+								<a href="https://bit.ly/MilkyWaySVG" target="_blank">
+									<img src="images/solar_system.png" alt="Screenshot of Solar System Animation" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>As part of learning Advanced FrontEnd techniques, we created an animation of our solar system, using SVGs and keyframes & animations in CSS</p>
+							</div>
+							<div class="box_basic">
+								<p> 
+								Frontend <span class="accent">|</span>
+								HTML5 <span class="accent">|</span>
+								CSS3 <span class="accent">|</span>
+								SVG <span class="accent">|</span>
+								<a href="https://bit.ly/ghMilkyWaySVG" target="_blank"  aria-label="Link to GitHub Repo for Solar System Animation">GitHub&nbspRepo
+									<i class="fab fa-github-square fa-3x" title="Solar System Animation Repo"></i>
+								</a>
+								</p>
+							</div>
+						</div> 
+
+						<!-- add in Powershelll repo egs or not? -->
+					</div> 
+					<!-- end of div about myprojects -->
+
+					</div>
+				</details>
+			</section>
+
+				<script>
 
 							//new stuff 2 April
 							let techstack_checkboxes = document.querySelectorAll('#checkTechStack input');
@@ -243,7 +853,11 @@
 								techstack_checkboxes[i].addEventListener('change', findTechStackProjects)
 							}
 
-							let all_projects = document.querySelectorAll('#projects div[data-tech]');
+							//orignal
+							//let all_projects = document.querySelectorAll('#projects div[data-tech]');
+							//let all_projects = document.querySelectorAll('div[data-tech]');
+							let all_projects = document.querySelectorAll('#myprojects div[data-tech]');
+
 							console.log('all_projects length : ' + all_projects.length);
 							let all_projects2 = document.querySelectorAll('#projects data-tech');
 							console.log('all_projects2 length : ' + all_projects2.length);
@@ -278,7 +892,8 @@
 									//wht is this??
 									console.log('inside z for loop, all_projects length : ' + all_projects.length);
 									//im getting the whole div here, so i can later call DISPLAY BLOCK or NONE - the content is likely under getAttribute('data-tech') ?
-									console.log('inside z, all_projects value ALL : ' + all_projects[z].innerText);
+									//console.log('inside z, all_projects value ALL : ' + all_projects[z].innerText);
+									console.log('inside z, all_projects value ALL : ' + all_projects[z].h3);
 									// project_languages = project_wrappers[k].getAttribute('data-languages').split(' ');
 									
 									//all avail projects, should this be nested under FOR EACH project?
@@ -423,464 +1038,6 @@
 							// } IF
 
 						</script>
-
-					</div>
-
-					<div class="section_child allowKeywords" id="php-laravel-tshirts" data-keyword="php7">
-							<div class="box_basic_top accent_bkg">
-								<h3>Laravel TShirt App</h3>
-							</div>
-							<div class="box_basic">
-								<em>Work in Progress - Dec 2021</em><br>
-								<a href="https://bit.ly/LaraTshirts" target="_blank">
-									<img src="images/lara_tshirts.png" alt="Screenshot of the Laravel TShirt App" class="portfolio-images">
-								</a>
-							</div>
-							<div class="box_basic">
-								<p>I've started learning Laravel 8 by following a tutorial about making a CRUD app, but customising the fields to make a TShirt App instead. I've also recently added an Image Uploader and deployed it as a demo site.</p> 
-								<p>I actually own a lot of tshirts, as I collect them whenever I go travelling, so they are usually about events or places I've been to. Sadly most of my tshirts are still in Auckland, as I only had a few with me when I travelled to the UK.</p>
-								<p>So far I've noticed that, compared to the Slim framework, there's a lot less boiler plate code required to get basic functionality up and running.</p>
-							</div>
-							<div class="box_basic">
-								<p>
-								Full Stack <span class="accent">|</span>
-								PHP <span class="accent">|</span>
-								Laravel 8 <span class="accent">|</span>
-								Blade Templates <span class="accent">|</span>
-								MYSQL <span class="accent">|</span>
-								<a href="https://bit.ly/ghLaraTshirtsDev" target="_blank"  aria-label="Link to GitHub Repo for Laravel TShirts App">GitHub&nbspRepo&nbspDev&nbspBranch
-									<!-- GH icons arent visible any more, why? -->
-									<i class="fab fa-github-square fa-3x" title="Laravel TShirts App"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-
-
-					<div class="section_parent"> 
-						<div class="section_child allowKeywords"  data-keyword="js6 css">
-							<div class="box_basic_top accent_bkg">
-								<h3>Delorean themed Random Quotes Template</h3>
-							</div>
-							<div class="box_basic">
-								<em>Added Dec 2021</em><br>
-								<a href="https://bit.ly/RandomQuotesTemplate" target="_blank">
-									<img src="images/screenshot_random_quotes.png" alt="Screenshot of the Delorean Random Quote Generator Template website" class="portfolio-images">
-								</a>
-							</div>
-							<div class="box_basic">
-								<p>I created a unicorn themed Random Quote generator with positive affirmations and then decided to turn it into a GitHub Template that others can use to generate their own Random Quotes.</p>
-								<p>Since I made this pre-Christmas, I also added a Toggle button to give a Snowing effect and make it more festive!</p>
-								<p>You can customise the template by adding your own text and images into the relevant arrays. For the Template repo I've used a Delorean theme, with quotes from the film Back to the Future.</p> 
-							</div>
-							<div class="box_basic">
-								<p>
-								<!-- Template <span class="accent">|</span> -->
-								Frontend <span class="accent">|</span>
-								JavaScript <span class="accent">|</span>
-								CSS3<span class="accent">|</span>
-								HTML5<span class="accent">|</span>
-								<a href="https://bit.ly/ghRandomQuotesTemplate" target="_blank"  aria-label="Link to GitHub Repo for Delorean Random Quote Generator Template website">GitHub&nbspRepo
-									<!-- GH icons arent visible any more, why? -->
-									<i class="fab fa-github-square fa-3x" title="Delorean Random Quote Generator Template website"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-
-
-
-						<div class="section_child allowKeywords"  data-keyword="php7 css">
-							<div class="box_basic_top accent_bkg">
-								<h3>Wellbeing Tracker using PHP and MVC</h3>
-							</div>
-							<div class="box_basic">
-								<em>Updated Dec 2021</em><br>
-								<a href="https://bit.ly/WellbeingLive" target="_blank">
-									<div title="View Live Demo">
-										<img src="images/screenshot_wellbeing_graph.png" alt="Screenshot of the Wellbeing Tracking website - which is a list of questions on the left, eg 'I have felt ok about myself', with groups on radio buttons on the right where you can choose an answer on a frequency scale between 'Not At All' and 'Most of the Time'" class="portfolio-images">
-									</div>
-								</a>
-							</div>
-							<div class="box_basic">
-								<p class="livedemo_accent"><a href="https://bit.ly/WellbeingLive" target="_blank">View Live Demo</a></p>
-								<p>I'm interested in psychology so decided to digitise  the GP-CORE form where you can answer questions about subjective wellbeing.</p>
-								<p>CORE Forms from the <a href="https://www.coresystemtrust.org.uk/">CORE Systems Trust</a> can be used to monitor changes in wellbeing over time in health care situations. There are different versions, like <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> for the General Population which has 14 questions.</p>
-								<p>After collecting the answers on the form, and storing them in the MySQL database, I plotted the overall score on a graph using the JpGraph library. This app is built using the Slim 4 framework and MVC pattern, and is still a work in progress.</p>
-								<details>
-									<summary>More</summary>
-									<p>In June I started restructuring the app into separate pages within a feature branch, and added register/login functionality. In August I finished protecting the routes and indivdual pages with sessions, and the app now has enough features that I've deployed a live demo version. In September I deployed a more mobile friendly version with better Media Queries and improved formatting of the Question Form</p>
-									<p>Next I need to tidy up my git branches so that all the feature commits in different branches get merged into main, and then I can start work on adding more features, like a password reset option and additional forms.</p>
-									<p>Some of my bigger challenges have been working out how to better use the graph plotting library, and learning more about using Git (eg cherry picking & stashing) in order to resolve certain branching issues I came across. I also discovered that some tech isn't meant to work together - like trying to add JWT to my project without realising its mainly intended for APIs and I'd written a (small) monolith...</p>
-								</details>
-							</div>
-							<div class="box_basic">
-								<p>
-								Full Stack <span class="accent">|</span>
-								PHP <span class="accent">|</span> 
-								Slim 4 <span class="accent">|</span> 
-								MVC <span class="accent">|</span> 
-								JPGraph <span class="accent">|</span>
-								MYSQL <span class="accent">|</span> 
-								Responsive <span class="accent">|</span> 
-								<a href="https://bit.ly/ghWellbeingWIp" target="_blank"  aria-label="Link to GitHub Repo Feature Branch for Wellbeing Tracker">GitHub&nbspRepo&nbspFeature&nbspBranch
-									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Cat-themed PWA ToDo App</h3>
-							</div>
-							<div class="box_basic">
-								<em>Updated Dec 2021</em><br>
-								<a href="https://bit.ly/PWAtodo" target="_blank">
-									<img src="images/pwa_todo_cats.png" alt="Screenshot of the PWA ToDo App" class="portfolio-images">
-								</a>
-							</div>
-							<div class="box_basic">
-								<p>As part of the bootcamp last year we did a half day workshop on PWAs or Progressive Web Apps.</p>
-								<p>We took an existing ToDo app written using the Slim 4 framework, and turned it into a PWA by adding a Service Worker to provide offline support.</p>
-								<p>I've since updated it by improving the styling and adding a cat-theme. I've also now got the live demo site setup and working with the Offline browser option.</p>
-							</div>
-							<div class="box_basic">
-								<p>
-								Full Stack <span class="accent">|</span>
-								PHP <span class="accent">|</span>
-								Slim 4 <span class="accent">|</span>
-								JavaScript ES6 <span class="accent">|</span>
-								PWA <span class="accent">|</span>
-								<a href="https://bit.ly/ghPWAtodo" target="_blank"  aria-label="Link to GitHub Repo for PWA ToDo App">GitHub&nbspRepo
-									<!-- GH icons arent visible any more, why? -->
-									<i class="fab fa-github-square fa-3x" title="PWA ToDo App"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Rock Paper Scissors Game</h3>
-							</div>
-							<div class="box_basic">
-								<em>Work in Progress - Oct 2021</em><br>
-								<a href="https://bit.ly/RockPaperLive" target="_blank">
-									<img src="images/screenshot_rock_wip_v7p2.png" alt="Screenshot of the Rock Paper Scissors Game" class="portfolio-images">
-								</a>
-							</div>
-							<div class="box_basic">
-								<p>I'm currently working through a FrontEnd Mentor Challenge to build the Rock Paper Scissors game, and I've recentlly improved the layout and styling.</p>
-								<p>I've deliberatly tried to break the challenge down into tiny tasks and put them in separate branches, and then documented in the Readme how I went about solving this challenge in an iterative way.</p>
-							</div>
-							<div class="box_basic">
-								<p>
-								Frontend <span class="accent">|</span>
-								JavaScript <span class="accent">|</span>
-								CSS3 <span class="accent">|</span>
-								HTML5 <span class="accent">|</span> 
-								<a href="https://bit.ly/ghRockPaper" target="_blank"  aria-label="Link to GitHub Repo for Rock Paper Scissors Game">GitHub&nbspRepo
-									<!-- GH icons arent visible any more, why? -->
-									<i class="fab fa-github-square fa-3x" title="Rock Paper Scissors Game"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-						
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>PHP Template with Unit Tests for Code Katas</h3>
-							</div>
-							<div class="box_basic">
-								<em>Sept/Oct 2021</em><br>
-								<img src="images/screenshot_php_boilerplate.png" alt="Screenshot of the PHP Template with Unit Tests for Code Kata" class="portfolio-images">
-							</div>
-							<div class="box_basic">
-								<p>I was working on a PHP code kata with my mentor and couldn't remember how to setup unit tests. So I thought I would make a GH Template repo that was already setup with such tests, so I could easily reuse it when practising other code kata or challenges.</p>
-								<h4>Reversi Game Kata</h4>
-								<p>I've since cloned the repo and used it for a kata to work out the next legal moves for a game of <a href="https://github.com/davin2020/reversi_game" target="_blank"  aria-label="Link to GitHub Repo for a Code Kata about the Game of Reversi">Reversi</a>. 
-								<h4>Poker Hands Game Kata</h4>
-								I'm currently also working through implementing the rules of Poker for another kata with my mentor.<p>
-							</div>
-							<div class="box_basic">
-								<p>
-								Template <span class="accent">|</span>
-								PHP <span class="accent">|</span>
-								PHPUnit <span class="accent">|</span> 
-								<a href="https://bit.ly/ghPHPboilerplate" target="_blank"  aria-label="Link to GitHub Repo for PHP Template with Unit Tests for Code Katas">GitHub&nbspRepo
-									<i class="fab fa-github-square fa-3x" title="PHP Template with Unit Tests for Code Katas"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>48 Hour Hackathon - Lemonie Mental Health Exercises</h3>
-							</div>
-							<div class="box_basic">
-								<em>Submitted 18 July 2021</em><br>
-								<!-- add View Live Demo title to other images. https://awesome-dbt.web.app/  -->
-								<a href="https://bit.ly/LemonieHackathon" target="_blank">
-									<img src="images/hackathon_lemonie.png" alt="Screenshot of the Lemonie Mental Health Exercises website - the prototype contains 2 exercises and elements of gamification" class="portfolio-images">
-								</a>
-							</div>
-							<div class="box_basic">
-								<p>I took part in my first 48 Hour hackathon over the weekend 16-18 July 2021, as part of <a href="https://level-up-society-13094.devpost.com/" target="_blank">Level Up Society Hackathon</a></p>
-								<p>It was both exciting and challenging to work with new people to try and design & build a prototype with gamification elements, all within 48 Hours!</p>
-								<p>We choose the categories of Mental Health and Learning and made a website where you can complete exercises based on a Dialectical Behaviour Therapy workbook</p>
-								<p>I mainly worked on setting up & designing the Firebase cloud DB, and writing functions using async/await in vanilla JS to add and get data from the DB. I also tried to integrate that with the Vue front end, but ran out of time.<p>
-								<p>Our Submission is here - <a href="https://devpost.com/software/team-awesome-force" target="_blank">Lemonie: Self Reflection for Recovery, by Team Awesome Force</a></p>
-								<p>Next I'd like to finish integrating the front and back ends and setup proper access controls for the cloud database.</p>
-							</div>
-							<div class="box_basic">
-								<p>
-								Full Stack <span class="accent">|</span>
-								Firebase Firestore DB <span class="accent">|</span>
-								JavaScript ES6 <span class="accent">|</span>
-								Vue v2 <span class="accent">|</span>
-								Bootstrap <span class="accent">|</span>
-								Tailwind CSS <span class="accent">|</span>
-								<a href="https://bit.ly/ghLemonie" target="_blank"  aria-label="Link to GitHub Repo for Lemonie Mental Health Exercises">GitHub&nbspRepo
-									<i class="fab fa-github-square fa-3x" title="Lemonie Mental Health Exercises Repo"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Killjoys Themed Vue Example</h3>
-							</div>
-							<div class="box_basic">
-								<em>Work in Progress - July 2021</em><br>
-								<!-- <a href="https://xxx" target="_blank"> -->
-									<img src="images/vue_killjoys.png" alt="Screenshot of the xxx" class="portfolio-images">
-								<!-- </a> -->
-							</div>
-							<div class="box_basic">
-								<p>I attended a webinar about Vue and then googled for some further tutorials to make an example page, themed around characters & situations from the TV series Killjoys</p>
-							</div>
-							<div class="box_basic">
-								<p>
-								Frontend <span class="accent">|</span>
-								Vue v3 <span class="accent">|</span>
-								<a href="https://bit.ly/ghVueKilljoys" target="_blank"  aria-label="Link to GitHub Repo for Vue Examples">GitHub&nbspRepo
-									<i class="fab fa-github-square fa-3x" title="Vue Examples  Repo"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Hack Night - Space Flight Booking Site</h3>
-							</div>
-							<div class="box_basic">
-								<em>Added April 2021</em><br>
-								<!-- <a href="live_url_when_ready" target="_blank"> -->
-									<img src="images/space_hacknight.png" alt="Screenshot of the Space Flight Booking Site - An outer space background with many small stars, with 3 orbiting planets indicating the day, month and year that you can book your space flight, and a central Check button representing the sun" class="portfolio-images">
-								<!-- </a> -->
-							</div>
-							<div class="box_basic">
-								<p>I attended a mini hack night in April, where teams of 3 were challenged to create a system that allows people to book a space flight, all in under 90mins!</p>
-								<p>We decided to make a website where you could select dates, and I was able to contribute ideas & code from my previous solar system animation, plus async/await for calls to the deliberatly flaky external API.</p>
-								<p>Although we didn't finish the website that evening, I really enjoyed the experience of being thrown together to create something tangible within a short timeframe.</p>
-								<p>Next I'd like to finish my take on the site by adding suitable booking success & failure images and making them appear & disappear at the right time.</p>
-							</div>
-							<div class="box_basic">
-								<p>
-								Frontend <span class="accent">|</span>
-								JavaScript <span class="accent">|</span>
-								HMTL5 <span class="accent">|</span>
-								CSS3 
-								<!-- <span class="accent">|</span>  -->
-								<!-- <a href="https://github.com/davin2020/mini_hack_space" target="_blank"  aria-label="Link to GitHub Repo for Space Flight Booking Site">GitHub&nbspRepo
-									<i class="fab fa-github-square fa-3x" title="Wellbeing Tracking Form Repo"></i>
-								</a> -->
-								</p>
-							</div>
-						</div>
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>RESTful Banking API</h3>
-							</div>
-							<div class="box_basic">
-								<em>Finished March 2021</em><br>
-								<!-- <a href="xxx" target="_blank"> -->
-								<!-- could i make a link to postman workspaces in lieu of a demo site? -->
-									<img src="images/banking_api.png" alt="Screenshot of RESTful Banking API" class="portfolio-images">
-							</div>
-							<div class="box_basic">
-								<p>After learning about RESTful APIs and Node, I finished created a Banking API, themed with characters from the TV series Killjoys.</p>
-								<p>I later documented the API by adding routes, example requests, and local install instructions to the Readme</p>
-							</div>
-							<div class="box_basic">
-								<p>
-								Backend <span class="accent">|</span>
-								Node.js <span class="accent">|</span> 
-								Express <span class="accent">|</span> 
-								MongoDB <span class="accent">|</span>
-								REST API <span class="accent">|</span>
-								<a href="http://bit.ly/ghBankingAPI" target="_blank"  aria-label="Link to GitHub Repo for RESTful Banking API">GitHub&nbspRepo
-									<i class="fab fa-github-square fa-3x" title="Banking API Repo"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Social Media Site using GraphQL</h3>
-							</div>
-							<div class="box_basic">
-								<em>Updated March 2021</em><br>
-								<a href="https://bit.ly/socialmdemo" target="_blank">
-									<img src="images/knowsy_app.png" alt="Screenshot of Social Media Site" class="portfolio-images">
-								</a>
-							</div>
-							<div class="box_basic">
-								<p>As a team of 4 we made a 'Today I Learned' social media site called Knowsy. We decided to use the MERN stack, with separate repos for the front & backend, and GraphQL for the API calls to MongoDB.</p>
-								<details>
-									<summary>More</summary>
-									<p>We mostly did pair programming and I chose to work on the backend API. I was heavily involved in researching & creating the GraphQL queries & mutations, and later integrating the front & backends. We handled login manually, using the jsonwebtoken and  bcrypt node modules</p>
-									<p>This was our first scrum project working unsupervised, and I learned that I definitely prefer a more structured environment. Next time I would allocate time for researching before sprint/task planning, as we hadn't used GraphQL before. I would also allow more time when estimating tasks, to deal with the inevitable issues that crop up when trying to integrate different repos worked on by different people.
-									</p>
-									<p>On the demo site above, you can currently create an account or login with an existing account. The demo database is hosted in MongoDB Atlas</p>
-								</details>
-							</div>
-							<div class="box_basic">
-								<p>
-								Full Stack <span class="accent">|</span>
-								GraphQL <span class="accent">|</span>
-								Node <span class="accent">|</span>
-								Express <span class="accent">|</span>
-								JWT <span class="accent">|</span>
-								BCrypt <span class="accent">|</span>
-								React <span class="accent">|</span>
-								Atlas MongoDB <span class="accent">|</span>
-								<a href="https://bit.ly/ghSocialAPI" target="_blank"  aria-label="Link to GitHub Repo for for the Backend API of the Social Media website">GitHub&nbspRepo
-									<i class="fab fa-github-square fa-3x" title="Knowsys Backend API Repo"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>To Do App using PHP MVC</h3>
-							</div>
-							<div class="box_basic">
-								<em>Finished December 2020</em><br>
-								<a href="https://bit.ly/todoslim" target="_blank">
-									<img src="images/todo_app.png" alt="Screenshot of To Do App" class="portfolio-images">
-								</a>
-							</div>
-							<div class="box_basic">
-								<p>We learned about MVC & PHP frameworks, then used them as part of an exercise to create a To Do app. We cloned an existing repo that contained the Slim 4 framework, and worked through the architecture plan as a group. I then worked independently to create the functionality to add, complete or delete a task from the underlying MySQL DB, using Routing, the Dependency Injection Container, Factories, Controllers & Views.</p>
-							</div>
-							<div class="box_basic">
-								<p>
-								Full Stack <span class="accent">|</span>
-								PHP <span class="accent">|</span>
-								Slim 4 <span class="accent">|</span>
-								MVC <span class="accent">|</span>
-								MYSQL <span class="accent">|</span>
-								<a href="https://bit.ly/GHDtodo" target="_blank"  aria-label="Link to GitHub Repo for To Do App using PHP and MVC">GitHub&nbspRepo
-									<i class="fab fa-github-square fa-3x" title="To Do App Repo"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Scrum Master for Ecommerce Site using Design Patterns</h3>
-							</div>
-							<div class="box_basic">
-								<em>Finished November 2020</em><br>
-								<a href="https://bit.ly/robotstores" target="_blank">
-									<img src="images/robot_stores2	.png" alt="Screenshot of Ecommerce Website" class="portfolio-images">
-								</a>
-							</div>
-							<div class="box_basic">
-								<p>I volunteered as Scrum Master and facilitated our team to create an e-commerce site based on existing product data. I used my previous OO experience to assist the team with creating the architecture plan for the site. </p>
-								<p>We decided to use the Hydrator Entity design pattern along with a PDO Connection in our LAMP stack, with HTML, CSS & Bootstrap for the frontend. We also reviewed the SOLID principles and adjusted the plan accordingly. I did pair programming to create some of the classes and peer reviewed colleagues code in GitHub. During  Sprint Review I gave a non-technical overview of the site's architecture.</p>
-							</div>
-							<div class="box_basic">
-								<p>
-								Full Stack <span class="accent">|</span>
-								PHP <span class="accent">|</span> 
-								Bootstrap <span class="accent">|</span>
-								MYSQL <span class="accent">|</span> 
-								SOLID <span class="accent">|</span>
-								<a href="https://bit.ly/ghStores" target="_blank"  aria-label="Link to GitHub Repo for Ecommerce website">GitHub&nbspRepo
-									<i class="fab fa-github-square fa-3x" title="Ecommerce Site Repo"></i>
-								</a>
-								</p>
-							</div>
-						</div>
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Jarver's Crypt Maze Game</h3>
-							</div>
-							<div class="box_basic">
-								<em>Finished October 2020</em><br>
-								<a href="https://bit.ly/jsmaze" target="_blank">
-									<img src="images/maze_game.png" alt="Screenshot of Jarver's Crypt Maze Game" class="portfolio-images">
-								</a>
-							</div>
-							<div class="box_basic">
-								<p>As part of a scrum team of 8 people, we designed & created a maze game using Javascript. I did some pair programming to design the splash screen wireframe & code that, and coded the eventListeners to detect collisions with the path & ghost obstacles. I also implemented changes after our tutor's code reviews</p>
-							</div>
-							<div class="box_basic">
-								<p>
-								Frontend <span class="accent">|</span>
-								JavaScript ES6<span class="accent">|</span> 
-								HMTL5 <span class="accent">|</span> 
-								CSS3 <span class="accent">|</span>
-								<a href="https://bit.ly/ghMaze" target="_blank"  aria-label="Link to GitHub Repo for Jarver's Crypt Maze Game">GitHub&nbspRepo
-									<i class="fab fa-github-square fa-3x" title="Maze Game Repo"></i>
-								</a>
-								</p>
-							</div>
-						</div> 
-
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Solar System Animation using only CSS and SVGs</h3>
-							</div>
-							<div class="box_basic">
-								<em>Finished October 2020</em><br>
-								<!-- TODO add br after other dates, otherwise last odd-numbered item has date NEXT to image -->
-								<a href="https://bit.ly/MilkyWaySVG" target="_blank">
-									<img src="images/solar_system.png" alt="Screenshot of Solar System Animation" class="portfolio-images">
-								</a>
-							</div>
-							<div class="box_basic">
-								<p>As part of learning Advanced FrontEnd techniques, we created an animation of our solar system, using SVGs and keyframes & animations in CSS</p>
-							</div>
-							<div class="box_basic">
-								<p>
-								Frontend <span class="accent">|</span>
-								HTML5 <span class="accent">|</span>
-								CSS3 <span class="accent">|</span>
-								SVG <span class="accent">|</span>
-								<a href="https://bit.ly/ghMilkyWaySVG" target="_blank"  aria-label="Link to GitHub Repo for Solar System Animation">GitHub&nbspRepo
-									<i class="fab fa-github-square fa-3x" title="Solar System Animation Repo"></i>
-								</a>
-								</p>
-							</div>
-						</div> 
-
-						<!-- add in Powershelll repo egs or not? -->
-
-					</div>
-				</details>
-			</section>
 
 
 			<div class="visual-separator width_60"> </div>
