@@ -159,24 +159,14 @@
 						<h2 class="section__title">Projects</h2>
 					</summary>
 				
-
-				<!--  FILTER BY KEYWRODS 29 DEC 2021
-				need to have array of data that is easy to filter and option to show/hide block when filter tag/keyword is clicked ie event harndler 
-				should i also store all my data in an array/jsono?
-
-				29jan22 need thmml toggle buttons
-
-				 -->
 					<div class="section_child">
 						<div class="box_basic_top accent_bkg">
 							<h3>Tech Keyword Filter</h3>
 						</div>
 						<div class="box_basic">
-							<!-- <p>PHP | JavaScript </p>
-							<button>PHP</button> -->
 							<br>
 							<div id="checkTechStack">
-								<!-- TODO Add GH Link and Live Demo Later - ALpbahetise -->
+								<!-- TODO Add GH Link and Live Demo Later - TODO Style as buttons instead of checkboxes -->
 								<label>
 									<input type="checkbox" name="techstack" value="backend" />
 									<span>Backend</span> 
@@ -318,71 +308,10 @@
 								</label>
 								
 							</div>
-
-							<!-- <br>
-							<br>
-							 <input type="submit" id="btnPHP" value="PHP" style="background-color: lightgray">
-							 <input type="submit" id="btnJS" value="JS">
-							 <input type="submit" id="btnCSS" value="CSS"> -->
 						</div>
-
-							<!-- 
-							<div class="section_child allowKeywords" id="php-laravel-tshirts" data-keyword="php7">
-							<li data-languages="php js">PHP/JS</li>
-							try it with single keywords first? 
-							-->
-						<!-- <p>Temp Fake Projects are here<p> -->
-							<!-- when u click it, u want to show the matching ones, NOT hide the matching ones -->
-							<div id="projects">
-								
-								<!-- keywords should be on project-level div that u want to hide -->
-								<!-- <div class="box_basic_top accent_bkg allowKeywords" data-tech="css">
-									<p>Solar System - CSS</p>
-								</div>
-								<br>
-								<div class="box_basic_top accent_bkg allowKeywords" data-tech="js">
-									<p>Just JS project</p>
-								</div>
-								<br>
-								<div class="box_basic_top accent_bkg allowKeywords" data-tech="js css">
-									<p>JS and CSS Project</p>
-								</div>
-								<br>
-								<div class="box_basic_top accent_bkg allowKeywords" data-tech="php">
-									<p>Wellbeing PHP Project</p>
-								</div>
-								<br>
-								<div class="box_basic_top accent_bkg allowKeywords" data-tech="php js">
-									<p>Project with JS and PHP </p>
-								</div>
- -->
-								<!-- new test -->
-									<!-- <div class="section_child allowKeywords" id="php-laravel-tshirts" data-keyword="php7" data-tech="fullstack php laravel8 blade mysql">
-										<div class="box_basic_top accent_bkg">
-											<h3>Laravel TShirt App</h3>
-										</div>
-									</div> -->
-
-								<!-- prev older stuff  -->
-									<!-- <br>
-									<br>
-									<div class="box_basic_top accent_bkg allowKeywords" data-keyword="php7">
-										<p data-keyword="php7">Laravel TShirt App - PHP7</p>
-									</div>
-									<div class="box_basic_top accent_bkg allowKeywords" data-keyword="js6 css">
-										<p data-keyword="js6">Delorean Random Quote Generato - JS6 CSSr</p>
-									</div>
-									<br> -->
-							</div>
-
-
-						<!-- JS  SCRIPT WAS HERE  -->
-
 					</div>
 
-					<!-- <div class="box_basic_top accent_bkg allowKeywords" data-tech="js css"> -->
-
-	<div id="myprojects">
+				<div id="myprojects">
 					<div class="section_child allowKeywords" id="php-laravel-tshirts" data-keyword="php7" data-tech="fullstack php laravel8 blade mysql">
 							<div class="box_basic_top accent_bkg">
 								<h3>Laravel TShirt App</h3>
@@ -413,9 +342,8 @@
 							</div>
 						</div>
 
-
 					<div class="section_parent"> 
-						<div class="section_child allowKeywords"  data-keyword="js6 css"  data-tech="frontend js css3 html5">
+						<div class="section_child allowKeywords"  data-keyword="js6 css"  data-tech="template frontend js css3 html5">
 							<div class="box_basic_top accent_bkg">
 								<h3>Delorean themed Random Quotes Template</h3>
 							</div>
@@ -432,8 +360,7 @@
 							</div>
 							<div class="box_basic">
 								<p>
-								<!-- Template <span class="accent">|</span> -->
-
+								Template <span class="accent">|</span>
 								Frontend <span class="accent">|</span>
 								JavaScript <span class="accent">|</span>
 								CSS3<span class="accent">|</span>
@@ -445,8 +372,6 @@
 								</p>
 							</div>
 						</div>
-
-
 
 						<div class="section_child allowKeywords"  data-keyword="php7 css" data-tech="fullstack php slim4 mvc jpgraph mysql responsive">
 							<div class="box_basic_top accent_bkg">
@@ -835,209 +760,14 @@
 							</div>
 						</div> 
 
-						<!-- add in Powershelll repo egs or not? -->
-					</div> 
-					<!-- end of div about myprojects -->
+					</div> <!-- end of div about myprojects -->
 
 					</div>
 				</details>
 			</section>
 
-				<script>
 
-							//new stuff 2 April
-							let techstack_checkboxes = document.querySelectorAll('#checkTechStack input');
-
-							console.log('..about to add event listeners to checkboxes : ');
-							for (let i=0; i<techstack_checkboxes.length; i++) {
-								techstack_checkboxes[i].addEventListener('change', findTechStackProjects)
-							}
-
-							//orignal
-							//let all_projects = document.querySelectorAll('#projects div[data-tech]');
-							//let all_projects = document.querySelectorAll('div[data-tech]');
-							let all_projects = document.querySelectorAll('#myprojects div[data-tech]');
-
-							console.log('all_projects length : ' + all_projects.length);
-							let all_projects2 = document.querySelectorAll('#projects data-tech');
-							console.log('all_projects2 length : ' + all_projects2.length);
-
-
-
-							//ticking the box hides the projets that DONT contain taht keyword
-							//BUT UNTICKING DOES NOTHING AT PRESENT !  > sSOLVED
-							//BUT cant select both php and js projects at same time
-							function findTechStackProjects() {
-								let techstacks = []; //aka languages
-								let project_languages = []; // mine was project_stack
-								let current_proj_techstack = "";
-								var found_all_keywords = false;
-								
-								console.log("");
-								console.log(' __func findTechStackProjects ');
-								//get all the tech stacks that user wants to view and add them to a temp array
-								for (let i=0; i<techstack_checkboxes.length; i++) {
-									if (techstack_checkboxes[i].checked) {
-											techstacks.push(techstack_checkboxes[i].value);
-											console.log('..checkbox value, ie what user wants to see : ' + techstack_checkboxes[i].value);
-									}
-								}
-								console.log('techstacks length, of lang to find: ' + techstacks.length);
-								//if thi is zero then show ALL the projects
-								
-
-								//try getting this here 30Apr
-								//project_languages = all_projects[z].getAttribute('data-tech');
-								for (let z=0; z < all_projects.length; z++) {
-									//wht is this??
-									console.log('inside z for loop, all_projects length : ' + all_projects.length);
-									//im getting the whole div here, so i can later call DISPLAY BLOCK or NONE - the content is likely under getAttribute('data-tech') ?
-									//console.log('inside z, all_projects value ALL : ' + all_projects[z].innerText);
-									console.log('inside z, all_projects value ALL : ' + all_projects[z].h3);
-									// project_languages = project_wrappers[k].getAttribute('data-languages').split(' ');
-									
-									//all avail projects, should this be nested under FOR EACH project?
-									//is thsi actually the lang tech stack for the current proejct?
-									project_languages = all_projects[z].getAttribute('data-tech');
-									console.log('project_languages: ' + project_languages);
-									current_proj_techstack = all_projects[z].getAttribute('data-tech');
-									console.log('current_proj_techstack: ' + current_proj_techstack);
-
-									console.log('_project_languages length : ' + project_languages.length);
-									console.log('_project_languages value : ' + project_languages.value);
-
-									//outputs css
-									// for (let i=0; i<project_languages.length; i++) {
-									// 	console.log('_FOR project_languages value ' + project_languages[i] );
-									// }
-
-
-									if (techstacks.length == 0) {
-										console.log('_NOW_ display ALL projects as techstacks.length is ZERO ');
-										all_projects[z].style.display = 'block';
-									}
-
-									found_all_keywords = true;
-									//this isnt working when multiple check boxes are checked/ticked
-									for (let j=0; j<techstacks.length; j++) {
-										//ISSUE if a project includes JS and PHP, finding PHP will show the project, but not finding JS will then HIDE the same project!
-										if ( !current_proj_techstack.includes(techstacks[j]) ) {
-											console.log('..stack doesnt match/include, '+ techstacks[j] +' thus setting display to NONE ' );
-											//all_projects[z].style.display = 'none';
-											found_all_keywords = false;
-											//is boolean actually being used correctly??
-										}
-										else {
-											//do i need the find_all option?
-											console.log('..stack MATCHES/includes tech user is after, so setting display to BLOCK ie showing ' + techstacks[j]);
-											//all_projects[z].style.display = 'block';
-										}
-									}
-									//project_wrappers[k].style.display = (found_all ? 'list-item' : 'none');
-									// NOW do the displaying here  - this is what i was missing! once ALL occurances of keywords have been found, finally do the actual displaying of projects
-									all_projects[z].style.display = (found_all_keywords ? 'block' : 'none');
-
-								}
-
-								
-
-								//loop over each project and if its data-keywords includes/contains a given techstack, then display block
-							}
-
-							// function showProjectsWith(techItem) {
-							// 	let techKeyword = techItem;
-							// 	console.log('wanted keyword is : ' + techKeyword);
-
-
-
-							//  original stuff
-							let keywordPHP = document.getElementById("btnPHP");
-							keywordPHP.addEventListener("click", function() {
-								console.log('keyword php event listener');
-								if (keywordPHP.style.background == "lightgray") {
-									keywordPHP.style.background = "lightgreen"
-								}
-								else {
-									keywordPHP.style.background = "lightgray";
-								}
-								//keywordPHP.style.background = "lightyellow";
-								//make it bold/visually different
-							  	showProjectsWith("php7");
-							});
-
-							let keywordJS = document.getElementById("btnJS");
-							keywordJS.addEventListener("click", function() {
-								console.log('keyword php event listener');
-								keywordJS.style.background = "lightyellow"
-								keywordJS.style.background = ("lightyellow" ? 'lightblue' : 'lightyellow');
-								//keywordJS.style.colors = "lightblue"
-								//make it bold/visually different
-							  	showProjectsWith("js6");
-							});
-
-							//let keywordJS = document.getElementById("btnCSS");
-							document.getElementById("btnCSS").addEventListener("click", function() {
-								console.log('keyword _css event listener');
-								//make it bold/visually different
-							  	showProjectsWith("css");
-							});
-
-							function showProjectsWith(techItem) {
-								let techKeyword = techItem;
-								console.log('wanted keyword is : ' + techKeyword);
-								// if (techKeyword == "php") {
-									//need to make this dynamic
-										// let targetDiv = document.getElementById("php-laravel-tshirts");
-
-									
-									// console.log('trying to do display none');
-									//this isnt working
-										// let result = targetDiv.getAttribute("data-keyword");
-										// console.log(result);
-
-									// let value = document.getElementById("myId").getAttribute("class");
-									//need to for each over items in class array class allowKeywords, then check for matching data-keyword
-									let targetDivNodeList = document.querySelectorAll(".allowKeywords");
-									//need to check for matching keywords eg php !
-									//works ok for PHP keyword, but JS keywords actually hides it - cos i want to hide the ontes that are NOT the keyword
-
-									//1Apr22 change logic - if it matches, display-block it, regardless of toggle status , as multiple projects may have the same tech keyword
-									for (let i = 0; i < targetDivNodeList.length; i++) {
-										//1Apr22 need to go another level deeper, as this return 'php,css' instead of separate words
-										let currentTerm = targetDivNodeList[i].getAttribute("data-keyword").split(' ');
-											console.log('.split currentTerm: ' + currentTerm);
-										//if dkeyword isnt the one u want, then hide it
-										if (currentTerm != techKeyword) {
-											if (targetDivNodeList[i].style.display == "none") {
-											    targetDivNodeList[i].style.display = "block";
-											    console.log('set dispaly to block');
-											  } else {
-											    targetDivNodeList[i].style.display = "none";
-											    console.log('set dispaly to none: ');
-											  }
-										}
-
-									  // targetDivNodeList[i].style.display = "none";
-									}
-									//  querySelector / querySelectorAll
-									// document.querySelector(".example");
-
-
-									// if (result == "php7") {
-									// 	if (targetDiv.style.display == "none") {
-									//     targetDiv.style.display = "block";
-									//   } else {
-									//     targetDiv.style.display = "none";
-									//   }
-									// }
-									
-									// targetDiv.style.display = "none";
-									
-									// document.getElementById(element).src = "images/icon-rock.svg";
-								}
-							// } IF
-
-						</script>
+			<script type="text/javascript" src="keyword_filter.js"></script>
 
 
 			<div class="visual-separator width_60"> </div>
