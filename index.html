@@ -3,6 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Portfolio Website for Davin Stirling</title>
+	<style>
+		button {
+			background-color: lightgray;
+		}
+	</style>
 
 	<!-- Link Preview uisng meta tags and Open Graph Protocol tags -->
 	<meta name="description" content="Davin Stirling is an IT Professional pivoting into web development. Their portfolio contains projects from the iO Academy web dev bootcamp, as well as personal projects, mainly in the LAMP, WAMP and MERN stacks.">
@@ -155,9 +160,165 @@
 					<summary id="portfolio">
 						<h2 class="section__title">Projects</h2>
 					</summary>
-				
-					<div class="section_parent"> 
-
+          
+				  <div class="section_parent"> 
+            
+					<div class="section_child">
+						<div class="box_basic_top accent_bkg">
+							<h3>Tech Keyword Filter</h3>
+						</div>
+						<div class="box_basic">
+							<br>
+							<div id="checkTechStack">
+								<!-- TODO Add GH Link and Live Demo Later - TODO Style as buttons instead of checkboxes -->
+								<label>
+									<input type="checkbox" name="techstack" value="backend" />
+									<span>Backend</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="bcrypt" />
+									<span>BCrypt</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="bootstrap" />
+									<span>Bootstrap</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="css" />
+									<span>CSS</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="express" />
+									<span>Express</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="firebase" />
+									<span>Firebase Firestore DB</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="frontend" />
+									<span>Front End</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="fullstack" />
+									<span>Full stack</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="graphql" />
+									<span>GraphQL API</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="js" /> 
+									<span>JavaScript</span>
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="jpgraph" />
+									<span>JP Graph</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="jwt" />
+									<span>JWT</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="mongodb" />
+									<span>MongoDB</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="atlas" />
+									<span>MongoDB Atlas</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="mvc" />
+									<span>MVC</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="mysql" />
+									<span>MYSQL</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="node" />
+									<span>Node</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="php" /> 
+									<span>PHP</span>
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="phpunit" />
+									<span>PHP Unit</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="react" />
+									<span>React</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="responsive" />
+									<span>Responsive</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="rest" />
+									<span>REST API</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="slim4" />
+									<span>Slim 4</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="solid" />
+									<span>SOLID</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="svg" />
+									<span>SVG</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="tailwindcss" />
+									<span>Tailwind CSS</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="template" />
+									<span>Template</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="vue" />
+									<span>Vue</span> 
+								</label>
+								
+              </div>
+						</div>
+					</div>
+//
+                
+                
+        <div id="myprojects">      
+                
 						<div class="section_child">
 							<div class="box_basic_top accent_bkg">
 								<!-- <h3>Java and Spring Boot Shopping Cart</h3> -->
@@ -343,10 +504,12 @@
 									<i class="fab fa-github-square fa-3x" title="Delorean Random Quote Generator Template website"></i>
 								</a>
 								</p>
-							</div>
-						</div>
+						  </div>
+					  </div>
+				
 
-						<div class="section_child">
+
+					<div class="section_child allowKeywords" id="php-laravel-tshirts" data-keyword="php7" data-tech="fullstack php laravel8 blade mysql">
 							<div class="box_basic_top accent_bkg">
 								<h3>Laravel TShirt App</h3>
 							</div>
@@ -362,7 +525,8 @@
 								<p>So far I've noticed that, compared to the Slim framework, there's a lot less boiler plate code required to get basic functionality up and running.</p>
 							</div>
 							<div class="box_basic">
-								<p>
+								<p> 
+								Full Stack <span class="accent">|</span>
 								PHP <span class="accent">|</span>
 								Laravel 8 <span class="accent">|</span>
 								Blade Templates <span class="accent">|</span>
@@ -375,7 +539,38 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+					<div class="section_parent"> 
+						<div class="section_child allowKeywords"  data-keyword="js6 css"  data-tech="template frontend js css3 html5">
+							<div class="box_basic_top accent_bkg">
+								<h3>Delorean themed Random Quotes Template</h3>
+							</div>
+							<div class="box_basic">
+								<em>Added Dec 2021</em><br>
+								<a href="https://bit.ly/RandomQuotesTemplate" target="_blank">
+									<img src="images/screenshot_random_quotes.png" alt="Screenshot of the Delorean Random Quote Generator Template website" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>I created a unicorn themed Random Quote generator with positive affirmations and then decided to turn it into a GitHub Template that others can use to generate their own Random Quotes.</p>
+								<p>Since I made this pre-Christmas, I also added a Toggle button to give a Snowing effect and make it more festive!</p>
+								<p>You can customise the template by adding your own text and images into the relevant arrays. For the Template repo I've used a Delorean theme, with quotes from the film Back to the Future.</p> 
+							</div>
+							<div class="box_basic">
+								<p>
+								Template <span class="accent">|</span>
+								Frontend <span class="accent">|</span>
+								JavaScript <span class="accent">|</span>
+								CSS3<span class="accent">|</span>
+								HTML5<span class="accent">|</span>
+								<a href="https://bit.ly/ghRandomQuotesTemplate" target="_blank"  aria-label="Link to GitHub Repo for Delorean Random Quote Generator Template website">GitHub&nbspRepo
+									<!-- GH icons arent visible any more, why? -->
+									<i class="fab fa-github-square fa-3x" title="Delorean Random Quote Generator Template website"></i>
+								</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child allowKeywords"  data-keyword="php7 css" data-tech="fullstack php slim4 mvc jpgraph mysql responsive">
 							<div class="box_basic_top accent_bkg">
 								<h3>Wellbeing Tracker using PHP and MVC</h3>
 							</div>
@@ -400,7 +595,9 @@
 								</details>
 							</div>
 							<div class="box_basic">
-								<p>PHP <span class="accent">|</span> 
+								<p> 
+								Full Stack <span class="accent">|</span>
+								PHP <span class="accent">|</span> 
 								Slim 4 <span class="accent">|</span> 
 								MVC <span class="accent">|</span> 
 								JPGraph <span class="accent">|</span>
@@ -413,7 +610,7 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+						<div class="section_child" data-tech="fullstack php slim4 js pwa">
 							<div class="box_basic_top accent_bkg">
 								<h3>Cat-themed PWA ToDo App</h3>
 							</div>
@@ -430,6 +627,7 @@
 							</div>
 							<div class="box_basic">
 								<p>
+								Full Stack <span class="accent">|</span>
 								PHP <span class="accent">|</span>
 								Slim 4 <span class="accent">|</span>
 								JavaScript ES6 <span class="accent">|</span>
@@ -442,7 +640,7 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+						<div class="section_child" data-tech="frontend js css3 html5">
 							<div class="box_basic_top accent_bkg">
 								<h3>Rock Paper Scissors Game</h3>
 							</div>
@@ -458,6 +656,7 @@
 							</div>
 							<div class="box_basic">
 								<p>
+								Frontend <span class="accent">|</span>
 								JavaScript <span class="accent">|</span>
 								CSS3 <span class="accent">|</span>
 								HTML5 <span class="accent">|</span> 
@@ -469,7 +668,7 @@
 							</div>
 						</div>
 						
-						<div class="section_child">
+						<div class="section_child" data-tech="template php phpunit">
 							<div class="box_basic_top accent_bkg">
 								<h3>PHP Template with Unit Tests for Code Katas</h3>
 							</div>
@@ -486,6 +685,7 @@
 							</div>
 							<div class="box_basic">
 								<p>
+								Template <span class="accent">|</span>
 								PHP <span class="accent">|</span>
 								PHPUnit <span class="accent">|</span> 
 								<a href="https://bit.ly/ghPHPboilerplate" target="_blank"  aria-label="Link to GitHub Repo for PHP Template with Unit Tests for Code Katas">GitHub&nbspRepo
@@ -495,7 +695,7 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+						<div class="section_child" data-tech="fullstack firebase js vue2 bootstrap tailwindcss">
 							<div class="box_basic_top accent_bkg">
 								<h3>48 Hour Hackathon - Lemonie Mental Health Exercises</h3>
 							</div>
@@ -515,7 +715,9 @@
 								<p>Next I'd like to finish integrating the front and back ends and setup proper access controls for the cloud database.</p>
 							</div>
 							<div class="box_basic">
-								<p>Firebase Firestore DB <span class="accent">|</span>
+								<p> 
+								Full Stack <span class="accent">|</span>
+								Firebase Firestore DB <span class="accent">|</span>
 								JavaScript ES6 <span class="accent">|</span>
 								Vue v2 <span class="accent">|</span>
 								Bootstrap <span class="accent">|</span>
@@ -527,7 +729,7 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+						<div class="section_child" data-tech="frontend vue3">
 							<div class="box_basic_top accent_bkg">
 								<h3>Killjoys Themed Vue Example</h3>
 							</div>
@@ -542,6 +744,7 @@
 							</div>
 							<div class="box_basic">
 								<p>
+								Frontend <span class="accent">|</span>
 								Vue v3 <span class="accent">|</span>
 								<a href="https://bit.ly/ghVueKilljoys" target="_blank"  aria-label="Link to GitHub Repo for Vue Examples">GitHub&nbspRepo
 									<i class="fab fa-github-square fa-3x" title="Vue Examples  Repo"></i>
@@ -550,7 +753,7 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+						<div class="section_child" data-tech="frontend js html5 css3">
 							<div class="box_basic_top accent_bkg">
 								<h3>Hack Night - Space Flight Booking Site</h3>
 							</div>
@@ -567,7 +770,9 @@
 								<p>Next I'd like to finish my take on the site by adding suitable booking success & failure images and making them appear & disappear at the right time.</p>
 							</div>
 							<div class="box_basic">
-								<p>JavaScript <span class="accent">|</span>
+								<p> 
+								Frontend <span class="accent">|</span>
+								JavaScript <span class="accent">|</span>
 								HMTL5 <span class="accent">|</span>
 								CSS3 
 								<!-- <span class="accent">|</span>  -->
@@ -578,7 +783,7 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+						<div class="section_child" data-tech="backend node express mongodb rest">
 							<div class="box_basic_top accent_bkg">
 								<h3>RESTful Banking API</h3>
 							</div>
@@ -593,7 +798,9 @@
 								<p>I later documented the API by adding routes, example requests, and local install instructions to the Readme</p>
 							</div>
 							<div class="box_basic">
-								<p>Node.js <span class="accent">|</span> 
+								<p> 
+								Backend <span class="accent">|</span>
+								Node.js <span class="accent">|</span> 
 								Express <span class="accent">|</span> 
 								MongoDB <span class="accent">|</span>
 								REST API <span class="accent">|</span>
@@ -604,7 +811,7 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+						<div class="section_child" data-tech="fullstack graphql js node express jwt bcrypt react atlas mongodb">
 							<div class="box_basic_top accent_bkg">
 								<h3>Social Media Site using GraphQL</h3>
 							</div>
@@ -625,7 +832,10 @@
 								</details>
 							</div>
 							<div class="box_basic">
-								<p>GraphQL <span class="accent">|</span>
+								<p> 
+								Full Stack <span class="accent">|</span>
+								GraphQL <span class="accent">|</span>
+								JavaScript ES6 <span class="accent">|</span>
 								Node <span class="accent">|</span>
 								Express <span class="accent">|</span>
 								JWT <span class="accent">|</span>
@@ -639,7 +849,7 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+						<div class="section_child" data-tech="fullstack php slim4 mvc mysql">
 							<div class="box_basic_top accent_bkg">
 								<h3>To Do App using PHP MVC</h3>
 							</div>
@@ -653,7 +863,9 @@
 								<p>We learned about MVC & PHP frameworks, then used them as part of an exercise to create a To Do app. We cloned an existing repo that contained the Slim 4 framework, and worked through the architecture plan as a group. I then worked independently to create the functionality to add, complete or delete a task from the underlying MySQL DB, using Routing, the Dependency Injection Container, Factories, Controllers & Views.</p>
 							</div>
 							<div class="box_basic">
-								<p>PHP <span class="accent">|</span>
+								<p> 
+								Full Stack <span class="accent">|</span>
+								PHP <span class="accent">|</span>
 								Slim 4 <span class="accent">|</span>
 								MVC <span class="accent">|</span>
 								MYSQL <span class="accent">|</span>
@@ -664,7 +876,7 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+						<div class="section_child" data-tech="fullstack php bootstrap mysql solid">
 							<div class="box_basic_top accent_bkg">
 								<h3>Scrum Master for Ecommerce Site using Design Patterns</h3>
 							</div>
@@ -679,7 +891,9 @@
 								<p>We decided to use the Hydrator Entity design pattern along with a PDO Connection in our LAMP stack, with HTML, CSS & Bootstrap for the frontend. We also reviewed the SOLID principles and adjusted the plan accordingly. I did pair programming to create some of the classes and peer reviewed colleagues code in GitHub. During  Sprint Review I gave a non-technical overview of the site's architecture.</p>
 							</div>
 							<div class="box_basic">
-								<p>PHP <span class="accent">|</span> 
+								<p> 
+								Full Stack <span class="accent">|</span>
+								PHP <span class="accent">|</span> 
 								Bootstrap <span class="accent">|</span>
 								MYSQL <span class="accent">|</span> 
 								SOLID <span class="accent">|</span>
@@ -690,7 +904,7 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+						<div class="section_child" data-tech="frontend js html5 css3">
 							<div class="box_basic_top accent_bkg">
 								<h3>Jarver's Crypt Maze Game</h3>
 							</div>
@@ -704,7 +918,9 @@
 								<p>As part of a scrum team of 8 people, we designed & created a maze game using Javascript. I did some pair programming to design the splash screen wireframe & code that, and coded the eventListeners to detect collisions with the path & ghost obstacles. I also implemented changes after our tutor's code reviews</p>
 							</div>
 							<div class="box_basic">
-								<p>JavaScript ES6<span class="accent">|</span> 
+								<p> 
+								Frontend <span class="accent">|</span>
+								JavaScript ES6<span class="accent">|</span> 
 								HMTL5 <span class="accent">|</span> 
 								CSS3 <span class="accent">|</span>
 								<a href="https://bit.ly/ghMaze" target="_blank"  aria-label="Link to GitHub Repo for Jarver's Crypt Maze Game">GitHub&nbspRepo
@@ -714,7 +930,7 @@
 							</div>
 						</div> 
 
-						<div class="section_child">
+						<div class="section_child" data-tech="frontend html5 css3 svg">
 							<div class="box_basic_top accent_bkg">
 								<h3>Solar System Animation using only CSS and SVGs</h3>
 							</div>
@@ -729,7 +945,9 @@
 								<p>As part of learning Advanced FrontEnd techniques, we created an animation of our solar system, using SVGs and keyframes & animations in CSS</p>
 							</div>
 							<div class="box_basic">
-								<p>HTML5 <span class="accent">|</span>
+								<p> 
+								Frontend <span class="accent">|</span>
+								HTML5 <span class="accent">|</span>
 								CSS3 <span class="accent">|</span>
 								SVG <span class="accent">|</span>
 								<a href="https://bit.ly/ghMilkyWaySVG" target="_blank"  aria-label="Link to GitHub Repo for Solar System Animation">GitHub&nbspRepo
@@ -739,16 +957,17 @@
 							</div>
 						</div> 
 
-						<!-- add in Powershelll repo egs or not? -->
+					</div> <!-- end of div about myprojects -->
 
 					</div>
 				</details>
 			</section>
 
+			<script type="text/javascript" src="keyword_filter.js"></script>
 
 			<div class="visual-separator width_50"> </div>
 			
-
+      
 			<section class="layout__skills">	
 				<details>
 					<summary id="skills">

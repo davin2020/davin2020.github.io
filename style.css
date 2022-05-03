@@ -558,6 +558,51 @@ footer a {
 	}
 }
 
+/*checkboxed for filtering by keyword */
+
+/*#checkTechStack checkbox {
+	color: red;
+}*/
+
+#checkTechStack label {
+	/*color: red;
+	background-color: lightblue;*/
+	padding: 5px;
+	font-size: 1.2rem;
+	/* to keep label and check box together*/
+	display: inline-block;
+	/*font-weight: bold;*/
+}
+/*#checkTechStack input {
+	color: red;
+	background-color: lightblue;
+
+}*/
+/*input[type="checkbox"]:checked  + label {
+	color: blue;
+	font-weight: bold;
+}*/
+
+/*.newLabel {
+	background-color: lightblue;
+}*/
+/*#checkTechStack  input[name="techstack"]:checked + .newLabel {*/
+
+#checkTechStack  input[name="techstack"]:checked + span {
+	color: green;
+	font-weight: 600;
+	/*background-color: lightgreen;*/
+}
+
+/*<input type="checkbox" name="techstack" value="php" />
+#languages input[name="language"]:checked + span {
+			text-decoration: underline;
+			background-color: lightgreen;
+		}
+
+<input type="checkbox" */
+
+
 /* NAMING - what does it do, or what is it?*/
 /*eg header vs blue header?*/
 /*BEM Block Element Modifier*/
