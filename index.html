@@ -75,7 +75,7 @@
 
 		<main>
 			
-			<div class="visual-separator width_20"> </div>
+			<div class="visual-separator width_17"> </div>
 
 			<section class="layout__about-me">
 				<!-- can use 'details open' to have this section open by default - links cant expand summary tags withoutu JS -->
@@ -90,11 +90,12 @@
 								<h3>Background</h3>
 							</div>
 							<div class="box_basic">
-								<p>Hiya, I'm Davin, an IT Professional with over 12 years experience, pivoting into web development</p>
-								<p>I'm interested in backend technologies including GraphQL API, and keen to build on my experience with LAMP and MERN stacks.
+								<p>Hiya, I'm Davin, an IT Professional with over 12 years industry experience, pivoting into web development</p>
+								<p>I'm mainly interested in backend technologies, eg Java, PHP, Node, GraphQL, and am keen to build on my experience in a collaborative and supportive environment that embraces diversity</p>
 								<p>I'm eligible to work in the UK, where I'm currently based, and also in New Zealand where I lived for 12 years pre-covid</p>
-								<p class="lowkey_accent">I'm open to new opportunities in 2021 - here's my <a href="DavinStirling_DeveloperCV2021August.pdf" target="_blank">Developer CV</a>
-							</p>
+								<p class="lowkey_accent">I'm open to new opportunities in 2022 - here's my 
+									<a href="DavinStirling_DeveloperCV2022April8Portfolio.pdf" target="_blank">Developer CV</a>
+								</p>
 							</div>
 						</div>
 
@@ -103,6 +104,7 @@
 								<h3>Qualifications</h3>
 							</div>
 							<div class="box_basic">
+								<p>Java course - mthree, March 2022</p>
 								<p>Certified Scrum Master - Agilify, 2020</p>
 								<p>Full Stack Web Development bootcamp - <a href="https://io-academy.uk/courses/full-stack-track/">iO Academy</a>, 2020
 								<a href="DavinStirlingiOAcademyCertificate.pdf" target="_blank">
@@ -150,7 +152,7 @@
 			</section>
 			
 
-			<div class="visual-separator width_40"> </div>
+			<div class="visual-separator width_33"> </div>
 
 			<!-- Section: Portfolio-->
 			<section class="layout__portfolio">
@@ -158,7 +160,9 @@
 					<summary id="portfolio">
 						<h2 class="section__title">Projects</h2>
 					</summary>
-				
+          
+				  <div class="section_parent"> 
+            
 					<div class="section_child">
 						<div class="box_basic_top accent_bkg">
 							<h3>Tech Keyword Filter</h3>
@@ -307,17 +311,210 @@
 									<span>Vue</span> 
 								</label>
 								
-							</div>
+              </div>
 						</div>
 					</div>
+//
+                
+                
+        <div id="myprojects">      
+                
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<!-- <h3>Java and Spring Boot Shopping Cart</h3> -->
+								<h3>Shopping Cart using Java and Spring Boot</h3>
+							</div>
+							<div class="box_basic">
+								<em>Added March 2022</em><br>
+								<!-- <a href="https://bit.ly/xxx" target="_blank"> -->
+									<img src="images/java_shopping_cart.png" alt="XYZ Retail Store Shopping Cart written in Java" class="portfolio-images">
+								<!-- </a> -->
+							</div>
+							<div class="box_basic">
+								<p>For the final project of our intensive 6 week Java course, I worked as part of a team of 5 to create a Shopping Cart App.</p>
+								<p>The brief was to create an app where users could view products, add them to the cart and generate an invoice with a price breakdown that included taxes.</p>
+								<p>While we were able to get a lot of the services written eg Customer, Product, Type, Order History, we didn't have enough time to integrate the different services so they could work together.</p>
+								<p>I spent time working on the API calls for the Type class (so users could see Products by Type eg Books, CDs), dynamically generating the Show Types buttons based on whats in the database, combining the Search and Display Products pages functionality, trying to write more performant queries using Hibernate syntax and adding more CSS styling.</p>
+								<!-- 
+								I spent time working on the API calls for the Type class (so users could search by different Types of Product),
+								 dynamically generating the Show Types buttons based on whats in the database, 
+								 combining the Search and Display Products pages, trying to write more performant Hibernate queries and adding more CSS styling. -->
+								<details>
+									<summary>More</summary>
+									<p>The architecture was intended to be a microservices setup with REST API calls and MVC, but we ended up with one frontend repo and one backend repo with REST calls.</p>
+									<p>During this project I got to appreciate the importance of having sufficient up front design, and clearer communication about whats important in the requirements and also between team members. As part of the Java course we also created a short presentation and spoke about our roles and challenges with the project.</p>
+									<p>Next, I want to try and finish integrating the services and get them working together, upload the code to GH and work out how to deploy it all to Heroku with an online relational database.</p>
+								</details>
 
-				<div id="myprojects">
+							</div>
+							<div class="box_basic">
+								<p>
+								Java v11 <span class="accent">|</span>
+								Spring Boot <span class="accent">|</span>
+								MySQL <span class="accent">|</span>
+								MVC <span class="accent">|</span>
+								REST API 
+								<!-- <a href="https://bit.ly/ghXXX" target="_blank"  aria-label="Link to GitHub Repo for Java Shopping Cart backend API">GitHub&nbspUI Repo</a>
+								<a href="https://bit.ly/ghYYY" target="_blank"  aria-label="Link to GitHub Repo for Java Shopping Cart frontend UI">GitHub&nbspAPI Repo</a> -->
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Console version of Rock Paper Scissors using Java</h3>
+							</div>
+							<div class="box_basic">
+								<em>Added Feb 2022</em><br>
+								<!-- <a href="https://bit.ly/xxx" target="_blank"> -->
+									<img src="images/java_console_rock_paper_scissors.png" alt="Console version of Rock Paper Scissors game written in Java" class="portfolio-images">
+								<!-- </a> -->
+							</div>
+							<div class="box_basic">
+								<p>I've created a console version of the Rock Paper Scissors game.</p>
+								<p>This was my first assessment and verbal code review, as part of a course I'm taking to relearn Java. I definitley reused some of my earlier code from my JavaScript version of this game.</p>
+								<p>I've since refactored the code into more smaller methods, so each has less responsibility.</p>
+							</div>
+							<div class="box_basic">
+								<p>
+								Java v11 <span class="accent">|</span>
+								<a href="https://bit.ly/ghJavaRockPaper" target="_blank"  aria-label="Link to GitHub Repo for Console version of Rockk Paper Scissors game">GitHub&nbspAPI Repo</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Hackathon - Job Habit Tracker</h3>
+							</div>
+							<div class="box_basic">
+								<em>Added Feb 2022 | Updated Apr 2022</em><br>
+								<a href="https://bit.ly/JabitTracker" target="_blank">
+									<img src="images/jabit_tracke_dashboard.png" alt="Job Habit Tracker app" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>I took part in a Hackathon run by Troopl between 2-6 February. The brief was to creat a a Goal Tracking App, so I decided to track job seeking habits.</p>
+								<p>I used MERN stack with the MongoDB Atlas cloud database and GraphQL API for the backend, and React for the frontend. The app was deployed to Heroku as 2 separate repos - this involved me learning to extract and then setup environment variables and secrets in Heroku for the first time.</p>
+								<p>The app currently has features to Register and Login Users, and to display Profile info and Goals on the Dashboard page. As it turns out, displaying the Goals was harder than I thought it would be, as React has its own way of rendering data from arrays, and I'm more of a backend person.</p>
+								<p>Now I'm in the process of creating and processing a form in React to add a new goal to the database, by calling the existing GraphQL mutation.
+								</p>
+									
+								<!-- <p>I liked working with GraphQL on the bootcamp, so wanted to practise using it to make a Wellbeing Tracker last year.</p> -->
+
+								<!-- <details>
+									<summary>More</summary>
+									
+								</details> -->
+							</div>
+							<div class="box_basic">
+								<p>
+								GraphQL API <span class="accent">|</span>
+								Node.js <span class="accent">|</span>
+								<!-- express-graphql <span class="accent">|</span> -->
+								Express <span class="accent">|</span>
+								React <span class="accent">|</span>
+								MongoDB Atlas <span class="accent">|</span>
+								<a href="https://bit.ly/ghJabitTrackerAPI" target="_blank"  aria-label="Link to GitHub Repo for Jabit Tracker API">GitHub&nbspAPI Repo</a> <span class="accent">|</span>
+								<a href="https://bit.ly/ghJabitTrackerUI" target="_blank"  aria-label="Link to GitHub Repo for Jabit Tracker UI">GitHub&nbspUI Repo</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Wellbeing Tracker Questions using Node, GraphQL API and MySQL</h3>
+							</div>
+							<div class="box_basic">
+								<em>Added Jan 2022</em><br>
+								<!-- <a href="https://bit.ly/xxx" target="_blank"> -->
+									<img src="images/core_questions_graphql_api.png" alt="GraphQL API used to provide Wellbeing Tracker Questions" class="portfolio-images">
+								<!-- </a> -->
+							</div>
+							<div class="box_basic">
+								<p>I liked working with GraphQL on the bootcamp, so wanted to practise using it to make a Wellbeing Tracker last year.</p>
+								<p>However at that time I could not get GraphQL to work with either Node and MySQL, nor with PHP and MySQL. As the Tracker's only tech requirement was a relational database, I looked at my existing repos that used MySQL, and the most suitable was a PHP app that used the MVC framework. So thats why my original Wellbeing Tracker uses that tech stack.</p>
+								<p>However I was later able to get Node and GraphQL to work with MySQL, after being advised that I needed to use the promise-mysql npm package, which was not mentioned in the online tutorial that I had found and was following.</p>
+								<details>
+									<summary>More</summary>
+									<p>The Tracker lets users answer questions from the <a href="https://www.coresystemtrust.org.uk/wp-content/uploads/2020/03/GP-CORE-English.pdf">GP-CORE</a> form about how they have been feeling over the last week. I've tidied up the repo and included 2 queries for now, to get all the Questions or a single Question.</p>
+									<p>Next I'd like to add in some new queries to get Users and Questions together, add in some mutations so that a given User's Answers can be saved, and find a better way of refactoring and structuring the code that connects to the DB.</p>
+								</details>
+							</div>
+							<div class="box_basic">
+								<p>
+								Node.js <span class="accent">|</span>
+								GraphQL API <span class="accent">|</span>
+								express-graphql <span class="accent">|</span>
+								Express <span class="accent">|</span>
+								promise-mysql <span class="accent">|</span>
+								MySQL <span class="accent">|</span>
+								<a href="https://bit.ly/ghQuestionsGQLapi" target="_blank"  aria-label="Link to GitHub Repo for Wellbeing Tracker Questions using Node, GraphQL anda MySQL">GitHub&nbspRepo</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>PowerShell Scripts to manipulate Users and Mailboxes</h3>
+								<!-- Active Directory and Exchange objects -->
+							</div>
+							<div class="box_basic">
+								<em>Re-added Jan 2022</em><br>
+								<!-- <a href="https://bit.ly/xxx" target="_blank"> -->
+									<img src="images/powershell_publicfolder.jpg" alt="PowerShell Script to create Public Folder" class="portfolio-images">
+								<!-- </a> -->
+							</div>
+							<div class="box_basic">
+								<p>While working on a service desk during 2017-8, I created several Powershell scripts, that manipulated User and Mailbox objects, within a corporate Microsoft environment.</p>
+								<p>One example was a script to create Public Folders in Exchange, using a seed file of input data, as that was a common and time consuming task.</p>
+								<p>Another example was a script to move security groups from one manager to another within Active Directory. I created this script during a restructuring period when multiple managers were moving departments, and it reduced the amount of time my Team Leader had to spend on admin work after hours.</p>
+							</div>
+							<div class="box_basic">
+								<p>
+								PowerShell <span class="accent">|</span>
+								Scripting <span class="accent">|</span>
+								<a href="https://github.com/davin2020/powershell" target="_blank"  aria-label="Link to GitHub Repo for PowerShell scripts">GitHub&nbspRepo</a>
+								</p>
+							</div>
+						</div>
+
+						<div class="section_child">
+							<div class="box_basic_top accent_bkg">
+								<h3>Delorean themed Random Quotes Template</h3>
+							</div>
+							<div class="box_basic">
+								<em>Added Dec 2021</em><br>
+								<a href="https://bit.ly/RandomQuotesTemplate" target="_blank">
+									<img src="images/screenshot_random_quotes.png" alt="Screenshot of the Delorean Random Quote Generator Template website" class="portfolio-images">
+								</a>
+							</div>
+							<div class="box_basic">
+								<p>I created a unicorn themed Random Quote generator with positive affirmations and then decided to turn it into a GitHub Template that others can use to generate their own Random Quotes.</p>
+								<p>Since I made this pre-Christmas, I also added a Toggle button to give a Snowing effect and make it more festive!</p>
+								<p>You can customise the template by adding your own text and images into the relevant arrays. For the Template repo I've used a Delorean theme, with quotes from the film Back to the Future.</p> 
+							</div>
+							<div class="box_basic">
+								<p>
+								JavaScript <span class="accent">|</span>
+								CSS3<span class="accent">|</span>
+								HTML5<span class="accent">|</span>
+								<a href="https://bit.ly/ghRandomQuotesTemplate" target="_blank"  aria-label="Link to GitHub Repo for Delorean Random Quote Generator Template website">GitHub&nbspRepo
+									<!-- GH icons arent visible any more, why? -->
+									<i class="fab fa-github-square fa-3x" title="Delorean Random Quote Generator Template website"></i>
+								</a>
+								</p>
+						  </div>
+					  </div>
+				
+
+
 					<div class="section_child allowKeywords" id="php-laravel-tshirts" data-keyword="php7" data-tech="fullstack php laravel8 blade mysql">
 							<div class="box_basic_top accent_bkg">
 								<h3>Laravel TShirt App</h3>
 							</div>
 							<div class="box_basic">
-								<em>Work in Progress - Dec 2021</em><br>
+								<em>Work in Progress - Dec 2021/Jan 2022</em><br>
 								<a href="https://bit.ly/LaraTshirts" target="_blank">
 									<img src="images/lara_tshirts.png" alt="Screenshot of the Laravel TShirt App" class="portfolio-images">
 								</a>
@@ -454,7 +651,7 @@
 								</a>
 							</div>
 							<div class="box_basic">
-								<p>I'm currently working through a FrontEnd Mentor Challenge to build the Rock Paper Scissors game, and I've recentlly improved the layout and styling.</p>
+								<p>I'm currently working through a FrontEnd Mentor Challenge to build the Rock Paper Scissors game, and I've recently improved the layout and styling.</p>
 								<p>I've deliberatly tried to break the challenge down into tiny tasks and put them in separate branches, and then documented in the Readme how I went about solving this challenge in an iterative way.</p>
 							</div>
 							<div class="box_basic">
@@ -631,7 +828,7 @@
 									<p>We mostly did pair programming and I chose to work on the backend API. I was heavily involved in researching & creating the GraphQL queries & mutations, and later integrating the front & backends. We handled login manually, using the jsonwebtoken and  bcrypt node modules</p>
 									<p>This was our first scrum project working unsupervised, and I learned that I definitely prefer a more structured environment. Next time I would allocate time for researching before sprint/task planning, as we hadn't used GraphQL before. I would also allow more time when estimating tasks, to deal with the inevitable issues that crop up when trying to integrate different repos worked on by different people.
 									</p>
-									<p>On the demo site above, you can currently create an account or login with an existing account. The demo database is hosted in MongoDB Atlas</p>
+									<p>On the demo site above, you can currently create an account or login with an existing account. The demo database is hosted in the cloud using MongoDB Atlas</p>
 								</details>
 							</div>
 							<div class="box_basic">
@@ -644,7 +841,7 @@
 								JWT <span class="accent">|</span>
 								BCrypt <span class="accent">|</span>
 								React <span class="accent">|</span>
-								Atlas MongoDB <span class="accent">|</span>
+								MongoDB Atlas <span class="accent">|</span>
 								<a href="https://bit.ly/ghSocialAPI" target="_blank"  aria-label="Link to GitHub Repo for for the Backend API of the Social Media website">GitHub&nbspRepo
 									<i class="fab fa-github-square fa-3x" title="Knowsys Backend API Repo"></i>
 								</a>
@@ -766,14 +963,12 @@
 				</details>
 			</section>
 
-
 			<script type="text/javascript" src="keyword_filter.js"></script>
 
-
-			<div class="visual-separator width_60"> </div>
+			<div class="visual-separator width_50"> </div>
 			
-
-			<section class="layout__skills ">	
+      
+			<section class="layout__skills">	
 				<details>
 					<summary id="skills">
 						<h2 class="section__title ">Skills</h2>
@@ -786,20 +981,26 @@
 							</div>
 							<div class="box_basic accent_bkg">
 								<p class="skills">
+								Java 11 <span class="accent">|</span>
+								Spring (JDBC, MVC, Test) <span class="accent">|</span>
+								Spring Boot (Data JPA using Hibernate ORM, Web Starter, Thymeleaf templates) <span class="accent">|</span>
+								SQL <span class="accent">|</span>
 								LAMP <span class="accent">|</span>
+								PHP 7 including Slim 4 & PHPUnit <span class="accent">|</span>
+								Laravel 8 <span class="accent">|</span>
 								MERN <span class="accent">|</span>
-								PHP7 including Slim4 & PHPUnit <span class="accent">|</span>
-								JavaScript ES6 including React <span class="accent">|</span>
+								JavaScript ES6 including React and Jest <span class="accent">|</span>
+								Vue <span class="accent">|</span>
 								Node.js & Express <span class="accent">|</span>
 								GraphQL API <span class="accent">|</span>
-								RESTful APIs & Postman <span class="accent">|</span>
-								MongoDB & Compass & Atlas <span class="accent">|</span>
+								RESTful APIs & JSON & Postman <span class="accent">|</span>	
+								MongoDB Compass & Atlas <span class="accent">|</span>
+								Firebase Firestore NoSQL DB <span class="accent">|</span>
 								MySQL <span class="accent">|</span>
 								HTML5 <span class="accent">|</span>
 								CSS3 <span class="accent">|</span>
-								OOP,&nbspSOLID & MVC design
-								principles <span class="accent">|</span>
-								Git & GitHub <span class="accent">|</span>
+								OOP,&nbspSOLID & MVC design principles <span class="accent">|</span>
+								Git, GitHub & GitHub Actions <span class="accent">|</span>
 								Docker <span class="accent">|</span>
 								Scrum & Agile</p>
 							</div>
@@ -810,13 +1011,105 @@
 			</section>
 				
 
-			<div class="visual-separator width_80"> </div>
+			<div class="visual-separator width_67"> </div>
 
+
+			<!-- <div class="visual-separator width_20"> </div> -->
+
+			<section class="layout__blog">
+				<!-- can use 'details open' to have this section open by default - links cant expand summary tags withoutu JS -->
+				<details>
+					<!-- Think about swopping Blog and Skills section later -->
+					<summary id="blog">
+						<h2 class="section__title">Blog</h2>
+					</summary>
+
+					<div class="section_parent"> 
+
+						<div class="section_child_blog">
+							<div class="box_basic_top accent_bkg">
+								<h3>Welcome</h3>
+							</div>
+							<div class="box_basic">
+								<p class="blog_tags">
+									January 2022 <span class="accent">|</span> 
+									Psychology <span class="accent">|</span> 
+									Technology
+								</p>
+							</div>
+							<div class="box_basic blog_text">
+								<p>Welcome to my blog, where I will be writing about my twin interests of psychology and technology.</p>
+								<p>For me, both subjects are about learning different models or ways of doing things, and then trying to decide what tool/method is the best one for the current task. For me, gaining knowledge allows me to make more informed choices about how to deal with challenges in my life.</p>
+								<p>However, if my psychology or wellbeing tips & techniques aren’t suitable for who you are, or where you are in your life right now, that’s ok - you don’t need to try everything you read about on the internet. 
+								But if you are interested, you can of course do your own research into these models/techniques now that you know that they exist.</p>
+								<p>Also, I’m not a trained mental heatlth professional, just a techie with a keen interest in reading about psychology and sharing knowledge.</p>
+							</div>
+						</div>
+
+						<div class="section_child_blog">
+							<div class="box_basic_top accent_bkg">
+								<h3>Rebooting your Brain for Social Engagement</h3>
+							</div>
+							<div class="box_basic">
+								<p class="blog_tags">
+									31 January 2022 <span class="accent">|</span> 
+									Psychology <span class="accent">|</span> 
+									Polyvagal Theory <span class="accent">|</span>
+									Anxiety
+								</p>
+							</div>
+							<div class="box_basic blog_text">
+								<p>For me, psychology is a bit like coding - there are triggers or stimuli (inputs) and reactions or behaviours (outputs). 
+								And then there are tools or actions (functions) you can use to modify those input into different kinds of output.</p>
+								
+								<p>I’m going to share some tools I’ve discovered that have helped me during my journey, in the hope that they might also help you. With practice you can have more choice about how you respond to a given input or stimuli.</p>
+
+								<p>For example, if you're thirsty you can grab a drink - but whether you choose  water, tea or beer depends on you and your situation - but grabbing a beer (output) can be surprisingly tempting at the end of a tough work day (input).</p>
+
+								<p>If you’re anxious about an meeting with another person, you can try and calm your nerves - but whether you choose deep breathing or telling yourself that your excited rather than nervous, depends on you, your situation, and maybe what's worked for you in the past.</p>
+
+								<!-- <p>But what if you could reboot your brain to deal with your  temporary anxiety?</p>  -->
+
+								<details>
+									<summary>But what if you could reboot your brain to deal with your  temporary anxiety?</summary>
+
+									<p>Ok well maybe that’s a step too far, but what if you could reboot the part of your brain that helps you deal with people and social engagement? Normally when you, and more specifically your central nervous system, is in a regulated state you feel safe and comfortable around other people. However, things that happen in your environment can trigger your nervous system into a dysregulated state of either stress or shutdown, and being in that state makes it harder to engage with people.  So what you would need is a way to get back to being socially engaged with others - something like Polyvagal Theory or PVT.</p>
+
+									<p>Broadly speaking, PVT is about the primary  nerve that helps your nervous system, and thus your body, feel safe or unsafe in the world. 
+									Poly means ‘many’ and Vagal refers to the wandering Vagus nerve that runs from your brain down your neck, along the spine and into your gut area - it forms the main component of your Parasympathetic Nervous System. This nerve is responsible for the 3 main states of your central nervous system - either stressed (aka Sympathetic Nervous System Activation), shutdown (Dorsal Vagal System) or social engagement (Ventral Vagal System).</p>
+
+									<p>Subject Matter Experts in this area of psychology include Stanley Rosenberg, Stephen Porges, and Deb Dana - feel free to google them if this article has sparked your interest.
+									Rosenberg has written an interesting book called ‘<a href="https://www.amazon.co.uk/Accessing-Healing-Power-Vagus-Nerve/dp/1623170249">Accessing the Healing Power of the Vagus Nerve: Self-Help Exercises for Anxiety, Depression, Trauma, and Autism</a>’,  which I read a few years ago. It contains a number of exercises to help regulate your nervous system - you could think of them as yoga for the brain.</p>
+
+									<p>This particular exercise, memorably called 'The Basic Exercise', aims to reset your nervous system from a state of dysregulation (ie stress or shutdown) to the more healthy regulated state of Social Engagement. On a biological level this exercise “repositions the 1st and 2nd cervical (neck) vertebrae, increases mobility in the neck and the entire spine and thus increases blood flow to the brain stem”.</p>
+
+									<p>The exercise is best explained via a short <a href="https://www.youtube.com/watch?v=rbowIy6kONY">4 minute video</a>, which includes a check to see if the exercise has had any positive effect on you - it involves putting your hands behind your head and facing straight ahead while turning your eyes to the left and then the right. While you can do the exercise sitting up, I find it more relaxing to do it while lying down. For me the most important part is the spontaneous yawn, sigh or swallow, as that indicates that the 'reset' has taken place.</p>
+
+									<p>You can think of doing this exercise a bit like drinking a glass of water - you can't just drink one glass and be done for the day - instead its best to drink water whenever you feel thirsty during the day. Similarly you can do this exercise anytime you feel stressed or shutdown about meeting with a fellow human, in order to try and reboot your brain into social engagement mode.</p>
+
+									<p>I tend to use this exercise anytime I have a meeting with other people online, e.g. an interview or maybe a social group with a lot of people, as I also have social anxiety. This exercise is one of many tools I have in my toolbox to help manage and improve my mental health, and I hope it can  help you feel more comfortable before interacting with people.</p>
+								</details>
+							</div>
+							<!-- <div class="box_basic">
+								<p class="blog_tags">
+									31 January 2022 <span class="accent">|</span> 
+									Psychology <span class="accent">|</span> 
+									Poly Vagal Theory
+								</p>
+							</div> -->
+						</div>
+						
+					</div>
+
+				</details>
+			</section>
+			
+			<div class="visual-separator width_83"> </div>
 
 			<section class="layout__contact-me">	
 				<details>
 					<summary id="contact-me">
-						<h2 class="section__title ">Contact</h2>
+						<h2 class="section__title">Contact</h2>
 					</summary>
 					<div class="section_parent"> 
 						
@@ -860,8 +1153,9 @@
 		<footer>
 			<!-- Links work but dont expand the summary tags, needs JS -->
 			<a href="#about-me">About</a> |
-			<a href="#portfolio">Portfolio</a> |
+			<a href="#portfolio">Projects</a> |
 			<a href="#skills">Skills</a> |
+			<a href="#blog">Blog</a> |
 			<a href="#contact-me">Contact</a>
 			<p>&#169; Davin Stirling 2020</p>
 		</footer>
