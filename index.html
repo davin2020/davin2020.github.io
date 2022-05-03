@@ -3,11 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>Portfolio Website for Davin Stirling</title>
-	<style>
-		button {
-			background-color: lightgray;
-		}
-	</style>
 
 	<!-- Link Preview uisng meta tags and Open Graph Protocol tags -->
 	<meta name="description" content="Davin Stirling is an IT Professional pivoting into web development. Their portfolio contains projects from the iO Academy web dev bootcamp, as well as personal projects, mainly in the LAMP, WAMP and MERN stacks.">
@@ -160,15 +155,16 @@
 					<summary id="portfolio">
 						<h2 class="section__title">Projects</h2>
 					</summary>
-          
-				  <div class="section_parent"> 
+          	
+          		<span id="myprojects">  
+				<div class="section_parent"> 
             
-					<div class="section_child">
+					<div class="section_child_blog">
 						<div class="box_basic_top accent_bkg">
 							<h3>Tech Keyword Filter</h3>
 						</div>
 						<div class="box_basic">
-							<br>
+							
 							<div id="checkTechStack">
 								<!-- TODO Add GH Link and Live Demo Later - TODO Style as buttons instead of checkboxes -->
 								<label>
@@ -214,6 +210,16 @@
 								<label>
 									<input type="checkbox" name="techstack" value="graphql" />
 									<span>GraphQL API</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="heroku" />
+									<span>Heroku Hosting</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
+									<input type="checkbox" name="techstack" value="java" /> 
+									<span>Java</span>
 								</label>
 								<span class="accent">|</span>
 								<label>
@@ -267,6 +273,11 @@
 								</label>
 								<span class="accent">|</span>
 								<label>
+									<input type="checkbox" name="techstack" value="powershell" />
+									<span>PowerShell</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
 									<input type="checkbox" name="techstack" value="react" />
 									<span>React</span> 
 								</label>
@@ -292,6 +303,11 @@
 								</label>
 								<span class="accent">|</span>
 								<label>
+									<input type="checkbox" name="techstack" value="springboot" />
+									<span>Spring Boot</span> 
+								</label>
+								<span class="accent">|</span>
+								<label>
 									<input type="checkbox" name="techstack" value="svg" />
 									<span>SVG</span> 
 								</label>
@@ -311,17 +327,14 @@
 									<span>Vue</span> 
 								</label>
 								
-              </div>
-						</div>
-					</div>
-//
+              				</div>
+              			</div>
+
+					</div> <!-- end of child for tech keywords -->
+				
                 
-                
-        <div id="myprojects">      
-                
-						<div class="section_child">
+						<div class="section_child" data-tech="java springboot mysql mvc rest">
 							<div class="box_basic_top accent_bkg">
-								<!-- <h3>Java and Spring Boot Shopping Cart</h3> -->
 								<h3>Shopping Cart using Java and Spring Boot</h3>
 							</div>
 							<div class="box_basic">
@@ -335,10 +348,6 @@
 								<p>The brief was to create an app where users could view products, add them to the cart and generate an invoice with a price breakdown that included taxes.</p>
 								<p>While we were able to get a lot of the services written eg Customer, Product, Type, Order History, we didn't have enough time to integrate the different services so they could work together.</p>
 								<p>I spent time working on the API calls for the Type class (so users could see Products by Type eg Books, CDs), dynamically generating the Show Types buttons based on whats in the database, combining the Search and Display Products pages functionality, trying to write more performant queries using Hibernate syntax and adding more CSS styling.</p>
-								<!-- 
-								I spent time working on the API calls for the Type class (so users could search by different Types of Product),
-								 dynamically generating the Show Types buttons based on whats in the database, 
-								 combining the Search and Display Products pages, trying to write more performant Hibernate queries and adding more CSS styling. -->
 								<details>
 									<summary>More</summary>
 									<p>The architecture was intended to be a microservices setup with REST API calls and MVC, but we ended up with one frontend repo and one backend repo with REST calls.</p>
@@ -348,7 +357,7 @@
 
 							</div>
 							<div class="box_basic">
-								<p>
+								<p> 
 								Java v11 <span class="accent">|</span>
 								Spring Boot <span class="accent">|</span>
 								MySQL <span class="accent">|</span>
@@ -360,7 +369,7 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+						<div class="section_child" data-tech="java">
 							<div class="box_basic_top accent_bkg">
 								<h3>Console version of Rock Paper Scissors using Java</h3>
 							</div>
@@ -383,7 +392,7 @@
 							</div>
 						</div>
 
-						<div class="section_child">
+						<div class="section_child" data-tech="graphql js node express react mongodb atlas heroku">
 							<div class="box_basic_top accent_bkg">
 								<h3>Hackathon - Job Habit Tracker</h3>
 							</div>
@@ -399,29 +408,24 @@
 								<p>The app currently has features to Register and Login Users, and to display Profile info and Goals on the Dashboard page. As it turns out, displaying the Goals was harder than I thought it would be, as React has its own way of rendering data from arrays, and I'm more of a backend person.</p>
 								<p>Now I'm in the process of creating and processing a form in React to add a new goal to the database, by calling the existing GraphQL mutation.
 								</p>
-									
-								<!-- <p>I liked working with GraphQL on the bootcamp, so wanted to practise using it to make a Wellbeing Tracker last year.</p> -->
-
-								<!-- <details>
-									<summary>More</summary>
-									
-								</details> -->
 							</div>
 							<div class="box_basic">
-								<p>
+								<p> 
 								GraphQL API <span class="accent">|</span>
+								JavaScript <span class="accent">|</span>
 								Node.js <span class="accent">|</span>
 								<!-- express-graphql <span class="accent">|</span> -->
 								Express <span class="accent">|</span>
 								React <span class="accent">|</span>
 								MongoDB Atlas <span class="accent">|</span>
+								Heroku Hosting <span class="accent">|</span>
 								<a href="https://bit.ly/ghJabitTrackerAPI" target="_blank"  aria-label="Link to GitHub Repo for Jabit Tracker API">GitHub&nbspAPI Repo</a> <span class="accent">|</span>
 								<a href="https://bit.ly/ghJabitTrackerUI" target="_blank"  aria-label="Link to GitHub Repo for Jabit Tracker UI">GitHub&nbspUI Repo</a>
 								</p>
 							</div>
 						</div>
 
-						<div class="section_child">
+						<div class="section_child" data-tech="js node graphql express mysql">
 							<div class="box_basic_top accent_bkg">
 								<h3>Wellbeing Tracker Questions using Node, GraphQL API and MySQL</h3>
 							</div>
@@ -442,7 +446,8 @@
 								</details>
 							</div>
 							<div class="box_basic">
-								<p>
+								<p> 
+								JavaScript <span class="accent">|</span>
 								Node.js <span class="accent">|</span>
 								GraphQL API <span class="accent">|</span>
 								express-graphql <span class="accent">|</span>
@@ -453,8 +458,9 @@
 								</p>
 							</div>
 						</div>
+						
 
-						<div class="section_child">
+						<div class="section_child"  data-tech="powershell">
 							<div class="box_basic_top accent_bkg">
 								<h3>PowerShell Scripts to manipulate Users and Mailboxes</h3>
 								<!-- Active Directory and Exchange objects -->
@@ -479,37 +485,8 @@
 							</div>
 						</div>
 
-						<div class="section_child">
-							<div class="box_basic_top accent_bkg">
-								<h3>Delorean themed Random Quotes Template</h3>
-							</div>
-							<div class="box_basic">
-								<em>Added Dec 2021</em><br>
-								<a href="https://bit.ly/RandomQuotesTemplate" target="_blank">
-									<img src="images/screenshot_random_quotes.png" alt="Screenshot of the Delorean Random Quote Generator Template website" class="portfolio-images">
-								</a>
-							</div>
-							<div class="box_basic">
-								<p>I created a unicorn themed Random Quote generator with positive affirmations and then decided to turn it into a GitHub Template that others can use to generate their own Random Quotes.</p>
-								<p>Since I made this pre-Christmas, I also added a Toggle button to give a Snowing effect and make it more festive!</p>
-								<p>You can customise the template by adding your own text and images into the relevant arrays. For the Template repo I've used a Delorean theme, with quotes from the film Back to the Future.</p> 
-							</div>
-							<div class="box_basic">
-								<p>
-								JavaScript <span class="accent">|</span>
-								CSS3<span class="accent">|</span>
-								HTML5<span class="accent">|</span>
-								<a href="https://bit.ly/ghRandomQuotesTemplate" target="_blank"  aria-label="Link to GitHub Repo for Delorean Random Quote Generator Template website">GitHub&nbspRepo
-									<!-- GH icons arent visible any more, why? -->
-									<i class="fab fa-github-square fa-3x" title="Delorean Random Quote Generator Template website"></i>
-								</a>
-								</p>
-						  </div>
-					  </div>
-				
 
-
-					<div class="section_child allowKeywords" id="php-laravel-tshirts" data-keyword="php7" data-tech="fullstack php laravel8 blade mysql">
+						<div class="section_child allowKeywords" id="php-laravel-tshirts" data-keyword="php7" data-tech="fullstack php laravel8 blade mysql">
 							<div class="box_basic_top accent_bkg">
 								<h3>Laravel TShirt App</h3>
 							</div>
@@ -539,7 +516,7 @@
 							</div>
 						</div>
 
-					<div class="section_parent"> 
+					<!-- <d i v class="section_parent">  -->
 						<div class="section_child allowKeywords"  data-keyword="js6 css"  data-tech="template frontend js css3 html5">
 							<div class="box_basic_top accent_bkg">
 								<h3>Delorean themed Random Quotes Template</h3>
@@ -783,7 +760,7 @@
 							</div>
 						</div>
 
-						<div class="section_child" data-tech="backend node express mongodb rest">
+						<div class="section_child" data-tech="backend js node express mongodb rest">
 							<div class="box_basic_top accent_bkg">
 								<h3>RESTful Banking API</h3>
 							</div>
@@ -800,6 +777,7 @@
 							<div class="box_basic">
 								<p> 
 								Backend <span class="accent">|</span>
+								JavaScript <span class="accent">|</span>
 								Node.js <span class="accent">|</span> 
 								Express <span class="accent">|</span> 
 								MongoDB <span class="accent">|</span>
@@ -955,11 +933,11 @@
 								</a>
 								</p>
 							</div>
-						</div> 
 
-					</div> <!-- end of div about myprojects -->
+						</div> <!-- end of div about section child -->
+					</span> <!-- end of span about myprojects, was div but interferered with parent/child relationshiop of flex boxes  -->
 
-					</div>
+					</div> <!-- end of div about parent of this Projects section -->
 				</details>
 			</section>
 
