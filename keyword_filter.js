@@ -6,6 +6,11 @@ for (let i=0; i<techstack_checkboxes.length; i++) {
 	techstack_checkboxes[i].addEventListener('change', findTechStackProjects)
 }
 
+//reset filter
+let resetButton = document.querySelector('#resetFilter');
+resetButton.addEventListener('click', resetFilter);
+//resetButton.addEventListener
+
 //get top level divs of all projects, so they can be displayed/hidden later
 let all_projects = document.querySelectorAll('#myprojects div[data-tech]');
 console.log('all_projects length : ' + all_projects.length);
@@ -50,5 +55,19 @@ function findTechStackProjects() {
 		//once ALL occurances of keywords have been found, finally do the actual displaying/hiding of projects, otherwise projects will be hidden unless they contain ALL wanted-keywords
 		all_projects[z].style.display = (found_all_keywords ? 'block' : 'none');
 	}
+
+}
+
+function resetFilter() {
+	for (let i=0; i<techstack_checkboxes.length; i++) { 
+		//uncheck the checkbox
+		techstack_checkboxes[i].checked = false;
+		console.log('clearing check boxes. length : ' + techstack_checkboxes.length);
+	}
+	for (let z=0; z < all_projects.length; z++) {
+		all_projects[z].style.display = 'block';
+		console.log('clearing all projects boxes. length : ' + all_projects.length);
+	}
+	
 
 }
