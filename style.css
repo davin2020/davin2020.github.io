@@ -433,6 +433,14 @@ a:hover .portfolio-images {
 	margin-top: 10px;
 }
 
+.art-images {
+	max-width: 100%;
+	border-radius: 20px;
+	/* show a transparent border around clickable images, so when border is shown on hover it doesnt make content below image jump */
+	border: 8px solid rgba(87, 24, 103, 0);
+	max-height: 400px;
+	margin-top: 10px;
+}
 /* names for BORDERS ? */
 /*
 or try names like
