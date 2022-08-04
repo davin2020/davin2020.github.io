@@ -369,6 +369,18 @@ maybe call one of the classes pattern or art and collapse the pattern on MQ with
 	/*text-align: center;*/
 	/*margin-bottom: 10px;*/
 }
+.visual-separator-space {
+	/*border: 5px solid #000000;  1C384A */
+	border-top: 10px solid #e9eade;
+	/*width: 80%;*/
+	align-items: center;
+	align-content: center;
+	align-self: center;
+	/*this only gives space above teh separator itself, so maybe need to place it insdie its own div?*/
+	margin: 10px 0px;
+	/*text-align: center;*/
+	/*margin-bottom: 10px;*/
+}
 
 .width_17 {
 	width: 17%;
