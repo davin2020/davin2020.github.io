@@ -369,6 +369,18 @@ maybe call one of the classes pattern or art and collapse the pattern on MQ with
 	/*text-align: center;*/
 	/*margin-bottom: 10px;*/
 }
+.visual-separator-space {
+	/*border: 5px solid #000000;  1C384A */
+	border-top: 10px solid #e9eade;
+	/*width: 80%;*/
+	align-items: center;
+	align-content: center;
+	align-self: center;
+	/*this only gives space above teh separator itself, so maybe need to place it insdie its own div?*/
+	margin: 10px 0px;
+	/*text-align: center;*/
+	/*margin-bottom: 10px;*/
+}
 
 .width_17 {
 	width: 17%;
@@ -433,11 +445,21 @@ a:hover .portfolio-images {
 	margin-top: -5px;
 }
 
+.art-images {
+	max-width: 100%;
+	border-radius: 20px;
+	/* show a transparent border around clickable images, so when border is shown on hover it doesnt make content below image jump */
+	border: 8px solid rgba(87, 24, 103, 0);
+	max-height: 400px;
+	margin-top: 10px;
+}
+
 /* used as an alternative to bullets points which i couldnt get to line up in the center and be on the same line as the text about qualifications */
 .qual_list_icon {
 	color:  #400068;
 	margin-right: 10px
 }
+
 /* names for BORDERS ? */
 /*
 or try names like
