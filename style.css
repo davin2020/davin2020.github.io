@@ -439,10 +439,10 @@ a:hover .portfolio-images {
 }
 
 .certificate-images {
-	max-width: 100%;
+	/*max-width: 100%;*/
 	border-radius: 20px;
 	max-height: 300px;
-	margin-top: 10px;
+	margin-top: -5px;
 }
 
 .art-images {
@@ -453,6 +453,13 @@ a:hover .portfolio-images {
 	max-height: 400px;
 	margin-top: 10px;
 }
+
+/* used as an alternative to bullets points which i couldnt get to line up in the center and be on the same line as the text about qualifications */
+.qual_list_icon {
+	color:  #400068;
+	margin-right: 10px
+}
+
 /* names for BORDERS ? */
 /*
 or try names like
